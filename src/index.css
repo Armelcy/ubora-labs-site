@@ -5,3 +5,13 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Fallback styles in case custom colors don't load */
+body {
+  background-color: #0A1630;
+  color: #FFFFFF;
+}
+
+#root {
+  min-height: 100vh;
+}
