@@ -16,21 +16,29 @@ const Navbar = () => {
             </span>
           </div>
 
-          {/* Navigation links */}
-          <div className="hidden md:flex items-center space-x-8">
+          {/* Centered Navigation links */}
+          <div className="hidden md:flex items-center justify-center space-x-8 flex-1">
             <a href="#research" className="text-textDim hover:text-textPrimary transition-colors duration-200">
               Research
             </a>
             <a href="#about" className="text-textDim hover:text-textPrimary transition-colors duration-200">
               About
             </a>
+            <a href="#pillars" className="text-textDim hover:text-textPrimary transition-colors duration-200">
+              Pillars
+            </a>
+            <a href="#projects" className="text-textDim hover:text-textPrimary transition-colors duration-200">
+              Projects
+            </a>
             <a href="#contact" className="text-textDim hover:text-textPrimary transition-colors duration-200">
               Contact
             </a>
-            
-            {/* Build & Research button */}
+          </div>
+
+          {/* Get Started button - Top Right */}
+          <div className="hidden md:block">
             <button className="border border-accentGold text-accentGold px-4 py-2 rounded-full text-sm font-medium hover:bg-accentGold hover:text-backgroundPrimary transition-all duration-200">
-              Build & Research
+              Get Started
             </button>
           </div>
 

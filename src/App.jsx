@@ -11,106 +11,134 @@ function App() {
       <Navbar />
       <Hero />
       
-      {/* Research Section */}
-      <section id="research" className="bg-backgroundSecondary">
+      {/* Mission & Vision Section */}
+      <section id="about" className="bg-backgroundSecondary">
         <div className="max-w-content mx-auto px-6 py-20">
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <p className="text-textDim text-lg leading-relaxed">
-              We explore the intersection of creativity, code, and community — transforming ideas into infrastructure.
-            </p>
+          <div className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
+            {/* Mission */}
+            <div className="space-y-6">
+              <div className="flex items-start space-x-4">
+                <div className="text-4xl">🧭</div>
+                <div>
+                  <h2 className="text-3xl font-bold text-textPrimary mb-4">Mission</h2>
+                  <p className="text-textDim text-lg leading-relaxed">
+                    To imagine, engineer, and scale systems that make Africa work better — building tools that bridge creativity, code, and community.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Vision */}
+            <div className="space-y-6">
+              <div className="flex items-start space-x-4">
+                <div className="text-4xl">🌟</div>
+                <div>
+                  <h2 className="text-3xl font-bold text-textPrimary mb-4">Vision</h2>
+                  <p className="text-textDim text-lg leading-relaxed">
+                    A future where African-built technology powers education, commerce, and innovation — systems designed for real people in real places.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Philosophy */}
+          <div className="mt-16 max-w-4xl mx-auto text-center">
+            <div className="flex items-start justify-center space-x-4 mb-6">
+              <div className="text-4xl">💡</div>
+              <h2 className="text-3xl font-bold text-textPrimary">Philosophy</h2>
+            </div>
+            <div className="space-y-4 text-textDim text-lg leading-relaxed">
+              <p>We believe in measured innovation: technology that serves, not dazzles.</p>
+              <p>Our work blends rigor with empathy — designing for impact, longevity, and cultural context.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Core Pillars Section */}
+      <section id="pillars" className="bg-backgroundPrimary">
+        <div className="max-w-content mx-auto px-6 py-20">
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center space-x-4 mb-6">
+              <div className="text-4xl">🧬</div>
+              <h2 className="text-4xl md:text-5xl font-bold text-textPrimary">Core Pillars</h2>
+            </div>
           </div>
           <Pillars />
         </div>
       </section>
       
-      {/* About Section */}
-      <section id="about" className="bg-backgroundPrimary relative">
-        <div className="max-w-content mx-auto px-6 py-24">
-          {/* Section header */}
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-textPrimary mb-6">
-              Redefining <span className="text-accentGold">African Innovation</span>
-            </h2>
-            <p className="text-textDim text-xl max-w-3xl mx-auto leading-relaxed">
-              We're not just building software — we're crafting the digital infrastructure that will power Africa's next chapter.
-            </p>
+      {/* Values Section */}
+      <section className="bg-backgroundSecondary">
+        <div className="max-w-content mx-auto px-6 py-20">
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center space-x-4 mb-6">
+              <div className="text-4xl">🧩</div>
+              <h2 className="text-4xl md:text-5xl font-bold text-textPrimary">Values</h2>
+            </div>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-20 max-w-6xl mx-auto items-center">
-            {/* Left column - Enhanced storytelling */}
-            <div className="space-y-8">
-              <div className="border-l-4 border-accentGold pl-6">
-                <h3 className="text-2xl font-bold text-textPrimary mb-4">
-                  Why we exist.
-                </h3>
-                <p className="text-textDim text-lg leading-relaxed">
-                  Ubora Labs exists to imagine and engineer the systems that make Africa work better. 
-                  We design technology for real people, in real places — blending creativity, code, and courage.
-                </p>
-              </div>
-              
-              <div className="border-l-4 border-blue-500 pl-6">
-                <h3 className="text-2xl font-bold text-textPrimary mb-4">
-                  Our Approach
-                </h3>
-                <p className="text-textDim text-lg leading-relaxed">
-                  Our work is not about hype. It's about building tools that can outlive us: platforms for education, 
-                  infrastructure for trade, systems that respect the realities on the ground.
-                </p>
-              </div>
-              
-              <div className="bg-backgroundSecondary rounded-xl p-6 border border-borderSoft">
-                <p className="text-accentGold text-xl font-medium italic text-center">
-                  "Where hope meets code."
-                </p>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-backgroundPrimary rounded-xl p-6 border border-borderSoft">
+              <h3 className="text-xl font-bold text-textPrimary mb-3">Integrity in Design</h3>
+              <p className="text-textDim">Thoughtful, intentional systems — no shortcuts.</p>
+            </div>
+            <div className="bg-backgroundPrimary rounded-xl p-6 border border-borderSoft">
+              <h3 className="text-xl font-bold text-textPrimary mb-3">Empathy in Technology</h3>
+              <p className="text-textDim">We build with, not just for, communities.</p>
+            </div>
+            <div className="bg-backgroundPrimary rounded-xl p-6 border border-borderSoft">
+              <h3 className="text-xl font-bold text-textPrimary mb-3">Sustainability</h3>
+              <p className="text-textDim">Code and culture should both endure.</p>
+            </div>
+            <div className="bg-backgroundPrimary rounded-xl p-6 border border-borderSoft">
+              <h3 className="text-xl font-bold text-textPrimary mb-3">Precision</h3>
+              <p className="text-textDim">Excellence is not speed; it's accuracy with purpose.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Research Focus Section */}
+      <section id="research" className="bg-backgroundPrimary">
+        <div className="max-w-content mx-auto px-6 py-20">
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center space-x-4 mb-6">
+              <div className="text-4xl">🧠</div>
+              <h2 className="text-4xl md:text-5xl font-bold text-textPrimary">Research Focus</h2>
+            </div>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="text-center">
+              <div className="bg-backgroundSecondary rounded-xl p-8 border border-borderSoft h-full">
+                <h3 className="text-xl font-bold text-textPrimary mb-4">Digital Infrastructure</h3>
+                <p className="text-textDim">For education and trade.</p>
               </div>
             </div>
-            
-            {/* Right column - Impact metrics and vision */}
-            <div className="space-y-8">
-              <div className="bg-gradient-to-br from-backgroundSecondary to-gray-800 rounded-2xl p-8 border border-borderSoft">
-                <h3 className="text-2xl font-bold text-textPrimary mb-6">
-                  Our Impact Vision
-                </h3>
-                
-                <div className="grid grid-cols-2 gap-6 mb-6">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-accentGold mb-2">1M+</div>
-                    <div className="text-textDim text-sm">Lives Impacted Goal</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-blue-400 mb-2">50+</div>
-                    <div className="text-textDim text-sm">Partner Organizations</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-green-400 mb-2">15</div>
-                    <div className="text-textDim text-sm">African Countries</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-purple-400 mb-2">24/7</div>
-                    <div className="text-textDim text-sm">Innovation Labs</div>
-                  </div>
-                </div>
-                
-                <p className="text-textDim leading-relaxed">
-                  Ubora Labs is an African research and development studio building systems that power education, 
-                  commerce, and innovation across the continent. Our philosophy blends curiosity, precision, and 
-                  empathy — technology designed for real lives.
-                </p>
-              </div>
-              
-              {/* Technology stack showcase */}
-              <div className="bg-backgroundSecondary rounded-xl p-6 border border-borderSoft">
-                <h4 className="text-lg font-semibold text-textPrimary mb-4">Tech Stack</h4>
-                <div className="flex flex-wrap gap-2">
-                  {['React', 'Node.js', 'Python', 'AI/ML', 'Cloud', 'Blockchain', 'IoT', 'Mobile'].map((tech, index) => (
-                    <span key={index} className="px-3 py-1 bg-accentGold text-backgroundPrimary rounded-full text-sm font-medium">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+            <div className="text-center">
+              <div className="bg-backgroundSecondary rounded-xl p-8 border border-borderSoft h-full">
+                <h3 className="text-xl font-bold text-textPrimary mb-4">Scalable Solutions</h3>
+                <p className="text-textDim">Cloud and AI solutions tailored for African realities.</p>
               </div>
             </div>
+            <div className="text-center">
+              <div className="bg-backgroundSecondary rounded-xl p-8 border border-borderSoft h-full">
+                <h3 className="text-xl font-bold text-textPrimary mb-4">Open Innovation</h3>
+                <p className="text-textDim">Experiments that feed public knowledge.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Projects Placeholder */}
+      <section id="projects" className="bg-backgroundSecondary">
+        <div className="max-w-content mx-auto px-6 py-20">
+          <div className="text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-textPrimary mb-6">Projects</h2>
+            <p className="text-textDim text-xl">Coming Soon</p>
           </div>
         </div>
       </section>

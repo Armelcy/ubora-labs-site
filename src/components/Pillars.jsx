@@ -9,7 +9,7 @@ const Pillars = () => {
     },
     {
       title: "Build for Scale.",
-      description: "We design systems meant to last — built for reliability, reach, and growth across Africa."
+      description: "Our systems are designed to last — built for reliability, reach, and growth across Africa."
     },
     {
       title: "Collaborate for Impact.",

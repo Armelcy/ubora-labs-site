@@ -10,7 +10,11 @@ const Footer = () => {
           </div>
           
           <div className="text-textDim text-sm">
-            A technology division of Leukam Group.
+            Ubora Labs is a technology division of Leukam Group.
+          </div>
+          
+          <div className="text-accentGold text-sm italic pt-2">
+            Where hope meets code.
           </div>
           
           <div className="text-textDim text-xs pt-4">
