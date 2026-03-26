@@ -1,17 +1,1286 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Ubora Labs - African R&D studio. We imagine, prototype, and scale systems built for real-world African contexts." />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <title>Ubora Labs - Where Hope Meets Code</title>
-  </head>
-  <body class="bg-backgroundPrimary text-textPrimary font-sans antialiased">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ══ FAVICON ══ -->
+  <link rel="icon" type="image/png" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/favicon.ico">
+
+  <!-- ══ GOOGLE ANALYTICS 4 ══ -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJED730Z5Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GJED730Z5Q');
+  </script>
+
+  <!-- ══ PRIMARY SEO ══ -->
+  <title>Ubora Labs | Tech Innovation Studio — Africa-First Digital Products</title>
+  <meta name="description" content="Ubora Labs builds Africa-first digital products that work in low-data environments. We create Ubora Écoles, Ezra Service, Ubora Living, Ubora Pay, and Ubora Health — software for the people, by the people.">
+  <meta name="keywords" content="Ubora Labs, Africa tech startup, edtech Africa, proptech Africa, mobile money API, Ubora Écoles, Ezra Service, Ubora Living, Ubora Pay, Ubora Health, Ubora ID, low data software, African innovation, digital products Africa">
+  <meta name="author" content="Ubora Labs">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://uboralabs.com/">
+
+  <!-- ══ OPEN GRAPH (Facebook, LinkedIn, WhatsApp) ══ -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://uboralabs.com/">
+  <meta property="og:title" content="Ubora Labs — Where Hope Meets Code">
+  <meta property="og:description" content="We build Africa-first digital products designed for low-data realities: education, services, housing, payments, health. Software built for the people.">
+  <meta property="og:image" content="https://uboralabs.com/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Ubora Labs">
+  <meta property="og:locale" content="en_US">
+
+  <!-- ══ TWITTER CARD ══ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@uboralabs">
+  <meta name="twitter:creator" content="@uboralabs">
+  <meta name="twitter:title" content="Ubora Labs — Where Hope Meets Code">
+  <meta name="twitter:description" content="We build Africa-first digital products designed for low-data realities. Education, services, housing, payments, health.">
+  <meta name="twitter:image" content="https://uboralabs.com/og-image.jpg">
+
+  <!-- ══ STRUCTURED DATA — Organization ══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Ubora Labs",
+    "url": "https://uboralabs.com",
+    "logo": "https://uboralabs.com/logo.png",
+    "description": "Ubora Labs builds Africa-first digital products that thrive in low-data environments — software for education, services, housing, payments, and healthcare.",
+    "foundingDate": "2025",
+    "knowsAbout": ["EdTech", "PropTech", "FinTech", "HealthTech", "Africa", "Mobile Money", "Low-data Software"],
+    "sameAs": [
+      "https://twitter.com/uboralabs",
+      "https://www.linkedin.com/company/uboralabs/",
+      "https://www.facebook.com/profile.php?id=61577655578257",
+      "https://github.com/uboralabs"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Ubora Products",
+      "itemListElement": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Ubora Écoles",
+          "url": "https://uboraecoles.com",
+          "applicationCategory": "EducationApplication",
+          "description": "Smart school management platform connecting students, teachers, parents, and tutors across Africa."
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Ezra Service",
+          "url": "https://ezraservice.com",
+          "applicationCategory": "BusinessApplication",
+          "description": "On-demand service marketplace connecting skilled technicians and clients across Africa."
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Ubora Living",
+          "url": "https://uboraliving.com",
+          "applicationCategory": "RealEstateApplication",
+          "description": "Rental platform with Africa's first Rental Score system for tenants and landlords."
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Ubora Pay",
+          "applicationCategory": "FinanceApplication",
+          "description": "Unified payment API hub bridging MTN, Orange, and other mobile money providers for African developers."
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- ══ TECHNICAL SEO ══ -->
+  <meta name="theme-color" content="#c9a84c">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+  <!-- ══ PERFORMANCE HINTS ══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Bebas+Neue&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy-0:      #020810;
+      --navy-1:      #060d1a;
+      --navy-2:      #0a1628;
+      --navy-3:      #0f2040;
+      --gold:        #c9a84c;
+      --gold-light:  #e8c96e;
+      --gold-dim:    rgba(201,168,76,0.10);
+      --gold-border: rgba(201,168,76,0.22);
+      --white:       #f0f4ff;
+      --white-dim:   rgba(240,244,255,0.55);
+      --white-faint: rgba(240,244,255,0.22);
+      --font-display:'Archivo Black', sans-serif;
+      --font-head:   'Archivo', sans-serif;
+      --font-mono:   'Space Mono', monospace;
+      --font-big:    'Bebas Neue', cursive;
+      --nav-h:       72px;
+    }
+
+    /* ── SKIP LINK (accessibility + SEO) ── */
+    .skip-link {
+      position:absolute; top:-100px; left:1rem;
+      background:var(--gold); color:var(--navy-0);
+      padding:.5rem 1.2rem; border-radius:0 0 6px 6px;
+      font-family:var(--font-mono); font-size:.75rem; font-weight:700;
+      text-decoration:none; z-index:99999;
+      transition:top .2s;
+    }
+    .skip-link:focus { top:0; }
+
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      background:var(--navy-1); color:var(--white);
+      font-family:var(--font-head); font-weight:300;
+      line-height:1.7; overflow-x:hidden; cursor:none;
+    }
+
+    /* ── CURSOR ── */
+    .cursor {
+      position:fixed; width:10px; height:10px;
+      background:var(--gold); border-radius:50%;
+      pointer-events:none; z-index:9999;
+      transform:translate(-50%,-50%);
+      transition:width .3s, height .3s;
+      mix-blend-mode:screen;
+    }
+    .cursor-ring {
+      position:fixed; width:38px; height:38px;
+      border:1.5px solid var(--gold); border-radius:50%;
+      pointer-events:none; z-index:9998;
+      transform:translate(-50%,-50%); opacity:.55;
+      transition:width .3s, height .3s, opacity .3s;
+    }
+    .cursor.big { width:20px; height:20px; }
+    .cursor-ring.big { width:58px; height:58px; opacity:.22; }
+
+    /* ── NAVBAR ── */
+    nav {
+      position:fixed; top:0; left:0; right:0; z-index:1000;
+      height:var(--nav-h);
+      padding:0 3rem;
+      display:flex; align-items:center; justify-content:space-between;
+      transition:background .4s, border-color .4s;
+      border-bottom:1px solid transparent;
+    }
+    nav.scrolled {
+      background:rgba(6,13,26,.92);
+      backdrop-filter:blur(22px);
+      -webkit-backdrop-filter:blur(22px);
+      border-bottom-color:var(--gold-border);
+    }
+    .nav-logo {
+      display:flex; align-items:center; gap:.65rem;
+      text-decoration:none; z-index:10;
+    }
+    .nav-logo-box {
+      width:34px; height:34px;
+      border-radius:6px;
+      overflow:hidden;
+      display:flex; align-items:center; justify-content:center;
+    }
+    .nav-logo-box img {
+      width:100%; height:100%; object-fit:cover;
+    }
+    .nav-logo-text {
+      font-family:var(--font-head); font-weight:600;
+      font-size:.85rem; letter-spacing:.18em;
+      color:var(--gold); text-transform:uppercase;
+    }
+    .nav-links { display:flex; align-items:center; gap:2.5rem; list-style:none; }
+    .nav-links a {
+      color:var(--white-dim); text-decoration:none;
+      font-size:.8rem; letter-spacing:.1em; text-transform:uppercase;
+      transition:color .3s; position:relative;
+    }
+    .nav-links a::after {
+      content:''; position:absolute; bottom:-4px; left:0;
+      width:0; height:1px; background:var(--gold); transition:width .3s;
+    }
+    .nav-links a:hover { color:var(--gold); }
+    .nav-links a:hover::after { width:100%; }
+    .nav-cta {
+      border:1.5px solid var(--gold) !important; color:var(--gold) !important;
+      padding:.42rem 1.2rem !important; border-radius:3px;
+      transition:background .3s, color .3s !important;
+    }
+    .nav-cta::after { display:none !important; }
+    .nav-cta:hover { background:var(--gold) !important; color:var(--navy-0) !important; }
+
+    /* Hamburger */
+    .hamburger {
+      display:none; flex-direction:column; gap:5px;
+      cursor:none; background:none; border:none; padding:4px;
+      z-index:10;
+    }
+    .hamburger span {
+      display:block; width:24px; height:1.5px;
+      background:var(--gold);
+      transition:transform .3s, opacity .3s;
+    }
+    .hamburger.open span:nth-child(1) { transform:translateY(6.5px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity:0; }
+    .hamburger.open span:nth-child(3) { transform:translateY(-6.5px) rotate(-45deg); }
+
+    /* Mobile menu */
+    .mobile-menu {
+      position:fixed; inset:0; z-index:999;
+      background:rgba(2,8,16,.97);
+      display:flex; flex-direction:column;
+      align-items:center; justify-content:center; gap:2.5rem;
+      opacity:0; pointer-events:none;
+      transition:opacity .4s;
+    }
+    .mobile-menu.open { opacity:1; pointer-events:all; }
+    .mobile-menu a {
+      color:var(--white-dim); text-decoration:none;
+      font-family:var(--font-display); font-size:2.2rem;
+      letter-spacing:.05em; text-transform:uppercase;
+      transition:color .3s;
+    }
+    .mobile-menu a:hover { color:var(--gold); }
+    .mobile-menu .m-cta {
+      margin-top:1rem;
+      border:1.5px solid var(--gold); color:var(--gold) !important;
+      padding:.7rem 2rem; font-size:1rem !important;
+    }
+
+    /* ── HERO ── */
+    #hero {
+      position:relative; min-height:100vh;
+      display:flex; align-items:center; justify-content:center;
+      overflow:hidden;
+    }
+    #particle-canvas { position:absolute; inset:0; width:100%; height:100%; }
+    .hero-glow {
+      position:absolute; inset:0; pointer-events:none;
+      background:
+        radial-gradient(ellipse 70% 50% at 50% 0%, rgba(201,168,76,.09) 0%, transparent 65%),
+        radial-gradient(ellipse 35% 35% at 85% 75%, rgba(201,168,76,.05) 0%, transparent 55%);
+    }
+    .hero-content {
+      position:relative; z-index:2;
+      text-align:center; max-width:960px;
+      padding:calc(var(--nav-h) + 2rem) 1.5rem 4rem;
+    }
+    .hero-eyebrow {
+      font-family:var(--font-mono); font-size:.65rem;
+      letter-spacing:.32em; color:var(--gold);
+      text-transform:uppercase; margin-bottom:2rem;
+      display:flex; align-items:center; justify-content:center; gap:1rem;
+      opacity:0; transform:translateY(18px);
+      animation:fadeUp .8s ease .3s forwards;
+    }
+    .hero-eyebrow::before, .hero-eyebrow::after {
+      content:''; width:36px; height:1px; background:var(--gold); opacity:.5;
+    }
+    .hero-h1 {
+      font-family:var(--font-display);
+      font-size:clamp(3.4rem, 8vw, 8rem);
+      line-height:.93; letter-spacing:-.02em;
+      color:var(--white); margin-bottom:1.5rem;
+      opacity:0; transform:translateY(30px);
+      animation:fadeUp .9s ease .5s forwards;
+    }
+    .hero-h1 .gold { color:var(--gold); display:block; }
+    .hero-sub {
+      font-weight:300; font-size:1.05rem;
+      color:var(--white-dim); max-width:560px;
+      margin:0 auto 3rem; line-height:1.85;
+      opacity:0; transform:translateY(20px);
+      animation:fadeUp .8s ease .7s forwards;
+    }
+    .hero-btns {
+      display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;
+      opacity:0; transform:translateY(20px);
+      animation:fadeUp .8s ease .9s forwards;
+    }
+    .btn-gold {
+      background:var(--gold); color:var(--navy-0);
+      padding:.9rem 2.1rem; font-weight:600;
+      font-size:.8rem; letter-spacing:.12em; text-transform:uppercase;
+      text-decoration:none; cursor:none;
+      position:relative; overflow:hidden;
+      transition:transform .3s, box-shadow .3s;
+      display:inline-block;
+    }
+    .btn-gold::before {
+      content:''; position:absolute; inset:0;
+      background:var(--gold-light); transform:translateX(-100%);
+      transition:transform .4s ease;
+    }
+    .btn-gold:hover::before { transform:translateX(0); }
+    .btn-gold span { position:relative; z-index:1; }
+    .btn-gold:hover { transform:translateY(-2px); box-shadow:0 0 32px rgba(201,168,76,.4); }
+    .btn-outline {
+      border:1.5px solid var(--gold-border); color:var(--gold);
+      padding:.9rem 2.1rem; font-weight:500;
+      font-size:.8rem; letter-spacing:.12em; text-transform:uppercase;
+      text-decoration:none; cursor:none;
+      transition:border-color .3s, background .3s, transform .3s;
+      display:inline-block;
+    }
+    .btn-outline:hover {
+      border-color:var(--gold); background:rgba(201,168,76,.08);
+      transform:translateY(-2px);
+    }
+    .scroll-hint {
+      position:absolute; bottom:2.5rem; left:50%;
+      transform:translateX(-50%);
+      display:flex; flex-direction:column; align-items:center; gap:.5rem;
+      opacity:0; animation:fadeIn 1s ease 1.6s forwards;
+    }
+    .scroll-hint span {
+      font-family:var(--font-mono); font-size:.58rem;
+      letter-spacing:.25em; color:var(--white-faint); text-transform:uppercase;
+    }
+    .scroll-line {
+      width:1px; height:48px;
+      background:linear-gradient(to bottom, var(--gold), transparent);
+      animation:linePulse 2s ease-in-out infinite;
+    }
+
+    /* ── MARQUEE ── */
+    .marquee-strip { background:var(--gold); padding:.85rem 0; overflow:hidden; }
+    .marquee-track {
+      display:flex; animation:marquee 28s linear infinite; white-space:nowrap;
+    }
+    .marquee-item {
+      display:flex; align-items:center; gap:2rem; padding:0 2rem;
+      font-weight:600; font-size:.7rem; letter-spacing:.22em;
+      text-transform:uppercase; color:var(--navy-0);
+    }
+    .marquee-dot {
+      width:4px; height:4px; background:var(--navy-0);
+      border-radius:50%; opacity:.45; flex-shrink:0;
+    }
+
+    /* ── SECTION SHARED ── */
+    .s-inner { max-width:1200px; margin:0 auto; padding:6rem 3rem; }
+    .s-label {
+      font-family:var(--font-mono); font-size:.62rem;
+      letter-spacing:.32em; color:var(--gold);
+      text-transform:uppercase; margin-bottom:.9rem;
+      display:flex; align-items:center; gap:.7rem;
+    }
+    .s-label::before { content:''; width:22px; height:1px; background:var(--gold); }
+    .s-title {
+      font-family:var(--font-display);
+      font-size:clamp(2.4rem, 5vw, 4.2rem);
+      line-height:1.0; letter-spacing:-.02em;
+      color:var(--white); margin-bottom:1.2rem;
+    }
+    .s-sub {
+      font-weight:300; font-size:.975rem;
+      color:var(--white-dim); max-width:540px;
+      line-height:1.85; margin-bottom:3.5rem;
+    }
+
+    /* ── REVEAL ── */
+    .reveal { opacity:0; transform:translateY(38px); transition:opacity .8s ease, transform .8s ease; }
+    .reveal.in { opacity:1; transform:none; }
+    .d1{transition-delay:.08s} .d2{transition-delay:.16s}
+    .d3{transition-delay:.24s} .d4{transition-delay:.32s}
+    .d5{transition-delay:.40s} .d6{transition-delay:.48s}
+
+    /* ── DIAGONAL DIVIDER ── */
+    .divider {
+      width:100%; overflow:hidden;
+      line-height:0; display:block;
+    }
+    .divider svg { display:block; width:100%; }
+
+    /* ── FOUNDATION ── */
+    #foundation { background:var(--navy-0); }
+    .foundation-top {
+      display:grid; grid-template-columns:1fr 1fr;
+      gap:4rem; align-items:end; margin-bottom:4rem;
+    }
+    .cards-row {
+      display:grid; grid-template-columns:repeat(3,1fr);
+      border:1.5px solid var(--gold-border);
+    }
+    .f-card {
+      background:var(--navy-1); padding:2.5rem;
+      border-right:1.5px solid var(--gold-border);
+      position:relative; overflow:hidden; transition:background .4s;
+    }
+    .f-card:last-child { border-right:none; }
+    .f-card::before {
+      content:''; position:absolute; top:0; left:0; right:0; height:2px;
+      background:var(--gold); transform:scaleX(0);
+      transition:transform .45s ease; transform-origin:left;
+    }
+    .f-card:hover::before { transform:scaleX(1); }
+    .f-card:hover { background:var(--navy-2); }
+    .f-num {
+      font-family:var(--font-big); font-size:4.5rem;
+      color:var(--gold); opacity:.1; line-height:1;
+      margin-bottom:.8rem; transition:opacity .4s;
+    }
+    .f-card:hover .f-num { opacity:.22; }
+    .f-label {
+      font-weight:600; font-size:.7rem; letter-spacing:.22em;
+      color:var(--gold); text-transform:uppercase; margin-bottom:.9rem;
+    }
+    .f-text { font-weight:300; font-size:.9rem; color:var(--white-dim); line-height:1.85; }
+
+    /* ── WHAT WE BUILD ── */
+    #build { background:var(--navy-1); }
+    .build-grid {
+      display:grid; grid-template-columns:repeat(2,1fr); gap:1.5rem;
+      margin-top:1rem;
+    }
+    .build-card {
+      background:var(--navy-2);
+      border:1px solid var(--gold-border);
+      padding:2rem 2rem 2.5rem;
+      position:relative; overflow:hidden;
+      transition:border-color .4s, transform .4s, box-shadow .4s;
+      cursor:none;
+    }
+    .build-card::after {
+      content:''; position:absolute; inset:0;
+      background:linear-gradient(135deg, rgba(201,168,76,.07) 0%, transparent 60%);
+      opacity:0; transition:opacity .4s;
+    }
+    .build-card:hover { border-color:var(--gold); transform:translateY(-6px); box-shadow:0 20px 60px rgba(0,0,0,.4); }
+    .build-card:hover::after { opacity:1; }
+    .build-tag {
+      font-family:var(--font-mono); font-size:.6rem;
+      letter-spacing:.2em; color:var(--gold);
+      text-transform:uppercase; margin-bottom:1.5rem;
+      display:flex; align-items:center; gap:.5rem;
+    }
+    .build-tag::before { content:''; width:14px; height:1px; background:var(--gold); }
+    .build-icon {
+      width:48px; height:48px;
+      border:1px solid var(--gold-border); border-radius:8px;
+      display:flex; align-items:center; justify-content:center;
+      margin-bottom:1.5rem;
+      font-size:1.4rem;
+      position:relative; z-index:1;
+    }
+    .build-name {
+      font-family:var(--font-display); font-size:1.5rem;
+      color:var(--white); margin-bottom:.6rem;
+      position:relative; z-index:1;
+    }
+    .build-desc {
+      font-weight:300; font-size:.875rem;
+      color:var(--white-dim); line-height:1.8;
+      position:relative; z-index:1; margin-bottom:1.8rem;
+    }
+    .build-status {
+      display:inline-flex; align-items:center; gap:.5rem;
+      font-family:var(--font-mono); font-size:.6rem;
+      letter-spacing:.15em; text-transform:uppercase;
+      padding:.35rem .75rem;
+      border-radius:2px;
+      position:relative; z-index:1;
+    }
+    .build-status.active {
+      background:rgba(201,168,76,.12); color:var(--gold);
+      border:1px solid var(--gold-border);
+    }
+    .build-status.soon {
+      background:rgba(240,244,255,.05); color:var(--white-dim);
+      border:1px solid rgba(240,244,255,.1);
+    }
+    .build-status .dot {
+      width:5px; height:5px; border-radius:50%;
+    }
+    .build-status.active .dot { background:var(--gold); animation:blink 2s infinite; }
+    .build-status.soon .dot { background:var(--white-dim); }
+
+    .horizon-label {
+      font-family:var(--font-mono); font-size:.62rem;
+      letter-spacing:.32em; color:var(--white-faint);
+      text-transform:uppercase; margin:3rem 0 1.5rem;
+      display:flex; align-items:center; gap:.75rem;
+    }
+    .horizon-label::before, .horizon-label::after {
+      content:''; flex:1; height:1px;
+      background:var(--gold-border);
+    }
+
+    /* ── PILLARS ── */
+    #pillars { background:var(--navy-0); }
+    .pillars-grid { display:grid; grid-template-columns:repeat(2,1fr); }
+    .p-item {
+      padding:2.6rem 2.8rem;
+      border-bottom:1px solid var(--gold-border);
+      border-right:1px solid var(--gold-border);
+      position:relative; overflow:hidden;
+      transition:background .4s; cursor:none;
+    }
+    .p-item:nth-child(even) { border-right:none; }
+    .p-item:nth-last-child(-n+2) { border-bottom:none; }
+    .p-item::after {
+      content:''; position:absolute; inset:0;
+      background:var(--gold-dim); opacity:0; transition:opacity .4s;
+    }
+    .p-item:hover::after { opacity:1; }
+    .p-num {
+      font-family:var(--font-big); font-size:.78rem;
+      letter-spacing:.18em; color:var(--gold);
+      opacity:.55; margin-bottom:.9rem; position:relative; z-index:1;
+    }
+    .p-title {
+      font-family:var(--font-display); font-size:1.45rem;
+      color:var(--white); margin-bottom:.6rem;
+      position:relative; z-index:1; transition:color .3s;
+    }
+    .p-item:hover .p-title { color:var(--gold-light); }
+    .p-text {
+      font-weight:300; font-size:.875rem;
+      color:var(--white-dim); line-height:1.85; position:relative; z-index:1;
+    }
+
+    /* ── RESEARCH ── */
+    #research { background:var(--navy-0); overflow:hidden; }
+    #research .s-inner { display:grid; grid-template-columns:1fr 1fr; gap:6rem; align-items:center; }
+    .r-items { display:flex; flex-direction:column; }
+    .r-item {
+      padding:1.8rem 0; border-bottom:1px solid var(--gold-border);
+      display:flex; align-items:flex-start; gap:1.4rem;
+      cursor:none; transition:padding-left .4s;
+    }
+    .r-item:first-child { border-top:1px solid var(--gold-border); }
+    .r-item:hover { padding-left:.9rem; }
+    .r-num {
+      font-family:var(--font-big); font-size:2.2rem;
+      color:var(--gold); opacity:.28; line-height:1;
+      flex-shrink:0; transition:opacity .4s;
+    }
+    .r-item:hover .r-num { opacity:.85; }
+    .r-title {
+      font-weight:600; font-size:1.05rem;
+      color:var(--white); margin-bottom:.35rem; transition:color .3s;
+    }
+    .r-item:hover .r-title { color:var(--gold); }
+    .r-text { font-weight:300; font-size:.875rem; color:var(--white-dim); }
+    .orb-wrap { display:flex; align-items:center; justify-content:center; aspect-ratio:1; }
+    .orb {
+      width:300px; height:300px; border-radius:50%;
+      border:1px solid var(--gold-border); position:relative;
+      display:flex; align-items:center; justify-content:center;
+      background:radial-gradient(circle at 30% 30%, rgba(201,168,76,.18), rgba(201,168,76,.02) 70%);
+      animation:orbFloat 7s ease-in-out infinite;
+    }
+    .orb::before {
+      content:''; position:absolute; inset:22px; border-radius:50%;
+      border:1px solid rgba(201,168,76,.12);
+      animation:orbFloat 7s ease-in-out infinite 1.5s;
+    }
+    .orb::after {
+      content:''; position:absolute; inset:52px; border-radius:50%;
+      border:1px solid rgba(201,168,76,.07);
+      animation:orbFloat 7s ease-in-out infinite 3s;
+    }
+    .orb-label {
+      font-family:var(--font-big); font-size:5.5rem;
+      color:var(--gold); opacity:.13;
+      letter-spacing:-.05em; position:relative; z-index:1;
+    }
+
+    /* ── STATS ── */
+    #stats {
+      background:var(--navy-1);
+      border-top:1px solid var(--gold-border);
+      border-bottom:1px solid var(--gold-border);
+    }
+    #stats .s-inner {
+      padding:4.5rem 3rem;
+      display:grid; grid-template-columns:repeat(4,1fr); gap:2rem;
+    }
+    .stat { text-align:center; padding:2rem 1rem; position:relative; }
+    .stat::after {
+      content:''; position:absolute;
+      right:0; top:18%; height:64%; width:1px; background:var(--gold-border);
+    }
+    .stat:last-child::after { display:none; }
+    .stat-n {
+      font-family:var(--font-big); font-size:5rem;
+      color:var(--gold); line-height:1; display:block;
+    }
+    .stat-l {
+      font-size:.75rem; color:var(--white-dim);
+      letter-spacing:.12em; text-transform:uppercase; margin-top:.4rem;
+    }
+
+    /* ── CONTACT ── */
+    #contact { background:var(--navy-0); text-align:center; }
+    #contact .s-inner { max-width:680px; }
+    .contact-line { width:56px; height:1px; background:var(--gold); margin:1.8rem auto; opacity:.4; }
+    .contact-email {
+      font-weight:500; font-size:1.05rem; color:var(--gold);
+      text-decoration:none; letter-spacing:.04em;
+      border-bottom:1px solid var(--gold-border); padding-bottom:2px;
+      transition:border-color .3s;
+    }
+    .contact-email:hover { border-color:var(--gold); }
+
+    /* ── INSIGHTS ── */
+    #insights { background:var(--navy-2); padding:7rem 3rem; }
+    .insights-grid {
+      max-width:1200px; margin:2.5rem auto 0;
+      display:grid; grid-template-columns:repeat(3,1fr); gap:1.8rem;
+    }
+    .insight-card {
+      background:var(--navy-1); border:1px solid var(--gold-border);
+      border-radius:8px; padding:2rem 1.8rem;
+      display:flex; flex-direction:column; gap:1rem;
+      text-decoration:none; color:inherit;
+      transition:border-color .3s, transform .3s;
+      position:relative; overflow:hidden;
+    }
+    .insight-card::before {
+      content:''; position:absolute; top:0; left:0; right:0;
+      height:2px; background:var(--gold);
+      transform:scaleX(0); transform-origin:left;
+      transition:transform .4s cubic-bezier(.16,1,.3,1);
+    }
+    .insight-card:hover { border-color:var(--gold); transform:translateY(-4px); }
+    .insight-card:hover::before { transform:scaleX(1); }
+    .insight-tag {
+      font-family:var(--font-mono); font-size:.65rem; letter-spacing:.1em;
+      color:var(--gold); text-transform:uppercase;
+    }
+    .insight-title {
+      font-family:var(--font-display); font-size:1.15rem; line-height:1.35;
+      color:var(--white);
+    }
+    .insight-excerpt {
+      font-size:.88rem; color:var(--white-dim); line-height:1.65;
+      flex:1;
+    }
+    .insight-read {
+      font-family:var(--font-mono); font-size:.72rem; color:var(--gold);
+      letter-spacing:.06em; display:flex; align-items:center; gap:.4rem;
+    }
+    .insight-read::after { content:'→'; transition:transform .2s; }
+    .insight-card:hover .insight-read::after { transform:translateX(4px); }
+    @media(max-width:900px){ .insights-grid{ grid-template-columns:1fr; } }
+
+    /* ── FOOTER ── */
+    footer { background:var(--navy-0); border-top:1px solid var(--gold-border); }
+    .footer-grid {
+      max-width:1200px; margin:0 auto; padding:3.5rem 3rem;
+      display:grid; grid-template-columns:1.6fr 1fr 1fr; gap:4rem;
+    }
+    .f-brand-name {
+      font-weight:600; font-size:.85rem; letter-spacing:.22em;
+      color:var(--gold); text-transform:uppercase; display:block; margin-bottom:.6rem;
+    }
+    .f-brand-tag {
+      font-style:italic; font-size:.875rem;
+      color:var(--white-faint); margin-bottom:1.2rem;
+    }
+    .f-brand-desc { font-size:.8rem; color:var(--white-faint); line-height:1.85; font-weight:300; }
+    .f-col-title {
+      font-weight:600; font-size:.62rem; letter-spacing:.28em;
+      color:var(--gold); text-transform:uppercase; margin-bottom:1.2rem;
+    }
+    .f-links { list-style:none; display:flex; flex-direction:column; gap:.75rem; }
+    .f-links a { color:var(--white-faint); text-decoration:none; font-size:.85rem; font-weight:300; transition:color .3s; }
+    .f-links a:hover { color:var(--gold); }
+    .social-row { display:flex; gap:1rem; margin-top:1.5rem; }
+    .social-btn {
+      width:36px; height:36px;
+      border:1px solid var(--gold-border); border-radius:4px;
+      display:flex; align-items:center; justify-content:center;
+      color:var(--white-dim); text-decoration:none;
+      font-size:.75rem; transition:border-color .3s, color .3s, background .3s;
+    }
+    .social-btn:hover { border-color:var(--gold); color:var(--gold); background:var(--gold-dim); }
+    .footer-bottom {
+      max-width:1200px; margin:0 auto; padding:1.2rem 3rem;
+      border-top:1px solid rgba(201,168,76,.08);
+      display:flex; justify-content:space-between; align-items:center;
+    }
+    .footer-bottom p { font-size:.72rem; color:var(--white-faint); font-weight:300; }
+
+    /* ── LANG SWITCH ── */
+    .lang-switch { display:flex; align-items:center; gap:.4rem; font-size:.75rem; font-family:var(--font-mono); }
+    .lang-switch a { color:var(--white-dim); text-decoration:none; transition:color .2s; }
+    .lang-switch a:hover { color:var(--gold); }
+    .lang-switch .lang-active { color:var(--gold); font-weight:700; }
+    .lang-switch span { color:var(--white-dim); opacity:.4; }
+
+    /* ── KEYFRAMES ── */
+    @keyframes fadeUp { to { opacity:1; transform:translateY(0); } }
+    @keyframes fadeIn { to { opacity:1; } }
+    @keyframes linePulse {
+      0%,100% { opacity:.4; transform:scaleY(1); }
+      50%      { opacity:1;  transform:scaleY(.65); }
+    }
+    @keyframes marquee {
+      from { transform:translateX(0); } to { transform:translateX(-50%); }
+    }
+    @keyframes orbFloat {
+      0%,100% { transform:scale(1) translateY(0); }
+      50%     { transform:scale(1.03) translateY(-8px); }
+    }
+    @keyframes blink {
+      0%,100% { opacity:1; } 50% { opacity:.3; }
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width:900px) {
+      nav { padding:0 1.5rem; }
+      .nav-links { display:none; }
+      .hamburger { display:flex; }
+      .s-inner { padding:4rem 1.5rem; }
+      .hero-content { padding-top:calc(var(--nav-h) + 1rem); }
+      .foundation-top { grid-template-columns:1fr; gap:2rem; }
+      .cards-row { grid-template-columns:1fr; }
+      .f-card { border-right:none !important; border-bottom:1.5px solid var(--gold-border); }
+      .f-card:last-child { border-bottom:none; }
+      .build-grid { grid-template-columns:1fr; }
+      .build-card.featured { grid-column:1; }
+      .pillars-grid { grid-template-columns:1fr; }
+      .p-item { border-right:none !important; }
+      .p-item:nth-last-child(-n+2) { border-bottom:1px solid var(--gold-border); }
+      .p-item:last-child { border-bottom:none; }
+      #research .s-inner { grid-template-columns:1fr; }
+      .orb-wrap { display:none; }
+      #stats .s-inner { grid-template-columns:repeat(2,1fr); padding:3rem 1.5rem; }
+      .stat:nth-child(2)::after { display:none; }
+      .footer-grid { grid-template-columns:1fr; gap:2rem; }
+      .footer-bottom { flex-direction:column; gap:.5rem; text-align:center; }
+    }
+  </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div class="cursor" id="cur"></div>
+<div class="cursor-ring" id="cur-ring"></div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#foundation" onclick="closeMenu()">About</a>
+  <a href="#build" onclick="closeMenu()">What We Build</a>
+  <a href="#pillars" onclick="closeMenu()">Pillars</a>
+  <a href="#research" onclick="closeMenu()">Research</a>
+  <a href="#contact" class="m-cta" onclick="closeMenu()">Get Started</a>
+</div>
+
+<!-- NAVBAR -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-box"><img src="/logo.png" alt="Ubora Labs Logo"></div>
+    <span class="nav-logo-text">Ubora Labs</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#foundation">About</a></li>
+    <li><a href="#build">What We Build</a></li>
+    <li><a href="#pillars">Pillars</a></li>
+    <li><a href="#research">Research</a></li>
+    <li>
+      <div class="lang-switch">
+        <span class="lang-active">EN</span>
+        <span>|</span>
+        <a href="/fr/">FR</a>
+      </div>
+    </li>
+    <li><a href="#contact" class="nav-cta">Get Started</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main id="main-content">
+
+<!-- HERO -->
+<section id="hero" aria-label="Hero — Ubora Labs introduction">
+  <canvas id="particle-canvas"></canvas>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">A Technology Division of Leukam Group</div>
+    <h1 class="hero-h1">
+      Excellence<br>
+      <span class="gold">through Innovation</span>
+    </h1>
+    <p class="hero-sub">
+      We build digital products for Africa, designed from the ground up for real people,
+      real conditions, and real constraints. Offline-first. Data-aware. Built to last.
+    </p>
+    <div class="hero-btns">
+      <a href="#foundation" class="btn-gold"><span>Discover Our Vision</span></a>
+      <a href="#contact" class="btn-outline">Start Your Project</a>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-item">Where Hope Meets Code <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Building Africa's Digital Future <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Excellence Through Innovation <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Technology That Serves, Not Dazzles <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Precision · Empathy · Scale <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Where Hope Meets Code <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Building Africa's Digital Future <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Excellence Through Innovation <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Technology That Serves, Not Dazzles <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Precision · Empathy · Scale <span class="marquee-dot"></span></div>
+  </div>
+</div>
+
+<!-- FOUNDATION -->
+<section id="foundation" aria-label="Our foundation — mission, vision, philosophy">
+  <div class="s-inner">
+    <div class="foundation-top">
+      <div class="reveal">
+        <div class="s-label">Our Foundation</div>
+        <h2 class="s-title">The principles<br>that guide us</h2>
+      </div>
+      <div class="reveal d2">
+        <p class="s-sub">
+          Every line of code, every system we build is rooted in these beliefs.
+          This is the foundation of Africa's technological future.
+        </p>
+      </div>
+    </div>
+    <div class="cards-row">
+      <div class="f-card reveal d1">
+        <div class="f-num">01</div>
+        <div class="f-label">Mission</div>
+        <p class="f-text">To imagine, engineer, and scale systems that make Africa work better. Building tools that bridge creativity, code, and community.</p>
+      </div>
+      <div class="f-card reveal d2">
+        <div class="f-num">02</div>
+        <div class="f-label">Vision</div>
+        <p class="f-text">A future where African-built technology powers education, commerce, and innovation. Systems designed for real people in real places.</p>
+      </div>
+      <div class="f-card reveal d3">
+        <div class="f-num">03</div>
+        <div class="f-label">Philosophy</div>
+        <p class="f-text">We believe in measured innovation: technology that serves, not dazzles. Our work blends rigor with empathy, designing for impact, longevity, and cultural context.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIAGONAL DIVIDER -->
+<div class="divider" style="background:var(--navy-1); margin-top:-1px;">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none" height="60">
+    <polygon points="0,0 1200,0 1200,60 0,0" fill="var(--navy-0)"/>
+  </svg>
+</div>
+
+<!-- WHAT WE BUILD -->
+<section id="build" aria-label="Products we build">
+  <div class="s-inner">
+    <div class="reveal">
+      <div class="s-label">What We Build</div>
+      <h2 class="s-title">Products in motion</h2>
+    </div>
+    <p class="s-sub reveal d1">
+      We build for the people, not the ideal user with fast internet and the latest phone.
+      Every product is designed to work in data-scarce environments, because real impact
+      means reaching everyone.
+    </p>
+    <div class="build-grid">
+      <div class="build-card reveal d1">
+        <div class="build-tag">Education</div>
+        <div class="build-icon">🏫</div>
+        <div class="build-name">Ubora Écoles</div>
+        <p class="build-desc">A digital learning platform built for African schools, designed to work on low bandwidth, limited data, and entry-level devices. When a student is struggling, parents receive smart recommendations and can connect directly to a certified tutor through Ezra Service with one tap. Built for the classroom as it actually exists.</p>
+        <span class="build-status active"><span class="dot"></span>Live · uboraecoles.com</span>
+      </div>
+      <div class="build-card reveal d2">
+        <div class="build-tag">Services</div>
+        <div class="build-icon">⚙️</div>
+        <div class="build-name">Ezra Service</div>
+        <p class="build-desc">A services marketplace connecting skilled providers with clients across Africa. Lightweight, fast-loading, and built for users with limited data. Because access to opportunity shouldn't depend on a strong Wi-Fi signal.</p>
+        <span class="build-status active"><span class="dot"></span>Live · ezraservice.com</span>
+      </div>
+      <div class="build-card reveal d3">
+        <div class="build-tag">Real Estate &amp; Lifestyle</div>
+        <div class="build-icon">🏡</div>
+        <div class="build-name">Ubora Living</div>
+        <p class="build-desc">A modern housing platform built for Africa's urban generation. Tenants build a Rental Score based on on-time payments, giving landlords a trusted way to choose tenants. When something breaks, tenants alert repair professionals directly through the platform. If none are available, landlords can book from Ezra Service in seconds. Better relationships. Fewer disputes. Smarter living.</p>
+        <span class="build-status active"><span class="dot"></span>Live · uboraliving.com</span>
+      </div>
+      <div class="build-card reveal d4">
+        <div class="build-tag">Fintech Infrastructure</div>
+        <div class="build-icon">💳</div>
+        <div class="build-name">Ubora Pay</div>
+        <p class="build-desc">A unified payment API hub connecting MTN Mobile Money, Orange Money, and more, all in one place. When operators update their APIs, only Ubora Pay updates and every product built on it stays working automatically. We are also opening this infrastructure to African entrepreneurs: integrate once, go live fast, and pay only a small percentage per transaction. No technical headache. Just build.</p>
+        <span class="build-status soon"><span class="dot"></span>Coming Soon</span>
+      </div>
+    </div>
+
+    <div class="horizon-label reveal">On the Horizon</div>
+    <div class="build-grid" style="margin-top:0;">
+      <div class="build-card reveal d1" style="opacity:.75;">
+        <div class="build-tag">Healthcare</div>
+        <div class="build-icon">🏥</div>
+        <div class="build-name">Ubora Health</div>
+        <p class="build-desc">A digital health platform modernizing how Africans manage their medical lives. No more lost carnets de santé. Medical records follow the patient, not the clinic. Streamlined communication between doctors, pharmacies, and patients, all in one secure place.</p>
+        <span class="build-status soon"><span class="dot"></span>In Planning · 2027</span>
+      </div>
+      <div class="build-card reveal d2" style="opacity:.75;">
+        <div class="build-tag">Identity Infrastructure</div>
+        <div class="build-icon">🪪</div>
+        <div class="build-name">Ubora ID</div>
+        <p class="build-desc">A secure digital identity layer for Africa. Ubora ID powers KYC for Ubora Pay, ties Rental Scores to verified individuals in Ubora Living, anchors patient records in Ubora Health, and verifies service providers on Ezra. One identity. Every platform. Available as an API for any African business that needs it.</p>
+        <span class="build-status soon"><span class="dot"></span>In Planning</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIAGONAL DIVIDER -->
+<div class="divider" style="background:var(--navy-0); margin-top:-1px;">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none" height="60">
+    <polygon points="0,60 1200,0 1200,60 0,60" fill="var(--navy-1)"/>
+  </svg>
+</div>
+
+<!-- PILLARS -->
+<section id="pillars" aria-label="Our operating pillars">
+  <div class="s-inner">
+    <div class="reveal">
+      <div class="s-label">Core Pillars</div>
+      <h2 class="s-title">How we work</h2>
+    </div>
+    <div class="pillars-grid">
+      <div class="p-item reveal d1">
+        <div class="p-num">01</div>
+        <h3 class="p-title">Experiment Boldly</h3>
+        <p class="p-text">We prototype fast and test in real environments. We learn in days, not quarters.</p>
+      </div>
+      <div class="p-item reveal d2">
+        <div class="p-num">02</div>
+        <h3 class="p-title">Build for Scale</h3>
+        <p class="p-text">Our systems are designed to last: built for reliability, reach, and growth across Africa.</p>
+      </div>
+      <div class="p-item reveal d3">
+        <div class="p-num">03</div>
+        <h3 class="p-title">Collaborate for Impact</h3>
+        <p class="p-text">We work with founders, schools, and community builders to turn local problems into durable infrastructure.</p>
+      </div>
+      <div class="p-item reveal d4">
+        <div class="p-num">04</div>
+        <h3 class="p-title">Integrity in Design</h3>
+        <p class="p-text">Thoughtful, intentional systems with no shortcuts. We build with honesty at the core.</p>
+      </div>
+      <div class="p-item reveal d5">
+        <div class="p-num">05</div>
+        <h3 class="p-title">Empathy in Technology</h3>
+        <p class="p-text">We build with, not just for, communities. Human-centered from day one.</p>
+      </div>
+      <div class="p-item reveal d6">
+        <div class="p-num">06</div>
+        <h3 class="p-title">Precision &amp; Sustainability</h3>
+        <p class="p-text">Excellence is not speed; it's accuracy with purpose. Code and culture should both endure.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research" aria-label="Our research focus areas">
+  <div class="s-inner">
+    <div>
+      <div class="s-label reveal">Research Focus</div>
+      <h2 class="s-title reveal d1">Where we direct<br>our energy</h2>
+      <div class="r-items">
+        <div class="r-item reveal d2">
+          <div class="r-num">01</div>
+          <div>
+            <div class="r-title">Digital Infrastructure</div>
+            <div class="r-text">Building foundational systems for education and trade across Africa.</div>
+          </div>
+        </div>
+        <div class="r-item reveal d3">
+          <div class="r-num">02</div>
+          <div>
+            <div class="r-title">Scalable Solutions</div>
+            <div class="r-text">Cloud and AI solutions tailored for African realities and constraints.</div>
+          </div>
+        </div>
+        <div class="r-item reveal d4">
+          <div class="r-num">03</div>
+          <div>
+            <div class="r-title">Open Innovation</div>
+            <div class="r-text">Experiments that feed public knowledge and advance the ecosystem.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="orb-wrap reveal d3">
+      <div class="orb"><span class="orb-label">R&amp;D</span></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- STATS -->
+<section id="stats">
+  <div class="s-inner">
+    <div class="stat reveal d1">
+      <span class="stat-n" data-target="6">0</span>
+      <div class="stat-l">Products in Portfolio</div>
+    </div>
+    <div class="stat reveal d2">
+      <span class="stat-n" data-target="3">0</span>
+      <div class="stat-l">Live &amp; Active</div>
+    </div>
+    <div class="stat reveal d3">
+      <span class="stat-n" data-target="3">0</span>
+      <div class="stat-l">Research Areas</div>
+    </div>
+    <div class="stat reveal d4">
+      <span class="stat-n" data-target="2025">0</span>
+      <div class="stat-l">Est. Year</div>
+    </div>
+  </div>
+</section>
+
+<!-- INSIGHTS -->
+<section id="insights" aria-label="Insights from Ubora Labs">
+  <div class="s-inner" style="max-width:1200px;margin:0 auto;">
+    <div class="s-label reveal" style="justify-content:left;">From the Lab</div>
+    <h2 class="s-title reveal d1">Ideas worth reading.</h2>
+    <p class="s-sub reveal d2" style="max-width:580px;">
+      We write about building technology for Africa. The constraints, the tradeoffs,
+      and the reasoning behind the products we ship.
+    </p>
+  </div>
+  <div class="insights-grid">
+    <a href="blog/rental-score.html" class="insight-card reveal d1">
+      <span class="insight-tag">PropTech · Housing</span>
+      <h3 class="insight-title">Why African Tenants Need a Rental Score</h3>
+      <p class="insight-excerpt">Millions of renters across Africa have no credit trail, no formal lease history, and no way to prove they pay on time. We built Rental Score to change that.</p>
+      <span class="insight-read">Read article</span>
+    </a>
+    <a href="blog/mobile-money-africa.html" class="insight-card reveal d2">
+      <span class="insight-tag">FinTech · Payments</span>
+      <h3 class="insight-title">The Mobile Money Fragmentation Problem in West Africa</h3>
+      <p class="insight-excerpt">MTN. Orange. Moov. Every operator runs its own API. Every developer integrates each one separately. We think there is a better way.</p>
+      <span class="insight-read">Read article</span>
+    </a>
+    <a href="blog/low-data-design.html" class="insight-card reveal d3">
+      <span class="insight-tag">EdTech · Design</span>
+      <h3 class="insight-title">Designing Software for Low-Data Realities</h3>
+      <p class="insight-excerpt">Most software is built assuming fast Wi-Fi and unlimited data. We build in the opposite direction. Here is what that actually looks like in practice.</p>
+      <span class="insight-read">Read article</span>
+    </a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" aria-label="Contact Ubora Labs">
+  <div class="s-inner" style="margin:0 auto;">
+    <div class="s-label reveal" style="justify-content:center;">Get In Touch</div>
+    <h2 class="s-title reveal d1">Start a conversation.</h2>
+    <div class="contact-line reveal d2"></div>
+    <p class="s-sub reveal d2" style="margin:0 auto 2.5rem; text-align:center;">
+      If you're building for education, commerce, or infrastructure in Africa and
+      believe technology can unlock the next step, we'd like to hear from you.
+    </p>
+    <div class="reveal d3">
+      <a href="mailto:contact@uboralabs.com" class="contact-email">contact@uboralabs.com</a>
+    </div>
+    <br><br>
+    <div class="reveal d4">
+      <a href="mailto:contact@uboralabs.com" class="btn-gold"><span>Start Your Project</span></a>
+    </div>
+  </div>
+</section>
+
+</main><!-- /main -->
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-grid">
+    <div>
+      <span class="f-brand-name">Ubora Labs</span>
+      <p class="f-brand-tag">Where hope meets code.</p>
+      <p class="f-brand-desc">A technology division of Leukam Group, pioneering African innovation through R&D excellence. Building the future of technology with precision, creativity, and purpose.</p>
+      <div class="social-row">
+        <a href="https://www.linkedin.com/company/uboralabs/" target="_blank" rel="noopener" class="social-btn" title="LinkedIn">in</a>
+        <a href="#" class="social-btn" title="X / Twitter">𝕏</a>
+        <a href="https://www.facebook.com/profile.php?id=61577655578257" target="_blank" rel="noopener" class="social-btn" title="Facebook">f</a>
+      </div>
+    </div>
+    <div>
+      <div class="f-col-title">Navigate</div>
+      <ul class="f-links">
+        <li><a href="#foundation">About</a></li>
+        <li><a href="#build">What We Build</a></li>
+        <li><a href="#pillars">Pillars</a></li>
+        <li><a href="#research">Research</a></li>
+            <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="f-col-title">Connect</div>
+      <ul class="f-links">
+        <li><a href="#">Research &amp; Development</a></li>
+        <li><a href="#">African Innovation</a></li>
+        <li><a href="#">Technology Solutions</a></li>
+        <li><a href="#">Leukam Group</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Ubora Labs. All rights reserved.</p>
+    <p>A Leukam Group Company</p>
+  </div>
+</footer>
+
+<script>
+/* ── CURSOR ── */
+const cur = document.getElementById('cur');
+const curRing = document.getElementById('cur-ring');
+let mx=0, my=0, rx=0, ry=0;
+document.addEventListener('mousemove', e => {
+  mx=e.clientX; my=e.clientY;
+  cur.style.left=mx+'px'; cur.style.top=my+'px';
+});
+(function tick(){
+  rx+=(mx-rx)*.12; ry+=(my-ry)*.12;
+  curRing.style.left=rx+'px'; curRing.style.top=ry+'px';
+  requestAnimationFrame(tick);
+})();
+document.querySelectorAll('a,button,.p-item,.f-card,.r-item,.build-card').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{ cur.classList.add('big'); curRing.classList.add('big'); });
+  el.addEventListener('mouseleave',()=>{ cur.classList.remove('big'); curRing.classList.remove('big'); });
+});
+
+/* ── HAMBURGER ── */
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+hamburger.addEventListener('click', ()=>{
+  hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+  document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+});
+function closeMenu(){
+  hamburger.classList.remove('open');
+  mobileMenu.classList.remove('open');
+  document.body.style.overflow='';
+}
+
+/* ── NAVBAR SCROLL ── */
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', ()=>{ nav.classList.toggle('scrolled', window.scrollY > 55); });
+
+/* ── PARTICLES ── */
+const canvas = document.getElementById('particle-canvas');
+const ctx = canvas.getContext('2d');
+let W, H, particles=[];
+const COUNT=80, LINK=140, PUSH=115;
+let mouse={x:null, y:null};
+
+function resize(){
+  W=canvas.width=canvas.offsetWidth;
+  H=canvas.height=canvas.offsetHeight;
+}
+resize();
+window.addEventListener('resize',()=>{ resize(); init(); });
+canvas.addEventListener('mousemove', e=>{
+  const r=canvas.getBoundingClientRect();
+  mouse.x=e.clientX-r.left; mouse.y=e.clientY-r.top;
+});
+canvas.addEventListener('mouseleave',()=>{ mouse.x=mouse.y=null; });
+
+class P {
+  constructor(){ this.reset(); }
+  reset(){
+    this.x=Math.random()*W; this.y=Math.random()*H;
+    this.vx=(Math.random()-.5)*.45; this.vy=(Math.random()-.5)*.45;
+    this.r=Math.random()*1.6+.4; this.o=Math.random()*.5+.18;
+  }
+  update(){
+    if(mouse.x!==null){
+      const dx=this.x-mouse.x, dy=this.y-mouse.y;
+      const d=Math.sqrt(dx*dx+dy*dy);
+      if(d<PUSH){ const f=(PUSH-d)/PUSH; this.x+=(dx/d)*f*2.2; this.y+=(dy/d)*f*2.2; }
+    }
+    this.x+=this.vx; this.y+=this.vy;
+    if(this.x<0||this.x>W) this.vx*=-1;
+    if(this.y<0||this.y>H) this.vy*=-1;
+    this.x=Math.max(0,Math.min(W,this.x));
+    this.y=Math.max(0,Math.min(H,this.y));
+  }
+  draw(){
+    ctx.beginPath(); ctx.arc(this.x,this.y,this.r,0,Math.PI*2);
+    ctx.fillStyle=`rgba(201,168,76,${this.o})`; ctx.fill();
+  }
+}
+
+function init(){ particles=Array.from({length:COUNT},()=>new P()); }
+init();
+
+function drawLinks(){
+  for(let i=0;i<particles.length;i++){
+    for(let j=i+1;j<particles.length;j++){
+      const dx=particles[i].x-particles[j].x, dy=particles[i].y-particles[j].y;
+      const d=Math.sqrt(dx*dx+dy*dy);
+      if(d<LINK){
+        ctx.beginPath();
+        ctx.moveTo(particles[i].x,particles[i].y);
+        ctx.lineTo(particles[j].x,particles[j].y);
+        ctx.strokeStyle=`rgba(201,168,76,${(1-d/LINK)*.18})`;
+        ctx.lineWidth=.6; ctx.stroke();
+      }
+    }
+  }
+}
+
+(function loop(){
+  ctx.clearRect(0,0,W,H);
+  drawLinks();
+  particles.forEach(p=>{ p.update(); p.draw(); });
+  requestAnimationFrame(loop);
+})();
+
+/* ── SCROLL REVEAL ── */
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in'); });
+},{ threshold:.1, rootMargin:'0px 0px -45px 0px' });
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+/* ── STAT COUNTERS ── */
+function counter(el, target, dur=1800){
+  const start=performance.now();
+  (function tick(now){
+    const p=Math.min((now-start)/dur,1);
+    const e=1-Math.pow(1-p,3);
+    el.textContent=Math.floor(e*target);
+    if(p<1) requestAnimationFrame(tick);
+    else el.textContent=target;
+  })(start);
+}
+const sObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){ counter(e.target,+e.target.dataset.target); sObs.unobserve(e.target); }
+  });
+},{ threshold:.5 });
+document.querySelectorAll('.stat-n[data-target]').forEach(el=>sObs.observe(el));
+</script>
+</body>
 </html>
