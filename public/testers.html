@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#071A2F" />
+  <title>Testeurs bêta — Ubora Labs</title>
+  <meta name="description" content="Teste Ubora Living, EZRA et Ubora Écoles sur Android et reçois 2 500 FCFA. 12 places disponibles." />
+  <style>
+    :root{
+      --navy:#071A2F; --navy2:#0D2743; --green:#0F8B4C; --cream:#FFF9EE;
+      --gold:#F4C542; --red:#D62828; --text:#18202A; --muted:#667281;
+      --line:#E6E9ED; --white:#FFF; --shadow:0 16px 42px rgba(7,26,47,.10);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);background:
+      radial-gradient(circle at 10% 0%,rgba(244,197,66,.20),transparent 24rem),
+      radial-gradient(circle at 95% 8%,rgba(15,139,76,.14),transparent 28rem),var(--cream);
+      line-height:1.55
+    }
+    .wrap{width:min(100% - 30px,1040px);margin:auto}
+    header{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .brand img{width:32px;height:32px;object-fit:contain}
+    .brand span{font-weight:800;color:var(--navy);font-size:1.05rem;letter-spacing:.04em}
+    .badge{padding:8px 12px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:.84rem;font-weight:800}
+    .hero{text-align:center;padding:34px 0 18px}
+    .eyebrow{display:inline-block;padding:8px 13px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:800;color:var(--green)}
+    h1{font-size:clamp(2.6rem,8vw,5.2rem);line-height:.94;letter-spacing:-.055em;color:var(--navy);margin:18px auto 12px;max-width:850px}
+    .green{color:var(--green)} .red{color:var(--red)}
+    .lead{max-width:700px;margin:0 auto;color:var(--muted);font-size:1.08rem}
+    .reward{max-width:760px;margin:26px auto 0;background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;border-radius:28px;padding:24px;box-shadow:var(--shadow)}
+    .reward .amount{font-size:clamp(2.8rem,9vw,5rem);font-weight:1000;line-height:1;color:var(--gold);letter-spacing:-.05em}
+    .reward .main{font-weight:900;font-size:1.15rem;margin-top:8px}
+    .reward .small{color:#d9e2ea;margin-top:8px;font-size:.94rem}
+    .spots-bar{margin-top:18px;background:rgba(255,255,255,.12);border-radius:999px;height:8px;overflow:hidden}
+    .spots-fill{height:100%;background:var(--gold);border-radius:999px;transition:width .6s ease}
+    .spots-label{margin-top:8px;font-size:.88rem;color:#d9e2ea;font-weight:700}
+    .chips{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin-top:17px}
+    .chip{background:#fff;border:1px solid #e4decc;border-radius:999px;padding:8px 12px;font-size:.9rem;font-weight:800;color:var(--navy)}
+    section{padding:28px 0}
+    h2{color:var(--navy);font-size:clamp(1.7rem,4vw,2.4rem);margin:0 0 8px;letter-spacing:-.03em}
+    .sub{margin:0 0 18px;color:var(--muted)}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:22px;box-shadow:0 10px 28px rgba(7,26,47,.06)}
+    .step{padding:22px}.num{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;font-weight:1000;margin-bottom:12px}
+    .step h3,.app h3{margin:0 0 7px;color:var(--navy)} .step p,.app p{margin:0;color:var(--muted);font-size:.94rem}
+    .important{padding:22px;border:2px solid rgba(244,197,66,.55);background:#fffdf7}
+    .important strong{color:var(--navy)}
+    .group{padding:24px;display:grid;grid-template-columns:1.5fr .7fr;gap:22px;align-items:center;border:2px solid rgba(15,139,76,.2)}
+    .group .email{display:block;color:var(--green);font-weight:900;margin:8px 0 10px;word-break:break-all}
+    .note{background:#f5fbf7;border:1px solid #dceee2;padding:11px 13px;border-radius:13px;font-size:.9rem;color:#395447}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 17px;border-radius:14px;text-decoration:none;font-weight:900;transition:.15s;cursor:pointer;border:none;font-size:1rem;font-family:inherit}
+    .btn:hover:not(:disabled){transform:translateY(-1px)}
+    .btn:disabled{opacity:.5;cursor:not-allowed}
+    .primary{background:var(--green);color:#fff}.secondary{background:var(--navy);color:#fff}.outline{background:#fff;color:var(--navy);border:1px solid #d8dde4}
+    .app{padding:22px;display:flex;flex-direction:column;min-height:290px}
+    .app .icon{font-size:1.7rem;width:52px;height:52px;border-radius:15px;display:grid;place-items:center;background:#eef8f1;margin-bottom:14px}
+    .app:nth-child(2) .icon{background:#eef4ff}.app:nth-child(3) .icon{background:#f4efff}
+    .app p{flex:1;margin-bottom:14px}.app small{display:block;margin-bottom:14px;color:var(--green);font-weight:750}
+    /* Registration form */
+    .form-card{padding:28px}
+    .form-card h2{font-size:1.45rem;margin-bottom:6px}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+    .form-group{display:flex;flex-direction:column;gap:6px}
+    .form-group.full{grid-column:1/-1}
+    .form-group label{font-size:.88rem;font-weight:800;color:var(--navy)}
+    .form-group input{padding:12px 14px;border-radius:12px;border:1.5px solid var(--line);font-size:1rem;font-family:inherit;color:var(--text);background:#fff;transition:.15s;outline:none}
+    .form-group input:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(15,139,76,.1)}
+    .form-group input::placeholder{color:#aab3bb}
+    .form-note{font-size:.84rem;color:var(--muted);margin-top:4px}
+    .submit-row{margin-top:20px}
+    .submit-row .btn{width:100%;font-size:1.05rem;min-height:54px}
+    .form-msg{margin-top:14px;padding:13px 16px;border-radius:13px;font-size:.94rem;font-weight:700;display:none}
+    .form-msg.success{background:#f0faf4;border:1.5px solid #a8d8bc;color:#1a6b3a;display:block}
+    .form-msg.error{background:#fef2f2;border:1.5px solid #fbb;color:#b91c1c;display:block}
+    .quota-full{text-align:center;padding:28px;display:none}
+    .quota-full .icon-big{font-size:3rem;margin-bottom:12px}
+    .quota-full h3{color:var(--navy);margin:0 0 8px}
+    .quota-full p{color:var(--muted);margin:0}
+    .commit{padding:24px}
+    .commit ul{margin:12px 0 0;padding-left:22px}.commit li{margin:8px 0}
+    .cta{text-align:center;background:var(--navy);color:#fff;padding:32px 24px;border-radius:28px;margin:24px 0 50px;box-shadow:var(--shadow)}
+    .cta h2{color:#fff;margin-bottom:8px}.cta p{color:#d7e0e9;max-width:680px;margin:0 auto 18px}
+    .cta.full{display:block}.cta.hidden-cta{display:none}
+    footer{text-align:center;color:#7b8490;padding-bottom:30px;font-size:.86rem}
+    /* Loading skeleton for spots */
+    .spots-skeleton{display:inline-block;width:80px;height:14px;background:rgba(255,255,255,.2);border-radius:4px;animation:pulse 1.2s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}
+    @media(max-width:760px){
+      .grid3{grid-template-columns:1fr}.group{grid-template-columns:1fr}
+      .form-row{grid-template-columns:1fr}
+      .app{min-height:auto}.btn{width:100%}.badge{font-size:.76rem}header{align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a href="/" class="brand">
+        <img src="/logo.png" alt="Ubora Labs" />
+        <span>UBORA LABS</span>
+      </a>
+      <div class="badge">🇨🇲 Test bêta Android</div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow">📱 Testeurs recherchés au Cameroun</div>
+        <h1>Teste <span class="green">3 applis</span> et reçois <span class="red">2 500 FCFA</span></h1>
+        <p class="lead">Aide Ubora Labs à préparer Ubora Living, EZRA et Ubora Écoles pour leur lancement public sur Google Play.</p>
+
+        <div class="reward">
+          <div class="amount">2 500 FCFA</div>
+          <div class="main">Prime totale pour compléter le test des 3 applications</div>
+          <div class="small">Paiement via MTN MoMo ou Orange Money à la fin de la période de test.</div>
+          <div class="spots-bar"><div class="spots-fill" id="spots-fill" style="width:0%"></div></div>
+          <div class="spots-label" id="spots-label"><span class="spots-skeleton"></span></div>
+        </div>
+
+        <div class="chips">
+          <span class="chip">Android uniquement</span>
+          <span class="chip">Cameroun</span>
+          <span class="chip">Compte Gmail requis</span>
+          <span class="chip">12 places max</span>
+          <span class="chip">Jusqu'à 3 semaines</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Comment ça marche ?</h2>
+        <p class="sub">Le but n'est pas de télécharger une fois puis d'oublier les applis : nous avons besoin de vrais tests pendant toute la période.</p>
+        <div class="grid3">
+          <div class="card step">
+            <div class="num">1</div>
+            <h3>Inscris-toi ci-dessous</h3>
+            <p>Remplis le formulaire avec ton nom, ton Gmail et ton numéro MoMo/Orange Money pour recevoir la prime.</p>
+          </div>
+          <div class="card step">
+            <div class="num">2</div>
+            <h3>Rejoins les 3 tests</h3>
+            <p>Ouvre chacun des liens Google Play et accepte de devenir testeur avec le même compte Gmail.</p>
+          </div>
+          <div class="card step">
+            <div class="num">3</div>
+            <h3>Teste pendant la période</h3>
+            <p>Ouvre régulièrement les apps, installe les nouvelles versions et envoie ton feedback.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="card important">
+          <strong>💰 Pour recevoir les 2 500 FCFA :</strong>
+          reste inscrit(e) aux 3 tests pendant toute la période, garde les applications installées, vérifie les nouvelles mises à jour, teste les nouvelles versions lorsqu'elles sont publiées et envoie au moins un feedback utile.
+        </div>
+      </section>
+
+      <!-- Registration form -->
+      <section id="inscription">
+        <div class="card form-card" id="form-wrapper">
+          <h2>Inscris-toi au programme</h2>
+          <p class="sub" style="margin-bottom:0">12 places disponibles. Première inscription, premier servi.</p>
+
+          <div id="quota-full" class="quota-full">
+            <div class="icon-big">🎯</div>
+            <h3>Programme complet</h3>
+            <p>Les 12 places ont été attribuées. Merci de ton intérêt pour Ubora Labs !</p>
+          </div>
+
+          <form id="tester-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" name="name" placeholder="Ton nom et prénom" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Numéro MoMo / Orange Money</label>
+                <input type="tel" id="phone" name="phone" placeholder="6XXXXXXXX" required autocomplete="tel" />
+                <span class="form-note">Pour recevoir les 2 500 FCFA</span>
+              </div>
+              <div class="form-group full">
+                <label for="gmail">Adresse Gmail</label>
+                <input type="email" id="gmail" name="gmail" placeholder="tonnom@gmail.com" required autocomplete="email" />
+                <span class="form-note">Doit être le même compte connecté sur ton téléphone Android</span>
+              </div>
+            </div>
+
+            <div class="submit-row">
+              <button type="submit" class="btn primary" id="submit-btn">Réserver ma place →</button>
+            </div>
+          </form>
+
+          <div class="form-msg" id="form-msg"></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Étape 2 — Inscris-toi aux 3 applications</h2>
+        <p class="sub">Après ton inscription, ouvre chaque lien sur ton téléphone Android avec ton compte Gmail.</p>
+        <div class="grid3">
+          <article class="card app">
+            <div class="icon">🏠</div>
+            <h3>Ubora Living</h3>
+            <p>Loyer, maintenance et Score locatif.</p>
+            <small>Pas de compte requis : « Explorer sans compte ».</small>
+            <a class="btn primary" href="https://play.google.com/apps/testing/com.uboralabs.ubora_living" target="_blank" rel="noopener">Tester Ubora Living</a>
+          </article>
+
+          <article class="card app">
+            <div class="icon">🛠️</div>
+            <h3>EZRA</h3>
+            <p>Services locaux : plombiers, électriciens, déménageurs et autres prestataires.</p>
+            <a class="btn secondary" href="https://play.google.com/apps/testing/com.ezraworking" target="_blank" rel="noopener">Tester EZRA</a>
+          </article>
+
+          <article class="card app">
+            <div class="icon">🎓</div>
+            <h3>Ubora Écoles</h3>
+            <p>Frais scolaires, annonces, présences et suivi des élèves.</p>
+            <a class="btn outline" href="https://play.google.com/apps/testing/uboralabs.ezraecoles.app" target="_blank" rel="noopener" style="border-color:var(--navy);color:var(--navy)">Tester Ubora Écoles</a>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="card commit">
+          <h2 style="font-size:1.45rem">Étape 3 — Pendant le test</h2>
+          <ul>
+            <li>Ouvre et utilise les applications régulièrement.</li>
+            <li>Vérifie Google Play et installe les mises à jour disponibles.</li>
+            <li>Teste les changements après chaque nouvelle version.</li>
+            <li>Ne quitte pas le programme de test avant la fin.</li>
+            <li>Envoie au moins un feedback utile à <b>feedback@uboralabs.com</b>.</li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="cta full" id="cta-block">
+        <h2>Prêt(e) ? Inscris-toi maintenant 🚀</h2>
+        <p>12 places seulement. Commence par remplir le formulaire ci-dessus.</p>
+        <a class="btn primary" href="#inscription">Voir le formulaire</a>
+      </div>
+    </main>
+
+    <footer>© Ubora Labs · Tech camerounaise · Programme de test bêta Android</footer>
+  </div>
+
+  <script>
+    const SUPABASE_URL = 'https://zouyaaeincpprkdkofgf.supabase.co';
+    const SUPABASE_KEY = 'sb_publishable_zYS9hJWJUcFpiwWeScHOXw_eiT7WDsX';
+    const QUOTA = 12;
+
+    const headers = {
+      'apikey': SUPABASE_KEY,
+      'Authorization': 'Bearer ' + SUPABASE_KEY,
+      'Content-Type': 'application/json'
+    };
+
+    async function loadCount() {
+      try {
+        const res = await fetch(SUPABASE_URL + '/rest/v1/rpc/get_beta_tester_count', {
+          method: 'POST',
+          headers,
+          body: '{}'
+        });
+        const count = await res.json();
+        updateSpotsUI(count);
+      } catch {
+        document.getElementById('spots-label').textContent = 'Places disponibles';
+      }
+    }
+
+    function updateSpotsUI(count) {
+      const remaining = Math.max(0, QUOTA - count);
+      const pct = Math.min(100, (count / QUOTA) * 100);
+      document.getElementById('spots-fill').style.width = pct + '%';
+
+      if (remaining === 0) {
+        document.getElementById('spots-label').textContent = 'Programme complet — 12/12 testeurs';
+        showQuotaFull();
+      } else {
+        document.getElementById('spots-label').textContent =
+          remaining + ' place' + (remaining > 1 ? 's' : '') + ' restante' + (remaining > 1 ? 's' : '') + ' sur ' + QUOTA;
+      }
+    }
+
+    function showQuotaFull() {
+      document.getElementById('tester-form').style.display = 'none';
+      document.getElementById('quota-full').style.display = 'block';
+      document.getElementById('cta-block').style.display = 'none';
+    }
+
+    document.getElementById('tester-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submit-btn');
+      const msg = document.getElementById('form-msg');
+
+      const name = document.getElementById('name').value.trim();
+      const gmail = document.getElementById('gmail').value.trim().toLowerCase();
+      const phone = document.getElementById('phone').value.trim();
+
+      if (!name || !gmail || !phone) {
+        msg.className = 'form-msg error';
+        msg.textContent = 'Merci de remplir tous les champs.';
+        return;
+      }
+      if (!gmail.endsWith('@gmail.com')) {
+        msg.className = 'form-msg error';
+        msg.textContent = 'Utilise une adresse Gmail (ex: tonnom@gmail.com).';
+        return;
+      }
+
+      btn.disabled = true;
+      btn.textContent = 'Inscription en cours…';
+      msg.className = 'form-msg';
+      msg.style.display = 'none';
+
+      try {
+        const res = await fetch(SUPABASE_URL + '/rest/v1/beta_testers', {
+          method: 'POST',
+          headers: { ...headers, 'Prefer': 'return=minimal' },
+          body: JSON.stringify({ name, gmail, phone })
+        });
+
+        if (res.status === 201) {
+          // Success
+          document.getElementById('tester-form').style.display = 'none';
+          msg.className = 'form-msg success';
+          msg.textContent = 'Inscription confirmée ! Ouvre maintenant les 3 liens ci-dessous pour rejoindre les tests sur Google Play.';
+          msg.style.display = 'block';
+          // Refresh count
+          loadCount();
+        } else {
+          const body = await res.text();
+          if (body.includes('quota_reached')) {
+            showQuotaFull();
+          } else if (body.includes('beta_testers_gmail_idx') || body.includes('unique')) {
+            msg.className = 'form-msg error';
+            msg.textContent = 'Cette adresse Gmail est déjà inscrite.';
+            msg.style.display = 'block';
+            btn.disabled = false;
+            btn.textContent = 'Réserver ma place →';
+          } else {
+            throw new Error(body);
+          }
+        }
+      } catch (err) {
+        msg.className = 'form-msg error';
+        msg.textContent = 'Une erreur est survenue. Réessaie dans quelques instants.';
+        msg.style.display = 'block';
+        btn.disabled = false;
+        btn.textContent = 'Réserver ma place →';
+      }
+    });
+
+    loadCount();
+  </script>
+</body>
+</html>
