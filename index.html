@@ -448,6 +448,7 @@
       position:relative; overflow:hidden;
       transition:border-color .4s, transform .4s, box-shadow .4s;
       cursor:none;
+      display:flex; flex-direction:column;
     }
     .build-card::after {
       content:''; position:absolute; inset:0;
@@ -468,7 +469,9 @@
       border:1px solid var(--gold-border); border-radius:8px;
       display:flex; align-items:center; justify-content:center;
       margin-bottom:1.5rem;
-      font-size:1.4rem;
+      font-family:var(--font-mono); font-size:.7rem; font-weight:700;
+      letter-spacing:.06em; color:var(--gold);
+      background:rgba(201,168,76,.05);
       position:relative; z-index:1;
     }
     .build-name {
@@ -480,6 +483,7 @@
       font-weight:300; font-size:.875rem;
       color:var(--white-dim); line-height:1.8;
       position:relative; z-index:1; margin-bottom:1.8rem;
+      flex:1;
     }
     .build-status {
       display:inline-flex; align-items:center; gap:.5rem;
@@ -488,6 +492,7 @@
       padding:.35rem .75rem;
       border-radius:2px;
       position:relative; z-index:1;
+      margin-top:auto; align-self:flex-start;
     }
     .build-status.active {
       background:rgba(201,168,76,.12); color:var(--gold);
@@ -902,35 +907,35 @@
     <div class="build-grid">
       <div class="build-card reveal d1">
         <div class="build-tag">Education</div>
-        <div class="build-icon">🏫</div>
+        <div class="build-icon">ÉC</div>
         <div class="build-name">Ubora Écoles</div>
         <p class="build-desc">Cameroon's schools serve millions of students with dedication and discipline. Ubora Écoles gives them the infrastructure to go further — digital fee collection, student records, parent communication, and official exam results, all in one place. Built to amplify the mission, not complicate it.</p>
         <span class="build-status active"><span class="dot"></span>Live · uboraecoles.com</span>
       </div>
       <div class="build-card reveal d2">
         <div class="build-tag">Services</div>
-        <div class="build-icon">⚙️</div>
+        <div class="build-icon">EZ</div>
         <div class="build-name">Ezra Service</div>
         <p class="build-desc">A services marketplace connecting skilled providers with clients across Africa. Lightweight, fast-loading, and built for users with limited data. Because access to opportunity shouldn't depend on a strong Wi-Fi signal.</p>
         <span class="build-status active"><span class="dot"></span>Live · ezraservice.com</span>
       </div>
       <div class="build-card reveal d3">
         <div class="build-tag">Real Estate &amp; Lifestyle</div>
-        <div class="build-icon">🏡</div>
+        <div class="build-icon">LV</div>
         <div class="build-name">Ubora Living</div>
         <p class="build-desc">A modern housing platform built for Africa's urban generation. Tenants build a Rental Score based on on-time payments, giving landlords a trusted way to choose tenants. When something breaks, tenants alert repair professionals directly through the platform. If none are available, landlords can book from Ezra Service in seconds. Better relationships. Fewer disputes. Smarter living.</p>
         <span class="build-status active"><span class="dot"></span>Live · uboraliving.com</span>
       </div>
       <div class="build-card reveal d4">
         <div class="build-tag">Creator Economy</div>
-        <div class="build-icon">⭐</div>
+        <div class="build-icon">KR</div>
         <div class="build-name">Kreastar</div>
         <p class="build-desc">A marketplace connecting Cameroon's micro-influencers with local brands. Creators get discovered, book campaigns, and get paid directly through the app. Brands get authentic reach without the agency fees.</p>
         <span class="build-status active"><span class="dot"></span>Live · kreastar.com</span>
       </div>
       <div class="build-card reveal d5">
         <div class="build-tag">Fintech Infrastructure</div>
-        <div class="build-icon">💳</div>
+        <div class="build-icon">UP</div>
         <div class="build-name">Ubora Pay</div>
         <p class="build-desc">A unified payment API hub connecting MTN Mobile Money, Orange Money, and more, all in one place. When operators update their APIs, only Ubora Pay updates and every product built on it stays working automatically. We are also opening this infrastructure to African entrepreneurs: integrate once, go live fast, and pay only a small percentage per transaction. No technical headache. Just build.</p>
         <span class="build-status soon"><span class="dot"></span>Coming Soon</span>
@@ -941,14 +946,14 @@
     <div class="build-grid" style="margin-top:0;">
       <div class="build-card reveal d1" style="opacity:.75;">
         <div class="build-tag">Healthcare</div>
-        <div class="build-icon">🏥</div>
+        <div class="build-icon">UH</div>
         <div class="build-name">Ubora Health</div>
         <p class="build-desc">A digital health platform modernizing how Africans manage their medical lives. No more lost carnets de santé. Medical records follow the patient, not the clinic. Streamlined communication between doctors, pharmacies, and patients, all in one secure place.</p>
         <span class="build-status soon"><span class="dot"></span>In Planning · 2027</span>
       </div>
       <div class="build-card reveal d2" style="opacity:.75;">
         <div class="build-tag">Identity Infrastructure</div>
-        <div class="build-icon">🪪</div>
+        <div class="build-icon">ID</div>
         <div class="build-name">Ubora ID</div>
         <p class="build-desc">A secure digital identity layer for Africa. Ubora ID powers KYC for Ubora Pay, ties Rental Scores to verified individuals in Ubora Living, anchors patient records in Ubora Health, and verifies service providers on Ezra. One identity. Every platform. Available as an API for any African business that needs it.</p>
         <span class="build-status soon"><span class="dot"></span>In Planning</span>
