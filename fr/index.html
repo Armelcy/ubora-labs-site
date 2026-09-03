@@ -18,8 +18,8 @@
   </script>
 
   <!-- ══ PRIMARY SEO ══ -->
-  <title>Ubora Labs | Studio d'Innovation Technologique — Produits Numériques pour l'Afrique</title>
-  <meta name="description" content="Ubora Labs construit des produits numériques pensés pour l'Afrique, conçus pour fonctionner avec peu de données. Ubora Écoles, Ezra Service, Ubora Living, Kreastar — des logiciels au service des populations.">
+  <title>Ubora Labs | Infrastructure Numérique du Cameroun — Écoles, EZRA, Living, Kreastar</title>
+  <meta name="description" content="Ubora Labs construit l'infrastructure numérique du Cameroun — paiements scolaires, services à domicile, gestion locative et économie créative. 4 produits en ligne. Un seul écosystème.">
   <meta name="keywords" content="Ubora Labs, startup tech Afrique, edtech Afrique, proptech Afrique, mobile money API, Ubora Écoles, Ezra Service, Ubora Living, Kreastar, innovation numérique Afrique, logiciels Cameroun">
   <meta name="author" content="Ubora Labs">
   <meta name="robots" content="index, follow">
@@ -175,7 +175,7 @@
       background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(201,168,76,.09) 0%, transparent 65%),
                   radial-gradient(ellipse 35% 35% at 85% 75%, rgba(201,168,76,.05) 0%, transparent 55%);
     }
-    .hero-content { position:relative; z-index:2; text-align:center; max-width:960px; padding:calc(var(--nav-h) + 2rem) 1.5rem 4rem; }
+    .hero-content { position:relative; z-index:2; text-align:center; max-width:960px; padding:calc(var(--nav-h) + 2rem) 1.5rem 8rem; }
     .hero-eyebrow { font-family:var(--font-mono); font-size:.65rem; letter-spacing:.32em; color:var(--gold); text-transform:uppercase; margin-bottom:2rem; display:flex; align-items:center; justify-content:center; gap:1rem; opacity:0; transform:translateY(18px); animation:fadeUp .8s ease .3s forwards; }
     .hero-eyebrow::before, .hero-eyebrow::after { content:''; width:36px; height:1px; background:var(--gold); opacity:.5; }
     .hero-h1 { font-family:var(--font-display); font-size:clamp(3.4rem, 8vw, 8rem); line-height:.93; letter-spacing:-.02em; color:var(--white); margin-bottom:1.5rem; opacity:0; transform:translateY(30px); animation:fadeUp .9s ease .5s forwards; }
@@ -189,7 +189,7 @@
     .btn-gold:hover { transform:translateY(-2px); box-shadow:0 0 32px rgba(201,168,76,.4); }
     .btn-outline { border:1.5px solid var(--gold-border); color:var(--gold); padding:.9rem 2.1rem; font-weight:500; font-size:.8rem; letter-spacing:.12em; text-transform:uppercase; text-decoration:none; cursor:none; transition:border-color .3s, background .3s, transform .3s; display:inline-block; }
     .btn-outline:hover { border-color:var(--gold); background:rgba(201,168,76,.08); transform:translateY(-2px); }
-    .scroll-hint { position:absolute; bottom:2.5rem; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:.5rem; opacity:0; animation:fadeIn 1s ease 1.6s forwards; }
+    .scroll-hint { position:absolute; bottom:2.5rem; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:.5rem; opacity:0; animation:fadeIn 1s ease 1.6s forwards; z-index:3; }
     .scroll-hint span { font-family:var(--font-mono); font-size:.58rem; letter-spacing:.25em; color:var(--white-faint); text-transform:uppercase; }
     .scroll-line { width:1px; height:48px; background:linear-gradient(to bottom, var(--gold), transparent); animation:linePulse 2s ease-in-out infinite; }
 
@@ -243,7 +243,8 @@
     .build-name { font-family:var(--font-display); font-size:1.5rem; color:var(--white); margin-bottom:.6rem; position:relative; z-index:1; }
     .build-desc { font-weight:300; font-size:.875rem; color:var(--white-dim); line-height:1.8; position:relative; z-index:1; margin-bottom:1.8rem; flex:1; }
     .build-status { display:inline-flex; align-items:center; gap:.5rem; font-family:var(--font-mono); font-size:.6rem; letter-spacing:.15em; text-transform:uppercase; padding:.35rem .75rem; border-radius:2px; position:relative; z-index:1; margin-top:auto; align-self:flex-start; }
-    .build-status.active { background:rgba(201,168,76,.12); color:var(--gold); border:1px solid var(--gold-border); }
+    .build-status.active { background:rgba(201,168,76,.12); color:var(--gold); border:1px solid var(--gold-border); text-decoration:none; transition:background .3s, border-color .3s; }
+    a.build-status.active:hover { background:rgba(201,168,76,.22); border-color:var(--gold); }
     .build-status.soon { background:rgba(240,244,255,.05); color:var(--white-dim); border:1px solid rgba(240,244,255,.1); }
     .build-status .dot { width:5px; height:5px; border-radius:50%; }
     .build-status.active .dot { background:var(--gold); animation:blink 2s infinite; }
@@ -373,7 +374,12 @@
   <a href="#build" onclick="closeMenu()">Ce que nous créons</a>
   <a href="#pillars" onclick="closeMenu()">Piliers</a>
   <a href="#research" onclick="closeMenu()">Recherche</a>
-  <a href="#contact" class="m-cta" onclick="closeMenu()">Démarrer</a>
+  <div class="lang-switch" style="font-size:1rem;">
+    <a href="/">EN</a>
+    <span>|</span>
+    <span class="lang-active">FR</span>
+  </div>
+  <a href="#contact" class="m-cta" onclick="closeMenu()">Nous contacter</a>
 </div>
 
 <!-- NAVBAR -->
@@ -394,7 +400,7 @@
         <span class="lang-active">FR</span>
       </div>
     </li>
-    <li><a href="#contact" class="nav-cta">Démarrer</a></li>
+    <li><a href="#contact" class="nav-cta">Nous contacter</a></li>
   </ul>
   <button class="hamburger" id="hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
@@ -408,18 +414,18 @@
   <canvas id="particle-canvas"></canvas>
   <div class="hero-glow"></div>
   <div class="hero-content">
-    <div class="hero-eyebrow">Une division technologique du Groupe Leukam</div>
+    <div class="hero-eyebrow">Là où l'Espoir rencontre le Code · Studio R&amp;D · Groupe Leukam</div>
     <h1 class="hero-h1">
-      Excellence<br>
-      <span class="gold">par l'Innovation</span>
+      Construire pour<br>
+      <span class="gold">le Cameroun</span>
     </h1>
     <p class="hero-sub">
-      Nous créons des produits numériques pour l'Afrique, conçus dès la base pour des personnes réelles,
-      dans des conditions réelles. Hors ligne d'abord. Économes en données. Construits pour durer.
+      Paiements scolaires. Services à domicile. Gestion locative. Économie créative.
+      Quatre produits en ligne, un seul écosystème — construit depuis le Cameroun, pour le Cameroun.
     </p>
     <div class="hero-btns">
-      <a href="#foundation" class="btn-gold"><span>Découvrir notre vision</span></a>
-      <a href="#contact" class="btn-outline">Démarrer votre projet</a>
+      <a href="#build" class="btn-gold"><span>Voir nos produits</span></a>
+      <a href="#contact" class="btn-outline">Nous contacter</a>
     </div>
   </div>
   <div class="scroll-hint">
@@ -504,35 +510,35 @@
         <div class="build-icon">ÉC</div>
         <div class="build-name">Ubora Écoles</div>
         <p class="build-desc">Les établissements du Cameroun accompagnent des millions d'élèves avec dévouement et rigueur. Ubora Écoles leur donne l'infrastructure pour aller plus loin — collecte numérique des frais, dossiers élèves, communication parents et résultats officiels aux examens, le tout en un seul endroit. Conçu pour amplifier la mission, sans la compliquer.</p>
-        <span class="build-status active"><span class="dot"></span>Actif · uboraecoles.com</span>
+        <a href="https://uboraecoles.com" target="_blank" rel="noopener" class="build-status active"><span class="dot"></span>Actif · uboraecoles.com</a>
       </div>
       <div class="build-card reveal d2">
         <div class="build-tag">Services</div>
         <div class="build-icon">EZ</div>
         <div class="build-name">Ezra Service</div>
         <p class="build-desc">Une marketplace de services mettant en relation des prestataires qualifiés et leurs clients à travers l'Afrique. Légère, rapide, conçue pour les utilisateurs avec peu de données. Parce que l'accès à l'opportunité ne devrait pas dépendre d'un réseau Wi-Fi performant.</p>
-        <span class="build-status active"><span class="dot"></span>Actif · ezraservice.com</span>
+        <a href="https://ezraservice.com" target="_blank" rel="noopener" class="build-status active"><span class="dot"></span>Actif · ezraservice.com</a>
       </div>
       <div class="build-card reveal d3">
         <div class="build-tag">Immobilier &amp; Lifestyle</div>
         <div class="build-icon">LV</div>
         <div class="build-name">Ubora Living</div>
         <p class="build-desc">Une plateforme immobilière moderne pensée pour la génération urbaine africaine. Les locataires construisent un Score Locatif basé sur leurs paiements ponctuels, offrant aux propriétaires un moyen fiable de choisir leurs locataires. De meilleures relations. Moins de litiges. Un cadre de vie plus intelligent.</p>
-        <span class="build-status active"><span class="dot"></span>Actif · uboraliving.com</span>
+        <a href="https://uboraliving.com" target="_blank" rel="noopener" class="build-status active"><span class="dot"></span>Actif · uboraliving.com</a>
       </div>
       <div class="build-card reveal d4">
         <div class="build-tag">Économie Créative</div>
         <div class="build-icon">KR</div>
         <div class="build-name">Kreastar</div>
         <p class="build-desc">Une marketplace qui connecte les micro-influenceurs du Cameroun aux marques locales. Les créateurs se font découvrir, décrochent des campagnes et sont payés directement via l'application. Les marques obtiennent une audience authentique, sans les frais d'agence.</p>
-        <span class="build-status active"><span class="dot"></span>Actif · kreastar.com</span>
+        <a href="https://kreastar.com" target="_blank" rel="noopener" class="build-status active"><span class="dot"></span>Actif · kreastar.com</a>
       </div>
       <div class="build-card reveal d5">
         <div class="build-tag">Infrastructure Fintech</div>
         <div class="build-icon">UP</div>
         <div class="build-name">Ubora Pay</div>
         <p class="build-desc">Un hub API de paiement unifié connectant MTN Mobile Money, Orange Money et bien d'autres en un seul endroit. Quand les opérateurs mettent à jour leurs API, seul Ubora Pay s'adapte — et chaque produit construit dessus reste opérationnel automatiquement. Intégrez une fois, lancez vite. Pas de casse-tête technique.</p>
-        <span class="build-status soon"><span class="dot"></span>Bientôt disponible</span>
+        <span class="build-status active"><span class="dot"></span>Actif · API</span>
       </div>
     </div>
 
