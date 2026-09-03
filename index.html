@@ -19,8 +19,8 @@
   </script>
 
   <!-- ══ PRIMARY SEO ══ -->
-  <title>Ubora Labs | Tech Innovation Studio — Africa-First Digital Products</title>
-  <meta name="description" content="Ubora Labs builds Africa-first digital products that work in low-data environments. We create Ubora Écoles, Ezra Service, Ubora Living, Ubora Pay, and Ubora Health — software for the people, by the people.">
+  <title>Ubora Labs | Cameroon's Digital Infrastructure — Écoles, EZRA, Living, Kreastar</title>
+  <meta name="description" content="Ubora Labs builds Cameroon's digital infrastructure — school payments, home services, rental management, and creator marketing. 4 live products. One ecosystem.">
   <meta name="keywords" content="Ubora Labs, Africa tech startup, edtech Africa, proptech Africa, mobile money API, Ubora Écoles, Ezra Service, Ubora Living, Ubora Pay, Ubora Health, Ubora ID, low data software, African innovation, digital products Africa">
   <meta name="author" content="Ubora Labs">
   <meta name="robots" content="index, follow">
@@ -59,7 +59,6 @@
     "sameAs": [
       "https://www.facebook.com/profile.php?id=61577655578257",
       "https://www.linkedin.com/company/uboralabs/",
-      "https://www.facebook.com/profile.php?id=61577655578257",
       "https://github.com/uboralabs"
     ],
     "hasOfferCatalog": {
@@ -497,6 +496,11 @@
     .build-status.active {
       background:rgba(201,168,76,.12); color:var(--gold);
       border:1px solid var(--gold-border);
+      text-decoration:none;
+      transition:background .3s, border-color .3s;
+    }
+    a.build-status.active:hover {
+      background:rgba(201,168,76,.22); border-color:var(--gold);
     }
     .build-status.soon {
       background:rgba(240,244,255,.05); color:var(--white-dim);
@@ -779,7 +783,12 @@
   <a href="#build" onclick="closeMenu()">What We Build</a>
   <a href="#pillars" onclick="closeMenu()">Pillars</a>
   <a href="#research" onclick="closeMenu()">Research</a>
-  <a href="#contact" class="m-cta" onclick="closeMenu()">Get Started</a>
+  <div class="lang-switch" style="font-size:1rem;">
+    <span class="lang-active">EN</span>
+    <span>|</span>
+    <a href="/fr/">FR</a>
+  </div>
+  <a href="#contact" class="m-cta" onclick="closeMenu()">Get in Touch</a>
 </div>
 
 <!-- NAVBAR -->
@@ -816,16 +825,16 @@
   <div class="hero-content">
     <div class="hero-eyebrow">A Technology Division of Leukam Group</div>
     <h1 class="hero-h1">
-      Excellence<br>
-      <span class="gold">through Innovation</span>
+      Building for<br>
+      <span class="gold">Cameroon</span>
     </h1>
     <p class="hero-sub">
-      We build digital products for Africa, designed from the ground up for real people,
-      real conditions, and real constraints. Offline-first. Data-aware. Built to last.
+      School payments. Home services. Rental management. Creator marketing.
+      Four live products, one ecosystem — built from Cameroon, for Cameroon.
     </p>
     <div class="hero-btns">
-      <a href="#foundation" class="btn-gold"><span>Discover Our Vision</span></a>
-      <a href="#contact" class="btn-outline">Start Your Project</a>
+      <a href="#build" class="btn-gold"><span>View Our Products</span></a>
+      <a href="#contact" class="btn-outline">Get in Touch</a>
     </div>
   </div>
   <div class="scroll-hint">
@@ -910,35 +919,35 @@
         <div class="build-icon">ÉC</div>
         <div class="build-name">Ubora Écoles</div>
         <p class="build-desc">Cameroon's schools serve millions of students with dedication and discipline. Ubora Écoles gives them the infrastructure to go further — digital fee collection, student records, parent communication, and official exam results, all in one place. Built to amplify the mission, not complicate it.</p>
-        <span class="build-status active"><span class="dot"></span>Live · uboraecoles.com</span>
+        <a href="https://uboraecoles.com" target="_blank" rel="noopener" class="build-status active"><span class="dot"></span>Live · uboraecoles.com</a>
       </div>
       <div class="build-card reveal d2">
         <div class="build-tag">Services</div>
         <div class="build-icon">EZ</div>
         <div class="build-name">Ezra Service</div>
         <p class="build-desc">A services marketplace connecting skilled providers with clients across Africa. Lightweight, fast-loading, and built for users with limited data. Because access to opportunity shouldn't depend on a strong Wi-Fi signal.</p>
-        <span class="build-status active"><span class="dot"></span>Live · ezraservice.com</span>
+        <a href="https://ezraservice.com" target="_blank" rel="noopener" class="build-status active"><span class="dot"></span>Live · ezraservice.com</a>
       </div>
       <div class="build-card reveal d3">
         <div class="build-tag">Real Estate &amp; Lifestyle</div>
         <div class="build-icon">LV</div>
         <div class="build-name">Ubora Living</div>
         <p class="build-desc">A modern housing platform built for Africa's urban generation. Tenants build a Rental Score based on on-time payments, giving landlords a trusted way to choose tenants. When something breaks, tenants alert repair professionals directly through the platform. If none are available, landlords can book from Ezra Service in seconds. Better relationships. Fewer disputes. Smarter living.</p>
-        <span class="build-status active"><span class="dot"></span>Live · uboraliving.com</span>
+        <a href="https://uboraliving.com" target="_blank" rel="noopener" class="build-status active"><span class="dot"></span>Live · uboraliving.com</a>
       </div>
       <div class="build-card reveal d4">
         <div class="build-tag">Creator Economy</div>
         <div class="build-icon">KR</div>
         <div class="build-name">Kreastar</div>
         <p class="build-desc">A marketplace connecting Cameroon's micro-influencers with local brands. Creators get discovered, book campaigns, and get paid directly through the app. Brands get authentic reach without the agency fees.</p>
-        <span class="build-status active"><span class="dot"></span>Live · kreastar.com</span>
+        <a href="https://kreastar.com" target="_blank" rel="noopener" class="build-status active"><span class="dot"></span>Live · kreastar.com</a>
       </div>
       <div class="build-card reveal d5">
         <div class="build-tag">Fintech Infrastructure</div>
         <div class="build-icon">UP</div>
         <div class="build-name">Ubora Pay</div>
         <p class="build-desc">A unified payment API hub connecting MTN Mobile Money, Orange Money, and more, all in one place. When operators update their APIs, only Ubora Pay updates and every product built on it stays working automatically. We are also opening this infrastructure to African entrepreneurs: integrate once, go live fast, and pay only a small percentage per transaction. No technical headache. Just build.</p>
-        <span class="build-status soon"><span class="dot"></span>Coming Soon</span>
+        <span class="build-status active"><span class="dot"></span>Live · API</span>
       </div>
     </div>
 
@@ -1070,35 +1079,35 @@
   </div>
 </section>
 
-<!-- INSIGHTS -->
-<section id="insights" aria-label="Insights from Ubora Labs">
+<!-- TRACTION -->
+<section id="insights" aria-label="Ubora Labs traction">
   <div class="s-inner" style="max-width:1200px;margin:0 auto;">
-    <div class="s-label reveal" style="justify-content:left;">From the Lab</div>
-    <h2 class="s-title reveal d1">Ideas worth reading.</h2>
+    <div class="s-label reveal" style="justify-content:left;">On the Ground</div>
+    <h2 class="s-title reveal d1">Real traction.<br>Real Cameroon.</h2>
     <p class="s-sub reveal d2" style="max-width:580px;">
-      We write about building technology for Africa. The constraints, the tradeoffs,
-      and the reasoning behind the products we ship.
+      We don't measure success in features shipped. We measure it in payments processed,
+      landlords connected, and providers booked.
     </p>
   </div>
   <div class="insights-grid">
-    <a href="blog/rental-score.html" class="insight-card reveal d1">
-      <span class="insight-tag">PropTech · Housing</span>
-      <h3 class="insight-title">Why African Tenants Need a Rental Score</h3>
-      <p class="insight-excerpt">Millions of renters across Africa have no credit trail, no formal lease history, and no way to prove they pay on time. We built Rental Score to change that.</p>
-      <span class="insight-read">Read article</span>
-    </a>
-    <a href="blog/mobile-money-africa.html" class="insight-card reveal d2">
-      <span class="insight-tag">FinTech · Payments</span>
-      <h3 class="insight-title">The Mobile Money Fragmentation Problem in West Africa</h3>
-      <p class="insight-excerpt">MTN. Orange. Moov. Every operator runs its own API. Every developer integrates each one separately. We think there is a better way.</p>
-      <span class="insight-read">Read article</span>
-    </a>
-    <a href="blog/low-data-design.html" class="insight-card reveal d3">
-      <span class="insight-tag">EdTech · Design</span>
-      <h3 class="insight-title">Designing Software for Low-Data Realities</h3>
-      <p class="insight-excerpt">Most software is built assuming fast Wi-Fi and unlimited data. We build in the opposite direction. Here is what that actually looks like in practice.</p>
-      <span class="insight-read">Read article</span>
-    </a>
+    <div class="insight-card reveal d1" style="cursor:default;">
+      <span class="insight-tag">Écoles · Education</span>
+      <h3 class="insight-title">School fees collected digitally across Cameroon</h3>
+      <p class="insight-excerpt">Ubora Écoles processes tuition payments, tracks student records, and delivers official exam results — all from a single dashboard. Schools that used to manage everything on paper now have a full audit trail.</p>
+      <span class="insight-read" style="pointer-events:none;">Ubora Écoles</span>
+    </div>
+    <div class="insight-card reveal d2" style="cursor:default;">
+      <span class="insight-tag">Living · PropTech</span>
+      <h3 class="insight-title">Rental payments tracked. Trust built.</h3>
+      <p class="insight-excerpt">Ubora Living is live in Douala. Landlords collect rent via Mobile Money, tenants get digital receipts, and every on-time payment builds a Rental Score — Africa's first tenant reputation system.</p>
+      <span class="insight-read" style="pointer-events:none;">Ubora Living</span>
+    </div>
+    <div class="insight-card reveal d3" style="cursor:default;">
+      <span class="insight-tag">EZRA · Services</span>
+      <h3 class="insight-title">Verified providers. On-demand, across Douala.</h3>
+      <p class="insight-excerpt">Ezra Service connects clients with vetted plumbers, electricians, and cleaners in Douala and Yaoundé. Providers are verified, rated, and paid securely — no cash, no chasing invoices.</p>
+      <span class="insight-read" style="pointer-events:none;">Ezra Service</span>
+    </div>
   </div>
 </section>
 
