@@ -3,70 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- ══ FAVICON ══ -->
   <link rel="icon" type="image/png" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/favicon.ico">
-
-  <!-- ══ GOOGLE ANALYTICS 4 ══ -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJED730Z5Q"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-GJED730Z5Q');
-  </script>
-
-  <!-- ══ PRIMARY SEO ══ -->
-  <title>Ubora Labs | Infrastructure Numérique du Cameroun — Écoles, EZRA, Living, Kreastar</title>
-  <meta name="description" content="Ubora Labs construit l'infrastructure numérique du Cameroun — paiements scolaires, services à domicile, gestion locative et économie créative. 4 produits en ligne. Un seul écosystème.">
-  <meta name="keywords" content="Ubora Labs, startup tech Afrique, edtech Afrique, proptech Afrique, mobile money API, Ubora Écoles, Ezra Service, Ubora Living, Kreastar, innovation numérique Afrique, logiciels Cameroun">
+  <title>Ubora Labs — Là où l'Espoir rencontre le Code</title>
+  <meta name="description" content="Ubora Labs est un studio R&D qui construit l'infrastructure numérique de l'Afrique — paiements scolaires, services à domicile, gestion locative et économie créative. 4 produits en production. Un seul écosystème.">
+  <meta name="keywords" content="Ubora Labs, studio tech Afrique, lab R&D Afrique, edtech Cameroun, proptech Afrique, API mobile money, Ubora Écoles, Ezra Service, Ubora Living, Kreastar, Ubora Pay, logiciel faible débit, innovation africaine, produits numériques Cameroun">
   <meta name="author" content="Ubora Labs">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://uboralabs.com/fr/">
-
-  <!-- ══ OPEN GRAPH ══ -->
+  <link rel="alternate" hreflang="en" href="https://uboralabs.com/">
+  <link rel="alternate" hreflang="fr" href="https://uboralabs.com/fr/">
+  <link rel="alternate" hreflang="x-default" href="https://uboralabs.com/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://uboralabs.com/fr/">
   <meta property="og:title" content="Ubora Labs — Là où l'Espoir rencontre le Code">
-  <meta property="og:description" content="Nous créons des produits numériques pour l'Afrique, conçus pour les réalités du terrain : éducation, services, logement, paiements. Des logiciels au service des populations.">
+  <meta property="og:description" content="Nous étudions comment le Cameroun fonctionne. Ensuite nous construisons. Un studio R&D créant des produits numériques pour l'éducation, les services, le logement, les paiements et la santé.">
   <meta property="og:image" content="https://uboralabs.com/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="Ubora Labs">
-  <meta property="og:locale" content="fr_FR">
-
-  <!-- ══ TWITTER CARD ══ -->
+  <meta property="og:locale" content="fr_CM">
+  <meta property="og:locale:alternate" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@uboralabs">
+  <meta name="twitter:creator" content="@uboralabs">
   <meta name="twitter:title" content="Ubora Labs — Là où l'Espoir rencontre le Code">
-  <meta name="twitter:description" content="Des produits numériques pour l'Afrique, conçus pour les réalités du terrain. Éducation, services, logement, paiements.">
+  <meta name="twitter:description" content="Nous étudions comment le Cameroun fonctionne. Ensuite nous construisons. Studio R&D. 4 produits en production. Un seul écosystème.">
   <meta name="twitter:image" content="https://uboralabs.com/og-image.png">
-
-  <!-- ══ STRUCTURED DATA ══ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Ubora Labs",
-    "url": "https://uboralabs.com",
-    "logo": "https://uboralabs.com/logo.png",
-    "description": "Ubora Labs construit des produits numériques pour l'Afrique, conçus pour fonctionner avec peu de données — éducation, services, logement, paiements.",
-    "foundingDate": "2025",
-    "knowsAbout": ["EdTech", "PropTech", "FinTech", "Afrique", "Mobile Money", "Logiciels à faible bande passante"],
-    "sameAs": [
-      "https://www.facebook.com/profile.php?id=61577655578257",
-      "https://www.linkedin.com/company/uboralabs/",
-      "https://github.com/uboralabs"
-    ]
-  }
-  </script>
-
-  <!-- ══ TECHNICAL SEO ══ -->
   <meta name="theme-color" content="#c9a84c">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-
-  <!-- ══ PERFORMANCE HINTS ══ -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Bebas+Neue&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -100,6 +64,8 @@
     .skip-link:focus { top:0; }
 
     *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    a { color:inherit; text-decoration:none; }
+    a:visited { color:inherit; }
     html { scroll-behavior:smooth; }
     body {
       background:var(--navy-1); color:var(--white);
@@ -107,24 +73,13 @@
       line-height:1.7; overflow-x:hidden; cursor:none;
     }
 
-    .cursor {
-      position:fixed; width:10px; height:10px;
-      background:var(--gold); border-radius:50%;
-      pointer-events:none; z-index:9999;
-      transform:translate(-50%,-50%);
-      transition:width .3s, height .3s;
-      mix-blend-mode:screen;
-    }
-    .cursor-ring {
-      position:fixed; width:38px; height:38px;
-      border:1.5px solid var(--gold); border-radius:50%;
-      pointer-events:none; z-index:9998;
-      transform:translate(-50%,-50%); opacity:.55;
-      transition:width .3s, height .3s, opacity .3s;
-    }
+    /* ── CURSOR ── */
+    .cursor { position:fixed; width:10px; height:10px; background:var(--gold); border-radius:50%; pointer-events:none; z-index:9999; transform:translate(-50%,-50%); transition:width .3s, height .3s; mix-blend-mode:screen; }
+    .cursor-ring { position:fixed; width:38px; height:38px; border:1.5px solid var(--gold); border-radius:50%; pointer-events:none; z-index:9998; transform:translate(-50%,-50%); opacity:.55; transition:width .3s, height .3s, opacity .3s; }
     .cursor.big { width:20px; height:20px; }
     .cursor-ring.big { width:58px; height:58px; opacity:.22; }
 
+    /* ── NAVBAR ── */
     nav {
       position:fixed; top:0; left:0; right:0; z-index:1000;
       height:var(--nav-h); padding:0 3rem;
@@ -132,11 +87,7 @@
       transition:background .4s, border-color .4s;
       border-bottom:1px solid transparent;
     }
-    nav.scrolled {
-      background:rgba(6,13,26,.92);
-      backdrop-filter:blur(22px); -webkit-backdrop-filter:blur(22px);
-      border-bottom-color:var(--gold-border);
-    }
+    nav.scrolled { background:rgba(6,13,26,.92); backdrop-filter:blur(22px); -webkit-backdrop-filter:blur(22px); border-bottom-color:var(--gold-border); }
     .nav-logo { display:flex; align-items:center; gap:.65rem; text-decoration:none; z-index:10; }
     .nav-logo-box { width:34px; height:34px; border-radius:6px; overflow:hidden; display:flex; align-items:center; justify-content:center; }
     .nav-logo-box img { width:100%; height:100%; object-fit:cover; }
@@ -146,9 +97,11 @@
     .nav-links a::after { content:''; position:absolute; bottom:-4px; left:0; width:0; height:1px; background:var(--gold); transition:width .3s; }
     .nav-links a:hover { color:var(--gold); }
     .nav-links a:hover::after { width:100%; }
-    .nav-cta { border:1.5px solid var(--gold) !important; color:var(--gold) !important; padding:.42rem 1.2rem !important; border-radius:3px; transition:background .3s, color .3s !important; }
-    .nav-cta::after { display:none !important; }
-    .nav-cta:hover { background:var(--gold) !important; color:var(--navy-0) !important; }
+    .lang-switch { display:flex; align-items:center; gap:.4rem; font-size:.75rem; font-family:var(--font-mono); }
+    .lang-switch a { color:var(--white-dim); text-decoration:none; transition:color .2s; }
+    .lang-switch a:hover { color:var(--gold); }
+    .lang-switch .lang-active { color:var(--gold); font-weight:700; }
+    .lang-switch span { color:var(--white-dim); opacity:.4; }
 
     .hamburger { display:none; flex-direction:column; gap:5px; cursor:none; background:none; border:none; padding:4px; z-index:10; }
     .hamburger span { display:block; width:24px; height:1.5px; background:var(--gold); transition:transform .3s, opacity .3s; }
@@ -156,53 +109,36 @@
     .hamburger.open span:nth-child(2) { opacity:0; }
     .hamburger.open span:nth-child(3) { transform:translateY(-6.5px) rotate(-45deg); }
 
-    .mobile-menu {
-      position:fixed; inset:0; z-index:999;
-      background:rgba(2,8,16,.97);
-      display:flex; flex-direction:column;
-      align-items:center; justify-content:center; gap:2.5rem;
-      opacity:0; pointer-events:none; transition:opacity .4s;
-    }
+    .mobile-menu { position:fixed; inset:0; z-index:999; background:rgba(2,8,16,.97); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2.5rem; opacity:0; pointer-events:none; transition:opacity .4s; }
     .mobile-menu.open { opacity:1; pointer-events:all; }
     .mobile-menu a { color:var(--white-dim); text-decoration:none; font-family:var(--font-display); font-size:2.2rem; letter-spacing:.05em; text-transform:uppercase; transition:color .3s; }
     .mobile-menu a:hover { color:var(--gold); }
-    .mobile-menu .m-cta { margin-top:1rem; border:1.5px solid var(--gold); color:var(--gold) !important; padding:.7rem 2rem; font-size:1rem !important; }
 
+    /* ── HERO ── */
     #hero { position:relative; min-height:100vh; display:flex; align-items:center; justify-content:center; overflow:hidden; }
     #particle-canvas { position:absolute; inset:0; width:100%; height:100%; }
-    .hero-glow {
-      position:absolute; inset:0; pointer-events:none;
-      background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(201,168,76,.09) 0%, transparent 65%),
-                  radial-gradient(ellipse 35% 35% at 85% 75%, rgba(201,168,76,.05) 0%, transparent 55%);
-    }
-    .hero-content { position:relative; z-index:2; text-align:center; max-width:960px; padding:calc(var(--nav-h) + 2rem) 1.5rem 8rem; }
+    .hero-glow { position:absolute; inset:0; pointer-events:none; background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(201,168,76,.09) 0%, transparent 65%), radial-gradient(ellipse 35% 35% at 85% 75%, rgba(201,168,76,.05) 0%, transparent 55%); }
+    .hero-content { position:relative; z-index:2; text-align:center; max-width:960px; padding:calc(var(--nav-h) + 2rem) 1.5rem 7rem; }
     .hero-eyebrow { font-family:var(--font-mono); font-size:.65rem; letter-spacing:.32em; color:var(--gold); text-transform:uppercase; margin-bottom:2rem; display:flex; align-items:center; justify-content:center; gap:1rem; opacity:0; transform:translateY(18px); animation:fadeUp .8s ease .3s forwards; }
     .hero-eyebrow::before, .hero-eyebrow::after { content:''; width:36px; height:1px; background:var(--gold); opacity:.5; }
-    .hero-h1 { font-family:var(--font-display); font-size:clamp(3.4rem, 8vw, 8rem); line-height:.93; letter-spacing:-.02em; color:var(--white); margin-bottom:1.5rem; opacity:0; transform:translateY(30px); animation:fadeUp .9s ease .5s forwards; }
+    .hero-h1 { font-family:var(--font-display); font-size:clamp(2.6rem, 5.5vw, 5.5rem); line-height:.96; letter-spacing:-.02em; color:var(--white); margin-bottom:2rem; opacity:0; transform:translateY(30px); animation:fadeUp .9s ease .5s forwards; }
     .hero-h1 .gold { color:var(--gold); display:block; }
-    .hero-sub { font-weight:300; font-size:1.05rem; color:var(--white-dim); max-width:560px; margin:0 auto 3rem; line-height:1.85; opacity:0; transform:translateY(20px); animation:fadeUp .8s ease .7s forwards; }
-    .hero-btns { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; opacity:0; transform:translateY(20px); animation:fadeUp .8s ease .9s forwards; }
-    .btn-gold { background:var(--gold); color:var(--navy-0); padding:.9rem 2.1rem; font-weight:600; font-size:.8rem; letter-spacing:.12em; text-transform:uppercase; text-decoration:none; cursor:none; position:relative; overflow:hidden; transition:transform .3s, box-shadow .3s; display:inline-block; }
-    .btn-gold::before { content:''; position:absolute; inset:0; background:var(--gold-light); transform:translateX(-100%); transition:transform .4s ease; }
-    .btn-gold:hover::before { transform:translateX(0); }
-    .btn-gold span { position:relative; z-index:1; }
-    .btn-gold:hover { transform:translateY(-2px); box-shadow:0 0 32px rgba(201,168,76,.4); }
-    .btn-outline { border:1.5px solid var(--gold-border); color:var(--gold); padding:.9rem 2.1rem; font-weight:500; font-size:.8rem; letter-spacing:.12em; text-transform:uppercase; text-decoration:none; cursor:none; transition:border-color .3s, background .3s, transform .3s; display:inline-block; }
-    .btn-outline:hover { border-color:var(--gold); background:rgba(201,168,76,.08); transform:translateY(-2px); }
+    .hero-sub { font-weight:300; font-size:1.05rem; color:var(--white-dim); max-width:560px; margin:0 auto; line-height:1.85; opacity:0; transform:translateY(20px); animation:fadeUp .8s ease .7s forwards; }
     .scroll-hint { position:absolute; bottom:2.5rem; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:.5rem; opacity:0; animation:fadeIn 1s ease 1.6s forwards; z-index:3; }
     .scroll-hint span { font-family:var(--font-mono); font-size:.58rem; letter-spacing:.25em; color:var(--white-faint); text-transform:uppercase; }
     .scroll-line { width:1px; height:48px; background:linear-gradient(to bottom, var(--gold), transparent); animation:linePulse 2s ease-in-out infinite; }
 
+    /* ── MARQUEE ── */
     .marquee-strip { background:var(--gold); padding:.85rem 0; overflow:hidden; }
     .marquee-track { display:flex; animation:marquee 28s linear infinite; white-space:nowrap; }
     .marquee-item { display:flex; align-items:center; gap:2rem; padding:0 2rem; font-weight:600; font-size:.7rem; letter-spacing:.22em; text-transform:uppercase; color:var(--navy-0); }
     .marquee-dot { width:4px; height:4px; background:var(--navy-0); border-radius:50%; opacity:.45; flex-shrink:0; }
 
-    .s-inner { max-width:1200px; margin:0 auto; padding:6rem 3rem; }
+    /* ── SHARED ── */
+    .s-inner { max-width:1200px; margin:0 auto; padding:4.5rem 3rem; }
     .s-label { font-family:var(--font-mono); font-size:.62rem; letter-spacing:.32em; color:var(--gold); text-transform:uppercase; margin-bottom:.9rem; display:flex; align-items:center; gap:.7rem; }
     .s-label::before { content:''; width:22px; height:1px; background:var(--gold); }
     .s-title { font-family:var(--font-display); font-size:clamp(2.4rem, 5vw, 4.2rem); line-height:1.0; letter-spacing:-.02em; color:var(--white); margin-bottom:1.2rem; }
-    .s-sub { font-weight:300; font-size:.975rem; color:var(--white-dim); max-width:540px; line-height:1.85; margin-bottom:3.5rem; }
 
     .reveal { opacity:0; transform:translateY(38px); transition:opacity .8s ease, transform .8s ease; }
     .reveal.in { opacity:1; transform:none; }
@@ -213,124 +149,214 @@
     .divider { width:100%; overflow:hidden; line-height:0; display:block; }
     .divider svg { display:block; width:100%; }
 
-    #foundation { background:var(--navy-0); }
-    .foundation-top { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:end; margin-bottom:4rem; }
-    .cards-row { display:grid; grid-template-columns:repeat(3,1fr); border:1.5px solid var(--gold-border); }
-    .f-card { background:var(--navy-1); padding:2.5rem; border-right:1.5px solid var(--gold-border); position:relative; overflow:hidden; transition:background .4s; }
-    .f-card:last-child { border-right:none; }
-    .f-card::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:var(--gold); transform:scaleX(0); transition:transform .45s ease; transform-origin:left; }
-    .f-card:hover::before { transform:scaleX(1); }
-    .f-card:hover { background:var(--navy-2); }
-    .f-num { font-family:var(--font-big); font-size:4.5rem; color:var(--gold); opacity:.1; line-height:1; margin-bottom:.8rem; transition:opacity .4s; }
-    .f-card:hover .f-num { opacity:.22; }
-    .f-label { font-weight:600; font-size:.7rem; letter-spacing:.22em; color:var(--gold); text-transform:uppercase; margin-bottom:.9rem; }
-    .f-text { font-weight:300; font-size:.9rem; color:var(--white-dim); line-height:1.85; }
-
-    #build { background:var(--navy-1); }
-    .build-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1.5rem; margin-top:1rem; }
-    .build-card {
-      background:var(--navy-2); border:1px solid var(--gold-border);
-      padding:2rem 2rem 2.5rem; position:relative; overflow:hidden;
-      transition:border-color .4s, transform .4s, box-shadow .4s;
-      cursor:none; display:flex; flex-direction:column;
+    /* ── STATEMENT ── */
+    #statement { background:var(--navy-0); }
+    .statement-lede-wrap {
+      position:relative; margin:2rem 0 2.5rem;
     }
-    .build-card::after { content:''; position:absolute; inset:0; background:linear-gradient(135deg, rgba(201,168,76,.07) 0%, transparent 60%); opacity:0; transition:opacity .4s; }
-    .build-card:hover { border-color:var(--gold); transform:translateY(-6px); box-shadow:0 20px 60px rgba(0,0,0,.4); }
-    .build-card:hover::after { opacity:1; }
-    .build-tag { font-family:var(--font-mono); font-size:.6rem; letter-spacing:.2em; color:var(--gold); text-transform:uppercase; margin-bottom:1.5rem; display:flex; align-items:center; gap:.5rem; }
-    .build-tag::before { content:''; width:14px; height:1px; background:var(--gold); }
-    .build-icon { width:48px; height:48px; border:1px solid var(--gold-border); border-radius:8px; display:flex; align-items:center; justify-content:center; margin-bottom:1.5rem; font-family:var(--font-mono); font-size:.7rem; font-weight:700; letter-spacing:.06em; color:var(--gold); background:rgba(201,168,76,.05); position:relative; z-index:1; }
-    .build-name { font-family:var(--font-display); font-size:1.5rem; color:var(--white); margin-bottom:.6rem; position:relative; z-index:1; }
-    .build-desc { font-weight:300; font-size:.875rem; color:var(--white-dim); line-height:1.8; position:relative; z-index:1; margin-bottom:1.8rem; flex:1; }
-    .build-status { display:inline-flex; align-items:center; gap:.5rem; font-family:var(--font-mono); font-size:.6rem; letter-spacing:.15em; text-transform:uppercase; padding:.35rem .75rem; border-radius:2px; position:relative; z-index:1; margin-top:auto; align-self:flex-start; }
-    .build-status.active { background:rgba(201,168,76,.12); color:var(--gold); border:1px solid var(--gold-border); text-decoration:none; transition:background .3s, border-color .3s; }
-    a.build-status.active:hover { background:rgba(201,168,76,.22); border-color:var(--gold); }
-    .build-status.soon { background:rgba(240,244,255,.05); color:var(--white-dim); border:1px solid rgba(240,244,255,.1); }
-    .build-status .dot { width:5px; height:5px; border-radius:50%; }
-    .build-status.active .dot { background:var(--gold); animation:blink 2s infinite; }
-    .build-status.soon .dot { background:var(--white-dim); }
+    .statement-lede {
+      font-family:var(--font-display);
+      font-size:clamp(1.9rem, 3.2vw, 3rem);
+      line-height:1.12; letter-spacing:-.015em;
+      color:var(--white); max-width:820px;
+    }
+    .statement-pov {
+      position:absolute; top:50%; right:0; transform:translateY(-50%);
+      font-family:var(--font-big); font-size:5.5rem; color:var(--gold);
+      opacity:.22; line-height:1; letter-spacing:-.02em;
+      text-align:right; pointer-events:none; user-select:none;
+    }
+    .statement-body { max-width:660px; }
+    .statement-text {
+      font-weight:300; font-size:1.02rem;
+      color:var(--white-dim); line-height:1.9;
+    }
+    .statement-text + .statement-text { margin-top:1.3rem; }
+    .statement-rule {
+      width:100%; height:1px; background:var(--gold-border);
+      margin:3rem 0;
+    }
+    .statement-tenets {
+      display:grid; grid-template-columns:1fr 1fr; gap:1.5rem 4rem;
+    }
+    .tenet { display:flex; flex-direction:column; gap:.4rem; }
+    .tenet-label {
+      font-family:var(--font-mono); font-size:.6rem;
+      letter-spacing:.2em; color:var(--gold); text-transform:uppercase;
+    }
+    .tenet-text {
+      font-size:.88rem; color:var(--white-dim); line-height:1.75; font-weight:300;
+    }
 
-    .horizon-label { font-family:var(--font-mono); font-size:.62rem; letter-spacing:.32em; color:var(--white-faint); text-transform:uppercase; margin:3rem 0 1.5rem; display:flex; align-items:center; gap:.75rem; }
-    .horizon-label::before, .horizon-label::after { content:''; flex:1; height:1px; background:var(--gold-border); }
+    /* ── QUESTIONS ── */
+    #questions { background:var(--navy-1); }
+    .questions-intro { max-width:560px; margin-bottom:4rem; }
+    .questions-intro p { font-weight:300; font-size:.975rem; color:var(--white-dim); line-height:1.85; }
+    .q-list { display:flex; flex-direction:column; }
+    .q-item {
+      display:grid; grid-template-columns:80px 1fr auto;
+      align-items:center; gap:2rem;
+      padding:2.2rem 0;
+      border-bottom:1px solid var(--gold-border);
+      transition:padding-left .4s; cursor:none;
+      position:relative;
+    }
+    .q-item:first-child { border-top:1px solid var(--gold-border); }
+    .q-item:hover { padding-left:.8rem; }
+    .q-num {
+      font-family:var(--font-big); font-size:3rem;
+      color:var(--gold); opacity:.2; line-height:1;
+      transition:opacity .4s;
+    }
+    .q-item:hover .q-num { opacity:.8; }
+    .q-body { }
+    .q-text {
+      font-family:var(--font-display); font-size:clamp(1rem, 2vw, 1.35rem);
+      color:var(--white); line-height:1.3; margin-bottom:.4rem;
+      transition:color .3s;
+    }
+    .q-item:hover .q-text { color:var(--gold-light); }
+    .q-note { font-weight:300; font-size:.82rem; color:var(--white-dim); }
+    .q-output {
+      font-family:var(--font-mono); font-size:.62rem;
+      letter-spacing:.18em; color:var(--gold);
+      text-transform:uppercase; white-space:nowrap;
+      display:flex; align-items:center; gap:.5rem;
+      opacity:.6; transition:opacity .3s;
+    }
+    .q-item:hover .q-output { opacity:1; }
+    .q-output::before { content:'→'; }
 
-    #pillars { background:var(--navy-0); }
-    .pillars-grid { display:grid; grid-template-columns:repeat(2,1fr); }
-    .p-item { padding:2.6rem 2.8rem; border-bottom:1px solid var(--gold-border); border-right:1px solid var(--gold-border); position:relative; overflow:hidden; transition:background .4s; cursor:none; }
-    .p-item:nth-child(even) { border-right:none; }
-    .p-item:nth-last-child(-n+2) { border-bottom:none; }
-    .p-item::after { content:''; position:absolute; inset:0; background:var(--gold-dim); opacity:0; transition:opacity .4s; }
-    .p-item:hover::after { opacity:1; }
-    .p-num { font-family:var(--font-big); font-size:.78rem; letter-spacing:.18em; color:var(--gold); opacity:.55; margin-bottom:.9rem; position:relative; z-index:1; }
-    .p-title { font-family:var(--font-display); font-size:1.45rem; color:var(--white); margin-bottom:.6rem; position:relative; z-index:1; transition:color .3s; }
-    .p-item:hover .p-title { color:var(--gold-light); }
-    .p-text { font-weight:300; font-size:.875rem; color:var(--white-dim); line-height:1.85; position:relative; z-index:1; }
+    /* ── FROM THE LAB ── */
+    #lab { background:var(--navy-0); }
+    .lab-list { display:flex; flex-direction:column; margin-top:3rem; }
+    .lab-entry {
+      display:grid; grid-template-columns:72px 1fr 160px;
+      gap:0 3rem; padding:2.8rem 0;
+      border-bottom:1px solid var(--gold-border);
+      align-items:start;
+      transition:padding-left .4s; cursor:none;
+    }
+    .lab-entry:first-child { border-top:1px solid var(--gold-border); }
+    .lab-entry:hover { padding-left:.8rem; }
+    .lab-entry-num {
+      font-family:var(--font-big); font-size:2.8rem;
+      color:var(--gold); opacity:.2; line-height:1;
+      transition:opacity .4s; padding-top:.2rem;
+    }
+    .lab-entry:hover .lab-entry-num { opacity:.75; }
+    .lab-entry-question {
+      font-family:var(--font-mono); font-size:.68rem;
+      letter-spacing:.1em; color:var(--gold);
+      font-style:italic; line-height:1.65;
+      margin-bottom:.9rem; opacity:.8;
+    }
+    .lab-entry-name {
+      font-family:var(--font-display); font-size:1.6rem;
+      color:var(--white); line-height:1; margin-bottom:.7rem;
+      transition:color .3s;
+    }
+    .lab-entry:hover .lab-entry-name { color:var(--gold-light); }
+    .lab-entry-desc {
+      font-weight:300; font-size:.875rem;
+      color:var(--white-dim); line-height:1.82;
+    }
+    .lab-entry-right {
+      display:flex; flex-direction:column;
+      align-items:flex-end; gap:.7rem;
+      padding-top:.3rem;
+    }
+    .lab-entry-sector {
+      font-family:var(--font-mono); font-size:.58rem;
+      letter-spacing:.18em; color:var(--white-faint); text-transform:uppercase;
+    }
+    .lab-entry-status {
+      display:flex; align-items:center; gap:.5rem;
+      font-family:var(--font-mono); font-size:.58rem;
+      letter-spacing:.15em; color:var(--gold); text-transform:uppercase;
+    }
+    .lab-dot { width:5px; height:5px; border-radius:50%; background:var(--gold); animation:blink 2s infinite; flex-shrink:0; }
 
-    #research { background:var(--navy-0); overflow:hidden; }
-    #research .s-inner { display:grid; grid-template-columns:1fr 1fr; gap:6rem; align-items:center; }
-    .r-items { display:flex; flex-direction:column; }
-    .r-item { padding:1.8rem 0; border-bottom:1px solid var(--gold-border); display:flex; align-items:flex-start; gap:1.4rem; cursor:none; transition:padding-left .4s; }
-    .r-item:first-child { border-top:1px solid var(--gold-border); }
-    .r-item:hover { padding-left:.9rem; }
-    .r-num { font-family:var(--font-big); font-size:2.2rem; color:var(--gold); opacity:.28; line-height:1; flex-shrink:0; transition:opacity .4s; }
-    .r-item:hover .r-num { opacity:.85; }
-    .r-title { font-weight:600; font-size:1.05rem; color:var(--white); margin-bottom:.35rem; transition:color .3s; }
-    .r-item:hover .r-title { color:var(--gold); }
-    .r-text { font-weight:300; font-size:.875rem; color:var(--white-dim); }
-    .orb-wrap { display:flex; align-items:center; justify-content:center; aspect-ratio:1; }
-    .orb { width:300px; height:300px; border-radius:50%; border:1px solid var(--gold-border); position:relative; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at 30% 30%, rgba(201,168,76,.18), rgba(201,168,76,.02) 70%); animation:orbFloat 7s ease-in-out infinite; }
-    .orb::before { content:''; position:absolute; inset:22px; border-radius:50%; border:1px solid rgba(201,168,76,.12); animation:orbFloat 7s ease-in-out infinite 1.5s; }
-    .orb::after { content:''; position:absolute; inset:52px; border-radius:50%; border:1px solid rgba(201,168,76,.07); animation:orbFloat 7s ease-in-out infinite 3s; }
-    .orb-label { font-family:var(--font-big); font-size:5.5rem; color:var(--gold); opacity:.13; letter-spacing:-.05em; position:relative; z-index:1; }
-
-    #stats { background:var(--navy-1); border-top:1px solid var(--gold-border); border-bottom:1px solid var(--gold-border); }
-    #stats .s-inner { padding:4.5rem 3rem; display:grid; grid-template-columns:repeat(4,1fr); gap:2rem; }
-    .stat { text-align:center; padding:2rem 1rem; position:relative; }
-    .stat::after { content:''; position:absolute; right:0; top:18%; height:64%; width:1px; background:var(--gold-border); }
-    .stat:last-child::after { display:none; }
-    .stat-n { font-family:var(--font-big); font-size:5rem; color:var(--gold); line-height:1; display:block; }
-    .stat-l { font-size:.75rem; color:var(--white-dim); letter-spacing:.12em; text-transform:uppercase; margin-top:.4rem; }
-
-    #contact { background:var(--navy-0); text-align:center; }
-    #contact .s-inner { max-width:680px; }
-    .contact-line { width:56px; height:1px; background:var(--gold); margin:1.8rem auto; opacity:.4; }
-    .contact-email { font-weight:500; font-size:1.05rem; color:var(--gold); text-decoration:none; letter-spacing:.04em; border-bottom:1px solid var(--gold-border); padding-bottom:2px; transition:border-color .3s; }
-    .contact-email:hover { border-color:var(--gold); }
-
-    #insights { background:var(--navy-2); padding:7rem 3rem; }
-    .insights-grid { max-width:1200px; margin:2.5rem auto 0; display:grid; grid-template-columns:repeat(3,1fr); gap:1.8rem; }
-    .insight-card { background:var(--navy-1); border:1px solid var(--gold-border); border-radius:8px; padding:2rem 1.8rem; display:flex; flex-direction:column; gap:1rem; text-decoration:none; color:inherit; transition:border-color .3s, transform .3s; position:relative; overflow:hidden; }
+    /* ── TRACTION ── */
+    #traction { background:var(--navy-2); }
+    .insights-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.8rem; }
+    .insight-card { background:var(--navy-1); border:1px solid var(--gold-border); border-radius:8px; padding:2rem 1.8rem; display:flex; flex-direction:column; gap:1rem; position:relative; overflow:hidden; transition:border-color .3s, transform .3s; text-decoration:none; color:inherit; }
     .insight-card::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:var(--gold); transform:scaleX(0); transform-origin:left; transition:transform .4s cubic-bezier(.16,1,.3,1); }
     .insight-card:hover { border-color:var(--gold); transform:translateY(-4px); }
     .insight-card:hover::before { transform:scaleX(1); }
     .insight-tag { font-family:var(--font-mono); font-size:.65rem; letter-spacing:.1em; color:var(--gold); text-transform:uppercase; }
     .insight-title { font-family:var(--font-display); font-size:1.15rem; line-height:1.35; color:var(--white); }
     .insight-excerpt { font-size:.88rem; color:var(--white-dim); line-height:1.65; flex:1; }
-    .insight-read { font-family:var(--font-mono); font-size:.72rem; color:var(--gold); letter-spacing:.06em; display:flex; align-items:center; gap:.4rem; }
-    .insight-read::after { content:'→'; transition:transform .2s; }
+    .insight-read { font-family:var(--font-mono); font-size:.75rem; letter-spacing:.08em; color:var(--gold); text-transform:uppercase; margin-top:auto; padding-top:.5rem; }
+    .insight-read::after { content:" →"; display:inline-block; transition:transform .2s; }
     .insight-card:hover .insight-read::after { transform:translateX(4px); }
     @media(max-width:900px){ .insights-grid{ grid-template-columns:1fr; } }
 
+    /* ── INFRASTRUCTURE ── */
+    #infra { background:var(--navy-2); }
+    .infra-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-top:3rem; }
+    .infra-card {
+      border:1px solid var(--gold-border); padding:2.5rem;
+      display:flex; flex-direction:column; gap:1rem;
+      transition:border-color .4s;
+    }
+    .infra-card:hover { border-color:var(--gold); }
+    .infra-icon {
+      width:44px; height:44px;
+      border:1px solid var(--gold-border); border-radius:6px;
+      display:flex; align-items:center; justify-content:center;
+      font-family:var(--font-mono); font-size:.65rem; font-weight:700;
+      letter-spacing:.06em; color:var(--gold); background:rgba(201,168,76,.05);
+    }
+    .infra-name { font-family:var(--font-display); font-size:1.4rem; color:var(--white); }
+    .infra-desc { font-weight:300; font-size:.875rem; color:var(--white-dim); line-height:1.8; flex:1; }
+    .infra-note {
+      font-family:var(--font-mono); font-size:.6rem;
+      letter-spacing:.14em; color:var(--gold); text-transform:uppercase;
+      padding-top:1rem; border-top:1px solid var(--gold-border);
+    }
+
+    /* ── HORIZON ── */
+    #horizon { background:var(--navy-1); }
+    .horizon-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1.5rem; margin-top:3rem; }
+    .horizon-card {
+      border:1px solid rgba(201,168,76,.12); padding:2.5rem;
+      opacity:.65; display:flex; flex-direction:column; gap:1rem;
+    }
+    .horizon-label-tag {
+      font-family:var(--font-mono); font-size:.58rem;
+      letter-spacing:.2em; color:var(--white-faint); text-transform:uppercase;
+    }
+    .horizon-q {
+      font-family:var(--font-display); font-size:1.3rem;
+      color:var(--white); line-height:1.2;
+    }
+    .horizon-text { font-weight:300; font-size:.875rem; color:var(--white-dim); line-height:1.8; }
+    .horizon-when {
+      font-family:var(--font-mono); font-size:.58rem;
+      letter-spacing:.18em; color:var(--white-faint); text-transform:uppercase;
+      margin-top:auto;
+    }
+
+    /* ── FOOTER ── */
     footer { background:var(--navy-0); border-top:1px solid var(--gold-border); }
     .footer-grid { max-width:1200px; margin:0 auto; padding:3.5rem 3rem; display:grid; grid-template-columns:1.6fr 1fr 1fr; gap:4rem; }
     .f-brand-name { font-weight:600; font-size:.85rem; letter-spacing:.22em; color:var(--gold); text-transform:uppercase; display:block; margin-bottom:.6rem; }
-    .f-brand-tag { font-style:italic; font-size:.875rem; color:var(--white-faint); margin-bottom:1.2rem; }
-    .f-brand-desc { font-size:.8rem; color:var(--white-faint); line-height:1.85; font-weight:300; }
+    .f-brand-tag { font-style:italic; font-size:.95rem; color:var(--white-dim); margin-bottom:1.2rem; }
+    .f-brand-desc { font-size:.875rem; color:var(--white-dim); line-height:1.85; font-weight:300; }
     .f-col-title { font-weight:600; font-size:.62rem; letter-spacing:.28em; color:var(--gold); text-transform:uppercase; margin-bottom:1.2rem; }
     .f-links { list-style:none; display:flex; flex-direction:column; gap:.75rem; }
-    .f-links a { color:var(--white-faint); text-decoration:none; font-size:.85rem; font-weight:300; transition:color .3s; }
+    .f-links a { color:var(--white-dim); text-decoration:none; font-size:.9rem; font-weight:300; transition:color .3s; }
     .f-links a:hover { color:var(--gold); }
+    .f-contact-email { font-size:.9rem; color:var(--gold); text-decoration:none; border-bottom:1px solid var(--gold-border); padding-bottom:2px; transition:border-color .3s; }
+    .f-contact-email:hover { border-color:var(--gold); }
     .social-row { display:flex; gap:1rem; margin-top:1.5rem; }
     .social-btn { width:36px; height:36px; border:1px solid var(--gold-border); border-radius:4px; display:flex; align-items:center; justify-content:center; color:var(--white-dim); text-decoration:none; font-size:.75rem; transition:border-color .3s, color .3s, background .3s; }
     .social-btn:hover { border-color:var(--gold); color:var(--gold); background:var(--gold-dim); }
     .footer-bottom { max-width:1200px; margin:0 auto; padding:1.2rem 3rem; border-top:1px solid rgba(201,168,76,.08); display:flex; justify-content:space-between; align-items:center; }
-    .footer-bottom p { font-size:.72rem; color:var(--white-faint); font-weight:300; }
+    .footer-bottom p { font-size:.78rem; color:var(--white-dim); font-weight:300; }
 
-    .lang-switch { display:flex; align-items:center; gap:.4rem; font-size:.75rem; font-family:var(--font-mono); }
-    .lang-switch a { color:var(--white-dim); text-decoration:none; transition:color .2s; }
-    .lang-switch a:hover { color:var(--gold); }
-    .lang-switch .lang-active { color:var(--gold); font-weight:700; }
-    .lang-switch span { color:var(--white-dim); opacity:.4; }
-
+    /* ── KEYFRAMES ── */
     @keyframes fadeUp { to { opacity:1; transform:translateY(0); } }
     @keyframes fadeIn { to { opacity:1; } }
     @keyframes linePulse { 0%,100% { opacity:.4; transform:scaleY(1); } 50% { opacity:1; transform:scaleY(.65); } }
@@ -338,61 +364,86 @@
     @keyframes orbFloat { 0%,100% { transform:scale(1) translateY(0); } 50% { transform:scale(1.03) translateY(-8px); } }
     @keyframes blink { 0%,100% { opacity:1; } 50% { opacity:.3; } }
 
+    /* ── RESPONSIVE ── */
     @media (max-width:900px) {
       nav { padding:0 1.5rem; }
       .nav-links { display:none; }
       .hamburger { display:flex; }
       .s-inner { padding:4rem 1.5rem; }
-      .hero-content { padding-top:calc(var(--nav-h) + 1rem); }
-      .foundation-top { grid-template-columns:1fr; gap:2rem; }
-      .cards-row { grid-template-columns:1fr; }
-      .f-card { border-right:none !important; border-bottom:1.5px solid var(--gold-border); }
-      .f-card:last-child { border-bottom:none; }
-      .build-grid { grid-template-columns:1fr; }
-      .pillars-grid { grid-template-columns:1fr; }
-      .p-item { border-right:none !important; }
-      .p-item:nth-last-child(-n+2) { border-bottom:1px solid var(--gold-border); }
-      .p-item:last-child { border-bottom:none; }
-      #research .s-inner { grid-template-columns:1fr; }
-      .orb-wrap { display:none; }
-      #stats .s-inner { grid-template-columns:repeat(2,1fr); padding:3rem 1.5rem; }
-      .stat:nth-child(2)::after { display:none; }
+      .statement-tenets { grid-template-columns:1fr; }
+      .statement-pov { display:none; }
+      .q-item { grid-template-columns:50px 1fr; }
+      .q-output { display:none; }
+      .lab-entry { grid-template-columns:50px 1fr; }
+      .lab-entry-right { display:none; }
+      .infra-grid { grid-template-columns:1fr; }
+      .horizon-grid { grid-template-columns:1fr; }
       .footer-grid { grid-template-columns:1fr; gap:2rem; }
       .footer-bottom { flex-direction:column; gap:.5rem; text-align:center; }
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Ubora Labs",
+    "url": "https://uboralabs.com",
+    "logo": "https://uboralabs.com/logo.png",
+    "description": "Ubora Labs is an R&D studio building Africa-first digital infrastructure that thrives in low-data environments — software for education, services, housing, payments, and healthcare.",
+    "foundingLocation": { "@type": "Place", "name": "Cameroon" },
+    "parentOrganization": { "@type": "Organization", "name": "Leukam Group" },
+    "sameAs": ["https://twitter.com/uboralabs"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Ubora Labs Products",
+      "itemListElement": [
+        { "@type": "SoftwareApplication", "name": "Ubora Écoles", "applicationCategory": "EducationApplication", "operatingSystem": "iOS, Android", "url": "https://uboraecoles.com", "description": "Digital school management platform for Cameroon — fee collection, student records, parent communication, and official exam results." },
+        { "@type": "SoftwareApplication", "name": "Ezra Service", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS, Android", "url": "https://ezraservice.com", "description": "On-demand marketplace connecting vetted home service providers with clients in Douala and Yaoundé." },
+        { "@type": "SoftwareApplication", "name": "Ubora Living", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS, Android", "url": "https://uboraliving.com", "description": "Rental management platform with Mobile Money payments and Africa's first Rental Score system." },
+        { "@type": "SoftwareApplication", "name": "Kreastar", "applicationCategory": "SocialNetworkingApplication", "url": "https://kreastar.com", "description": "Creator marketplace connecting Cameroon's micro-influencers with local brands." }
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
 
-<a href="#main-content" class="skip-link">Aller au contenu principal</a>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <div class="cursor" id="cur"></div>
 <div class="cursor-ring" id="cur-ring"></div>
 
-<!-- Menu mobile -->
+<!-- Mobile Menu -->
 <div class="mobile-menu" id="mobile-menu">
-  <a href="#foundation" onclick="closeMenu()">À propos</a>
-  <a href="#build" onclick="closeMenu()">Ce que nous créons</a>
-  <a href="#pillars" onclick="closeMenu()">Piliers</a>
-  <a href="#research" onclick="closeMenu()">Recherche</a>
-  <div class="lang-switch" style="font-size:1rem;">
-    <a href="/">EN</a>
-    <span>|</span>
-    <span class="lang-active">FR</span>
-  </div>
-  <a href="#contact" class="m-cta" onclick="closeMenu()">Nous contacter</a>
+  <a href="#statement" onclick="closeMenu()">The Lab</a>
+  <a href="#questions" onclick="closeMenu()">Research</a>
+  <a href="#lab" onclick="closeMenu()">Work</a>
+  <a href="#infra" onclick="closeMenu()">Infrastructure</a>
 </div>
 
 <!-- NAVBAR -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-box"><img src="/logo.png" alt="Ubora Labs Logo"></div>
+    <span class="nav-logo-text">Ubora Labs</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#statement">The Lab</a></li>
+
+<div class="cursor" id="cur"></div>
+<div class="cursor-ring" id="cur-ring"></div>
+
+<a class="skip-link" href="#main-content">Aller au contenu principal</a>
+
 <nav id="nav" role="navigation" aria-label="Navigation principale">
-  <a href="/fr/" class="nav-logo">
+  <a href="/fr/" class="nav-logo" aria-label="Ubora Labs — Accueil">
     <div class="nav-logo-box"><img src="/logo.png" alt="Logo Ubora Labs"></div>
     <span class="nav-logo-text">Ubora Labs</span>
   </a>
   <ul class="nav-links">
-    <li><a href="#foundation">À propos</a></li>
-    <li><a href="#build">Ce que nous créons</a></li>
-    <li><a href="#pillars">Piliers</a></li>
-    <li><a href="#research">Recherche</a></li>
+    <li><a href="#statement">Le Lab</a></li>
+    <li><a href="#questions">Recherche</a></li>
+    <li><a href="#lab">Travaux</a></li>
+    <li><a href="#infra">Infrastructure</a></li>
     <li>
       <div class="lang-switch">
         <a href="/">EN</a>
@@ -400,36 +451,45 @@
         <span class="lang-active">FR</span>
       </div>
     </li>
-    <li><a href="#contact" class="nav-cta">Nous contacter</a></li>
   </ul>
   <button class="hamburger" id="hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu de navigation">
+  <a href="#statement" onclick="closeMenu()">Le Lab</a>
+  <a href="#questions" onclick="closeMenu()">Recherche</a>
+  <a href="#lab" onclick="closeMenu()">Travaux</a>
+  <a href="#infra" onclick="closeMenu()">Infrastructure</a>
+  <div class="lang-switch" style="margin-top:1rem;">
+    <a href="/">EN</a>
+    <span>|</span>
+    <span class="lang-active">FR</span>
+  </div>
+</div>
+
 <main id="main-content">
 
 <!-- HERO -->
-<section id="hero" aria-label="Introduction — Ubora Labs">
+<section id="hero" aria-label="Ubora Labs — Studio R&D">
   <canvas id="particle-canvas"></canvas>
   <div class="hero-glow"></div>
   <div class="hero-content">
-    <div class="hero-eyebrow">Là où l'Espoir rencontre le Code · Studio R&amp;D · Groupe Leukam</div>
+    <div class="hero-eyebrow">Là où l'Espoir rencontre le Code · Studio R&D · Groupe Leukam</div>
     <h1 class="hero-h1">
-      Construire pour<br>
-      <span class="gold">le Cameroun</span>
+      Nous étudions comment<br>
+      <span class="gold">le Cameroun fonctionne.</span><br>
+      Ensuite nous construisons.
     </h1>
     <p class="hero-sub">
-      Paiements scolaires. Services à domicile. Gestion locative. Économie créative.
-      Quatre produits en ligne, un seul écosystème — construit depuis le Cameroun, pour le Cameroun.
+      Ubora Labs est un studio de recherche et développement technologique.
+      Nous identifions les lacunes dans l'infrastructure numérique — et construisons
+      des systèmes pour les combler, depuis la base.
     </p>
-    <div class="hero-btns">
-      <a href="#build" class="btn-gold"><span>Voir nos produits</span></a>
-      <a href="#contact" class="btn-outline">Nous contacter</a>
-    </div>
   </div>
   <div class="scroll-hint">
-    <span>Défiler</span>
+    <span>Explorer</span>
     <div class="scroll-line"></div>
   </div>
 </section>
@@ -438,285 +498,283 @@
 <div class="marquee-strip" aria-hidden="true">
   <div class="marquee-track">
     <div class="marquee-item">Là où l'Espoir rencontre le Code <span class="marquee-dot"></span></div>
-    <div class="marquee-item">Construire l'Avenir Numérique de l'Afrique <span class="marquee-dot"></span></div>
-    <div class="marquee-item">Excellence par l'Innovation <span class="marquee-dot"></span></div>
-    <div class="marquee-item">Une technologie qui sert, sans éblouir <span class="marquee-dot"></span></div>
-    <div class="marquee-item">Précision · Empathie · Impact <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Construit depuis la Base <span class="marquee-dot"></span></div>
     <div class="marquee-item">Là où l'Espoir rencontre le Code <span class="marquee-dot"></span></div>
-    <div class="marquee-item">Construire l'Avenir Numérique de l'Afrique <span class="marquee-dot"></span></div>
-    <div class="marquee-item">Excellence par l'Innovation <span class="marquee-dot"></span></div>
-    <div class="marquee-item">Une technologie qui sert, sans éblouir <span class="marquee-dot"></span></div>
-    <div class="marquee-item">Précision · Empathie · Impact <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Un Secteur à la Fois <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Là où l'Espoir rencontre le Code <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Construit depuis la Base <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Là où l'Espoir rencontre le Code <span class="marquee-dot"></span></div>
+    <div class="marquee-item">Un Secteur à la Fois <span class="marquee-dot"></span></div>
   </div>
 </div>
 
-<!-- FONDATION -->
-<section id="foundation" aria-label="Notre fondation — mission, vision, philosophie">
+<!-- STATEMENT -->
+<section id="statement" aria-label="Ce qu'est Ubora Labs">
   <div class="s-inner">
-    <div class="foundation-top">
-      <div class="reveal">
-        <div class="s-label">Notre Fondation</div>
-        <h2 class="s-title">Les principes<br>qui nous guident</h2>
-      </div>
-      <div class="reveal d2">
-        <p class="s-sub">
-          Chaque ligne de code, chaque système que nous construisons est ancré dans ces convictions.
-          C'est le socle de l'avenir technologique de l'Afrique.
-        </p>
-      </div>
+    <div class="s-label reveal">Le Lab</div>
+    <div class="statement-lede-wrap reveal d1">
+      <p class="statement-lede">
+        La plupart des logiciels conçus pour les marchés africains sont adaptés
+        de produits pensés ailleurs. Nous travaillons dans l'autre sens.
+      </p>
+      <span class="statement-pov" aria-hidden="true">Point<br>de<br>Vue</span>
     </div>
-    <div class="cards-row">
-      <div class="f-card reveal d1">
-        <div class="f-num">01</div>
-        <div class="f-label">Mission</div>
-        <p class="f-text">Imaginer, concevoir et déployer des systèmes qui font mieux fonctionner l'Afrique. Des outils qui relient créativité, code et communauté.</p>
+    <div class="statement-body reveal d2">
+      <p class="statement-text">
+        Nous prenons le temps de comprendre comment les choses fonctionnent déjà —
+        comment les écoles collectent les frais, comment propriétaires et locataires
+        négocient la confiance, comment les artisans trouvent des clients,
+        comment les créateurs se font rémunérer. Ensuite nous construisons
+        une infrastructure autour de ces réalités, et non contre elles.
+      </p>
+      <p class="statement-text">
+        Le résultat est un portefeuille de systèmes interconnectés partageant
+        une couche commune de paiement et d'identité. Chaque produit commence
+        comme une question de recherche. Chacun est une réponse que nous affinons encore.
+      </p>
+    </div>
+    <div class="statement-rule reveal d3"></div>
+    <div class="statement-tenets">
+      <div class="tenet reveal d3">
+        <span class="tenet-label">Comment nous cherchons</span>
+        <p class="tenet-text">Nous étudions ce qui fonctionne déjà avant de proposer ce qui est nouveau. Le comportement local est le cahier des charges.</p>
       </div>
-      <div class="f-card reveal d2">
-        <div class="f-num">02</div>
-        <div class="f-label">Vision</div>
-        <p class="f-text">Un avenir où la technologie africaine propulse l'éducation, le commerce et l'innovation. Des systèmes conçus pour des personnes réelles, dans des lieux réels.</p>
+      <div class="tenet reveal d3">
+        <span class="tenet-label">Comment nous construisons</span>
+        <p class="tenet-text">Déploiement en production tôt. Solidification rapide. Conçu pour la 2G. Aucune hypothèse sur la connectivité ou l'appareil.</p>
       </div>
-      <div class="f-card reveal d3">
-        <div class="f-num">03</div>
-        <div class="f-label">Philosophie</div>
-        <p class="f-text">Nous croyons en l'innovation mesurée : une technologie qui sert, sans éblouir. Notre travail mêle rigueur et empathie, en concevant pour l'impact, la durabilité et le contexte culturel.</p>
+      <div class="tenet reveal d4">
+        <span class="tenet-label">Comment nous passons à l'échelle</span>
+        <p class="tenet-text">Infrastructure partagée entre les produits. Résoudre le mobile money une fois. Résoudre l'identité une fois. Ensuite tout construire par-dessus.</p>
+      </div>
+      <div class="tenet reveal d4">
+        <span class="tenet-label">Comment nous mesurons</span>
+        <p class="tenet-text">Transactions traitées. Confiance créée. Problèmes qui ne nécessitent plus de contournements. Pas des métriques de vanité.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SÉPARATEUR DIAGONAL -->
-<div class="divider" style="background:var(--navy-1); margin-top:-1px;">
-  <svg viewBox="0 0 1200 60" preserveAspectRatio="none" height="60">
-    <polygon points="0,0 1200,0 1200,60 0,0" fill="var(--navy-0)"/>
-  </svg>
-</div>
-
-<!-- CE QUE NOUS CRÉONS -->
-<section id="build" aria-label="Produits que nous créons">
+<!-- THE QUESTIONS -->
+<section id="questions" aria-label="Questions de recherche qui guident notre travail">
   <div class="s-inner">
     <div class="reveal">
-      <div class="s-label">Ce que nous créons</div>
-      <h2 class="s-title">Produits en mouvement</h2>
+      <div class="s-label">Recherche</div>
+      <h2 class="s-title">Les questions<br>auxquelles nous répondons</h2>
     </div>
-    <p class="s-sub reveal d1">
-      Nous construisons pour les populations, pas pour l'utilisateur idéal disposant d'une connexion rapide
-      et du dernier téléphone. Chaque produit est conçu pour fonctionner dans des environnements à données
-      limitées, parce qu'un impact réel, c'est atteindre tout le monde.
-    </p>
-    <div class="build-grid">
-      <div class="build-card reveal d1">
-        <div class="build-tag">Éducation</div>
-        <div class="build-icon">ÉC</div>
-        <div class="build-name">Ubora Écoles</div>
-        <p class="build-desc">Les établissements du Cameroun accompagnent des millions d'élèves avec dévouement et rigueur. Ubora Écoles leur donne l'infrastructure pour aller plus loin — collecte numérique des frais, dossiers élèves, communication parents et résultats officiels aux examens, le tout en un seul endroit. Conçu pour amplifier la mission, sans la compliquer.</p>
-        <a href="https://uboraecoles.com" target="_blank" rel="noopener" class="build-status active"><span class="dot"></span>Actif · uboraecoles.com</a>
-      </div>
-      <div class="build-card reveal d2">
-        <div class="build-tag">Services</div>
-        <div class="build-icon">EZ</div>
-        <div class="build-name">Ezra Service</div>
-        <p class="build-desc">Une marketplace de services mettant en relation des prestataires qualifiés et leurs clients à travers l'Afrique. Légère, rapide, conçue pour les utilisateurs avec peu de données. Parce que l'accès à l'opportunité ne devrait pas dépendre d'un réseau Wi-Fi performant.</p>
-        <a href="https://ezraservice.com" target="_blank" rel="noopener" class="build-status active"><span class="dot"></span>Actif · ezraservice.com</a>
-      </div>
-      <div class="build-card reveal d3">
-        <div class="build-tag">Immobilier &amp; Lifestyle</div>
-        <div class="build-icon">LV</div>
-        <div class="build-name">Ubora Living</div>
-        <p class="build-desc">Une plateforme immobilière moderne pensée pour la génération urbaine africaine. Les locataires construisent un Score Locatif basé sur leurs paiements ponctuels, offrant aux propriétaires un moyen fiable de choisir leurs locataires. De meilleures relations. Moins de litiges. Un cadre de vie plus intelligent.</p>
-        <a href="https://uboraliving.com" target="_blank" rel="noopener" class="build-status active"><span class="dot"></span>Actif · uboraliving.com</a>
-      </div>
-      <div class="build-card reveal d4">
-        <div class="build-tag">Économie Créative</div>
-        <div class="build-icon">KR</div>
-        <div class="build-name">Kreastar</div>
-        <p class="build-desc">Une marketplace qui connecte les micro-influenceurs du Cameroun aux marques locales. Les créateurs se font découvrir, décrochent des campagnes et sont payés directement via l'application. Les marques obtiennent une audience authentique, sans les frais d'agence.</p>
-        <a href="https://kreastar.com" target="_blank" rel="noopener" class="build-status active"><span class="dot"></span>Actif · kreastar.com</a>
-      </div>
-      <div class="build-card reveal d5">
-        <div class="build-tag">Infrastructure Fintech</div>
-        <div class="build-icon">UP</div>
-        <div class="build-name">Ubora Pay</div>
-        <p class="build-desc">Un hub API de paiement unifié connectant MTN Mobile Money, Orange Money et bien d'autres en un seul endroit. Quand les opérateurs mettent à jour leurs API, seul Ubora Pay s'adapte — et chaque produit construit dessus reste opérationnel automatiquement. Intégrez une fois, lancez vite. Pas de casse-tête technique.</p>
-        <span class="build-status active"><span class="dot"></span>Actif · API</span>
-      </div>
+    <div class="questions-intro reveal d1">
+      <p>Chaque produit du lab commence ici. Un problème observé sur le terrain, affiné en une question assez précise pour construire autour.</p>
     </div>
-
-    <div class="horizon-label reveal">À l'horizon</div>
-    <div class="build-grid" style="margin-top:0;">
-      <div class="build-card reveal d1" style="opacity:.75;">
-        <div class="build-tag">Santé</div>
-        <div class="build-icon">UH</div>
-        <div class="build-name">Ubora Health</div>
-        <p class="build-desc">Une plateforme de santé numérique qui modernise la gestion médicale en Afrique. Fini les carnets de santé perdus. Les dossiers médicaux suivent le patient, pas la clinique. Communication simplifiée entre médecins, pharmacies et patients, le tout en un seul endroit sécurisé.</p>
-        <span class="build-status soon"><span class="dot"></span>En planification · 2027</span>
+    <div class="q-list">
+      <div class="q-item reveal d2">
+        <div class="q-num">01</div>
+        <div class="q-body">
+          <div class="q-text">Comment les établissements servant des millions d'élèves gèrent-ils les frais, les dossiers et les résultats officiels sans perturber leur fonctionnement actuel ?</div>
+          <div class="q-note">Les écoles du Cameroun fonctionnent sur la confiance, la discipline et le papier. L'infrastructure pour aller au numérique devait s'insérer dans ce cadre, pas le remplacer.</div>
+        </div>
+        <div class="q-output">Ubora Écoles</div>
       </div>
-      <div class="build-card reveal d2" style="opacity:.75;">
-        <div class="build-tag">Infrastructure Identitaire</div>
-        <div class="build-icon">ID</div>
-        <div class="build-name">Ubora ID</div>
-        <p class="build-desc">Une couche d'identité numérique sécurisée pour l'Afrique. Ubora ID alimente le KYC d'Ubora Pay, relie les Scores Locatifs aux individus vérifiés dans Ubora Living, ancre les dossiers patients dans Ubora Health et vérifie les prestataires sur Ezra. Une identité. Toutes les plateformes.</p>
-        <span class="build-status soon"><span class="dot"></span>En planification</span>
+      <div class="q-item reveal d3">
+        <div class="q-num">02</div>
+        <div class="q-body">
+          <div class="q-text">Comment la réputation d'un prestataire qualifié voyage-t-elle au-delà des deux quartiers où il a déjà travaillé ?</div>
+          <div class="q-note">À Douala, le meilleur plombier se trouve en demandant à un voisin. Ce système fonctionne — jusqu'à ce que le plombier veuille grandir, ou que le voisin ne soit pas là.</div>
+        </div>
+        <div class="q-output">Ezra Service</div>
+      </div>
+      <div class="q-item reveal d4">
+        <div class="q-num">03</div>
+        <div class="q-body">
+          <div class="q-text">Comment un locataire prouve-t-il qu'il paie à temps quand il n'y a pas de bureau de crédit et pas d'historique de bail formel ?</div>
+          <div class="q-note">Les propriétaires au Cameroun s'en remettent à leur instinct faute de données. Les locataires qui paient régulièrement depuis des années n'ont rien à montrer quand ils déménagent.</div>
+        </div>
+        <div class="q-output">Ubora Living</div>
+      </div>
+      <div class="q-item reveal d5">
+        <div class="q-num">04</div>
+        <div class="q-body">
+          <div class="q-text">Comment les créateurs camerounais sont-ils rémunérés sans passer par des plateformes conçues pour d'autres marchés ?</div>
+          <div class="q-note">Les micro-influenceurs avec de vraies audiences sont exclus des deals de marques parce qu'ils ne peuvent pas recevoir de paiements internationaux. Le public est local. L'infrastructure devrait l'être aussi.</div>
+        </div>
+        <div class="q-output">Kreastar</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SÉPARATEUR DIAGONAL -->
-<div class="divider" style="background:var(--navy-0); margin-top:-1px;">
-  <svg viewBox="0 0 1200 60" preserveAspectRatio="none" height="60">
-    <polygon points="0,60 1200,0 1200,60 0,60" fill="var(--navy-1)"/>
-  </svg>
-</div>
-
-<!-- PILIERS -->
-<section id="pillars" aria-label="Nos piliers de fonctionnement">
+<!-- FROM THE LAB -->
+<section id="lab" aria-label="Produits issus du lab">
   <div class="s-inner">
     <div class="reveal">
-      <div class="s-label">Piliers Fondamentaux</div>
-      <h2 class="s-title">Notre façon<br>de travailler</h2>
+      <div class="s-label">Depuis le Lab</div>
+      <h2 class="s-title">Ce que la recherche<br>a produit</h2>
     </div>
-    <div class="pillars-grid">
-      <div class="p-item reveal d1">
-        <div class="p-num">01</div>
-        <h3 class="p-title">Expérimenter avec audace</h3>
-        <p class="p-text">Nous prototypons rapidement et testons en conditions réelles. Nous apprenons en jours, pas en trimestres.</p>
-      </div>
-      <div class="p-item reveal d2">
-        <div class="p-num">02</div>
-        <h3 class="p-title">Construire pour l'échelle</h3>
-        <p class="p-text">Nos systèmes sont conçus pour durer : fiabilité, portée et croissance à travers l'Afrique.</p>
-      </div>
-      <div class="p-item reveal d3">
-        <div class="p-num">03</div>
-        <h3 class="p-title">Collaborer pour l'impact</h3>
-        <p class="p-text">Nous travaillons avec des fondateurs, des établissements et des bâtisseurs de communautés pour transformer les problèmes locaux en infrastructures durables.</p>
-      </div>
-      <div class="p-item reveal d4">
-        <div class="p-num">04</div>
-        <h3 class="p-title">Intégrité dans la conception</h3>
-        <p class="p-text">Des systèmes réfléchis et intentionnels, sans raccourcis. Nous construisons avec l'honnêteté au cœur.</p>
-      </div>
-      <div class="p-item reveal d5">
-        <div class="p-num">05</div>
-        <h3 class="p-title">L'empathie dans la technologie</h3>
-        <p class="p-text">Nous construisons avec les communautés, pas seulement pour elles. Centré sur l'humain dès le premier jour.</p>
-      </div>
-      <div class="p-item reveal d6">
-        <div class="p-num">06</div>
-        <h3 class="p-title">Précision &amp; Durabilité</h3>
-        <p class="p-text">L'excellence, ce n'est pas la vitesse ; c'est la justesse avec un but. Le code et la culture doivent tous deux s'inscrire dans la durée.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- RECHERCHE -->
-<section id="research" aria-label="Nos axes de recherche">
-  <div class="s-inner">
-    <div>
-      <div class="s-label reveal">Axes de Recherche</div>
-      <h2 class="s-title reveal d1">Où nous concentrons<br>notre énergie</h2>
-      <div class="r-items">
-        <div class="r-item reveal d2">
-          <div class="r-num">01</div>
-          <div>
-            <div class="r-title">Infrastructure numérique</div>
-            <div class="r-text">Construire des systèmes fondamentaux pour l'éducation et le commerce à travers l'Afrique.</div>
-          </div>
+    <div class="lab-list">
+      <div class="lab-entry reveal d1">
+        <div class="lab-entry-num">01</div>
+        <div>
+          <div class="lab-entry-question">« Comment passer au tout numérique sans perturber le fonctionnement des écoles ? »</div>
+          <div class="lab-entry-name">Ubora Écoles</div>
+          <p class="lab-entry-desc">Collecte numérique des frais, dossiers élèves, communication parents et résultats officiels — conçu autour du fonctionnement réel des écoles camerounaises. Pas un remplacement. Un amplificateur.</p>
         </div>
-        <div class="r-item reveal d3">
-          <div class="r-num">02</div>
-          <div>
-            <div class="r-title">Solutions évolutives</div>
-            <div class="r-text">Des solutions cloud et IA adaptées aux réalités et contraintes africaines.</div>
-          </div>
-        </div>
-        <div class="r-item reveal d4">
-          <div class="r-num">03</div>
-          <div>
-            <div class="r-title">Innovation ouverte</div>
-            <div class="r-text">Des expériences qui alimentent la connaissance publique et font avancer l'écosystème.</div>
-          </div>
+        <div class="lab-entry-right">
+          <div class="lab-entry-sector">EdTech</div>
+          <div class="lab-entry-status"><span class="lab-dot"></span>En production</div>
         </div>
       </div>
-    </div>
-    <div class="orb-wrap reveal d3">
-      <div class="orb"><span class="orb-label">R&amp;D</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- STATISTIQUES -->
-<section id="stats">
-  <div class="s-inner">
-    <div class="stat reveal d1">
-      <span class="stat-n" data-target="6">0</span>
-      <div class="stat-l">Produits en portefeuille</div>
-    </div>
-    <div class="stat reveal d2">
-      <span class="stat-n" data-target="4">0</span>
-      <div class="stat-l">Actifs &amp; en ligne</div>
-    </div>
-    <div class="stat reveal d3">
-      <span class="stat-n" data-target="3">0</span>
-      <div class="stat-l">Domaines de recherche</div>
-    </div>
-    <div class="stat reveal d4">
-      <span class="stat-n" data-target="2025">0</span>
-      <div class="stat-l">Année de création</div>
+      <div class="lab-entry reveal d2">
+        <div class="lab-entry-num">02</div>
+        <div>
+          <div class="lab-entry-question">« Comment la réputation d'un prestataire voyage-t-elle au-delà du bouche-à-oreille ? »</div>
+          <div class="lab-entry-name">Ezra Service</div>
+          <p class="lab-entry-desc">Une marketplace de services pour Douala et Yaoundé. Les prestataires sont vérifiés, évalués et payés en toute sécurité. Le réseau fait ce que le bouche-à-oreille faisait — à l'échelle de la ville.</p>
+        </div>
+        <div class="lab-entry-right">
+          <div class="lab-entry-sector">Services</div>
+          <div class="lab-entry-status"><span class="lab-dot"></span>En production</div>
+        </div>
+      </div>
+      <div class="lab-entry reveal d3">
+        <div class="lab-entry-num">03</div>
+        <div>
+          <div class="lab-entry-question">« Comment construire la confiance locataire sans bureau de crédit ? »</div>
+          <div class="lab-entry-name">Ubora Living</div>
+          <p class="lab-entry-desc">Chaque paiement Mobile Money à temps construit un Score Locatif. Les locataires accumulent un historique vérifiable. Les propriétaires obtiennent un signal fiable. Une couche de confiance bâtie sur les comportements de paiement locaux.</p>
+        </div>
+        <div class="lab-entry-right">
+          <div class="lab-entry-sector">PropTech</div>
+          <div class="lab-entry-status"><span class="lab-dot"></span>En production</div>
+        </div>
+      </div>
+      <div class="lab-entry reveal d4">
+        <div class="lab-entry-num">04</div>
+        <div>
+          <div class="lab-entry-question">« Comment les créateurs locaux se font-ils payer sur des marchés locaux ? »</div>
+          <div class="lab-entry-name">Kreastar</div>
+          <p class="lab-entry-desc">Une marketplace connectant les micro-influenceurs du Cameroun aux marques locales. Les créateurs se font découvrir, décrochent des campagnes et reçoivent leur paiement directement — sans routage international, sans pourcentage perdu sur des plateformes conçues pour d'autres marchés.</p>
+        </div>
+        <div class="lab-entry-right">
+          <div class="lab-entry-sector">Économie Créative</div>
+          <div class="lab-entry-status"><span class="lab-dot"></span>En production</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- TRACTION -->
-<section id="insights" aria-label="Résultats concrets d'Ubora Labs">
-  <div class="s-inner" style="max-width:1200px;margin:0 auto;">
-    <div class="s-label reveal" style="justify-content:left;">Sur le terrain</div>
-    <h2 class="s-title reveal d1">Des résultats réels.<br>Un Cameroun réel.</h2>
-    <p class="s-sub reveal d2" style="max-width:580px;">
-      Nous ne mesurons pas le succès au nombre de fonctionnalités livrées. Nous le mesurons
-      en paiements traités, en propriétaires connectés, et en prestataires réservés.
+<section id="traction" aria-label="Résultats sur le terrain">
+  <div class="s-inner">
+    <div class="reveal">
+      <div class="s-label">Sur le Terrain</div>
+      <h2 class="s-title">La recherche<br>fonctionne</h2>
+    </div>
+    <p class="reveal d1" style="font-weight:300; font-size:.975rem; color:var(--white-dim); max-width:560px; line-height:1.85; margin-bottom:3.5rem;">
+      Nous ne mesurons pas le succès en fonctionnalités livrées. Nous le mesurons en paiements traités, propriétaires connectés et prestataires réservés.
     </p>
-  </div>
-  <div class="insights-grid">
-    <div class="insight-card reveal d1" style="cursor:default;">
-      <span class="insight-tag">Écoles · Éducation</span>
-      <h3 class="insight-title">Des frais scolaires collectés numériquement à travers le Cameroun</h3>
-      <p class="insight-excerpt">Ubora Écoles traite les paiements de scolarité, suit les dossiers élèves et transmet les résultats officiels aux examens — le tout depuis un seul tableau de bord. Des établissements qui géraient tout sur papier disposent aujourd'hui d'une traçabilité complète.</p>
-      <span class="insight-read" style="pointer-events:none;">Ubora Écoles</span>
-    </div>
-    <div class="insight-card reveal d2" style="cursor:default;">
-      <span class="insight-tag">Living · Immobilier</span>
-      <h3 class="insight-title">Loyers suivis. Confiance établie.</h3>
-      <p class="insight-excerpt">Ubora Living est en ligne à Douala. Les propriétaires encaissent les loyers via Mobile Money, les locataires reçoivent des quittances numériques, et chaque paiement à temps construit un Score Locatif — le premier système de réputation locataire en Afrique.</p>
-      <span class="insight-read" style="pointer-events:none;">Ubora Living</span>
-    </div>
-    <div class="insight-card reveal d3" style="cursor:default;">
-      <span class="insight-tag">EZRA · Services</span>
-      <h3 class="insight-title">Des prestataires vérifiés. À la demande, dans tout Douala.</h3>
-      <p class="insight-excerpt">Ezra Service connecte les clients avec des plombiers, électriciens et agents d'entretien vérifiés à Douala et Yaoundé. Les prestataires sont évalués et payés en toute sécurité — sans espèces, sans relancer les factures.</p>
-      <span class="insight-read" style="pointer-events:none;">Ezra Service</span>
+    <div class="insights-grid">
+      <div class="insight-card reveal d1" style="cursor:default;">
+        <span class="insight-tag">Écoles · Éducation</span>
+        <h3 class="insight-title">Frais scolaires collectés numériquement au Cameroun</h3>
+        <p class="insight-excerpt">Ubora Écoles traite les paiements de scolarité, suit les dossiers élèves et délivre les résultats officiels — depuis un seul tableau de bord. Les écoles qui géraient tout sur papier ont maintenant une piste d'audit complète.</p>
+      </div>
+      <div class="insight-card reveal d2" style="cursor:default;">
+        <span class="insight-tag">Living · PropTech</span>
+        <h3 class="insight-title">Paiements locatifs tracés. Confiance créée.</h3>
+        <p class="insight-excerpt">Ubora Living est actif à Douala. Les propriétaires collectent le loyer via Mobile Money, les locataires reçoivent des quittances numériques, et chaque paiement à temps construit un Score Locatif — le premier système de réputation locataire au Cameroun.</p>
+      </div>
+      <div class="insight-card reveal d3" style="cursor:default;">
+        <span class="insight-tag">EZRA · Services</span>
+        <h3 class="insight-title">Prestataires vérifiés. À la demande, à Douala.</h3>
+        <p class="insight-excerpt">Ezra Service connecte les clients avec des plombiers, électriciens et agents d'entretien vérifiés à Douala et Yaoundé. Les prestataires sont évalués et payés en toute sécurité — pas d'espèces, pas de factures à relancer.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" aria-label="Contacter Ubora Labs">
-  <div class="s-inner" style="margin:0 auto;">
-    <div class="s-label reveal" style="justify-content:center;">Nous contacter</div>
-    <h2 class="s-title reveal d1">Engageons la conversation.</h2>
-    <div class="contact-line reveal d2"></div>
-    <p class="s-sub reveal d2" style="margin:0 auto 2.5rem; text-align:center;">
-      Si vous construisez pour l'éducation, le commerce ou l'infrastructure en Afrique et croyez
-      que la technologie peut débloquer la prochaine étape, nous aimerions vous entendre.
-    </p>
-    <div class="reveal d3">
-      <a href="mailto:contact@uboralabs.com" class="contact-email">contact@uboralabs.com</a>
+<!-- WRITING -->
+<section id="writing" aria-label="Articles d'Ubora Labs">
+  <div class="s-inner">
+    <div class="reveal">
+      <div class="s-label">Écrits</div>
+      <h2 class="s-title">Du lab,<br>en profondeur</h2>
     </div>
-    <br><br>
-    <div class="reveal d4">
-      <a href="mailto:contact@uboralabs.com" class="btn-gold"><span>Démarrer votre projet</span></a>
+    <p class="reveal d1" style="font-weight:300; font-size:.975rem; color:var(--white-dim); max-width:560px; line-height:1.85; margin-bottom:3.5rem;">
+      Nous publions ce que nous apprenons. Les problèmes, les compromis, le raisonnement — écrits pour d'autres bâtisseurs, pas pour des communiqués de presse.
+    </p>
+    <div class="insights-grid">
+      <a href="../blog/rental-score.html" class="insight-card reveal d1">
+        <span class="insight-tag">PropTech · Logement</span>
+        <h3 class="insight-title">Pourquoi les locataires africains ont besoin d'un Score Locatif</h3>
+        <p class="insight-excerpt">Des millions de locataires en Afrique n'ont pas de trail de crédit, pas d'historique de bail formel, et aucun moyen de prouver qu'ils paient à temps. Nous avons construit le Score Locatif pour changer ça.</p>
+        <span class="insight-read">Lire l'article</span>
+      </a>
+      <a href="../blog/mobile-money-africa.html" class="insight-card reveal d2">
+        <span class="insight-tag">FinTech · Paiements</span>
+        <h3 class="insight-title">Le problème de fragmentation du Mobile Money en Afrique de l'Ouest</h3>
+        <p class="insight-excerpt">MTN. Orange. Moov. Chaque opérateur a sa propre API. Chaque développeur intègre chacune séparément. Nous pensons qu'il y a une meilleure façon.</p>
+        <span class="insight-read">Lire l'article</span>
+      </a>
+      <a href="../blog/low-data-design.html" class="insight-card reveal d3">
+        <span class="insight-tag">Ingénierie · Design</span>
+        <h3 class="insight-title">Concevoir des logiciels pour les réalités à faible débit</h3>
+        <p class="insight-excerpt">La plupart des logiciels sont conçus en supposant un Wi-Fi rapide et des données illimitées. Nous construisons dans la direction opposée. Voici à quoi ça ressemble en pratique.</p>
+        <span class="insight-read">Lire l'article</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- INFRASTRUCTURE -->
+<section id="infra" aria-label="Couche d'infrastructure partagée">
+  <div class="s-inner">
+    <div class="reveal">
+      <div class="s-label">Infrastructure Partagée</div>
+      <h2 class="s-title">La couche sous<br>tout le reste</h2>
+    </div>
+    <p class="reveal d1" style="font-weight:300; font-size:.975rem; color:var(--white-dim); max-width:600px; line-height:1.85; margin-bottom:0;">
+      Les quatre produits ci-dessus partagent une base commune. Nous avons construit les couches de paiement et d'identité une seule fois — pour que chaque produit bâti par-dessus hérite de la solution, pas du problème.
+    </p>
+    <div class="infra-grid">
+      <div class="infra-card reveal d2">
+        <div class="infra-icon">UP</div>
+        <div class="infra-name">Ubora Pay</div>
+        <p class="infra-desc">Une API de paiement unifiée connectant MTN Mobile Money, Orange Money et plus. Quand les opérateurs mettent à jour leurs APIs, seul Ubora Pay se met à jour — tous les produits construits dessus restent opérationnels. Nous ouvrons cette infrastructure aux autres bâtisseurs du Cameroun. Intégrez une fois, passez en production rapidement.</p>
+        <div class="infra-note">Ouvert aux bâtisseurs · En production</div>
+      </div>
+      <div class="infra-card reveal d3">
+        <div class="infra-icon">ID</div>
+        <div class="infra-name">Ubora ID</div>
+        <p class="infra-desc">Une couche d'identité numérique pour l'écosystème. Alimente le KYC pour Ubora Pay, lie les Scores Locatifs aux individus vérifiés dans Living, ancre les dossiers patients dans Health, vérifie les prestataires sur Ezra. Une identité. Toutes les plateformes. Disponible comme API pour tout bâtisseur en ayant besoin.</p>
+        <div class="infra-note">En développement</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ON THE HORIZON -->
+<section id="horizon" aria-label="Ce que nous étudions ensuite">
+  <div class="s-inner">
+    <div class="reveal">
+      <div class="s-label">À l'Horizon</div>
+      <h2 class="s-title">Questions que nous<br>étudions encore</h2>
+    </div>
+    <p class="reveal d1" style="font-weight:300; font-size:.975rem; color:var(--white-dim); max-width:540px; line-height:1.85; margin-bottom:0;">
+      Ce sont des problèmes ouverts. Nous n'avons pas encore les produits — seulement les questions.
+    </p>
+    <div class="horizon-grid">
+      <div class="horizon-card reveal d2">
+        <div class="horizon-label-tag">Santé · 2027</div>
+        <div class="horizon-q">Comment le dossier médical d'un patient le suit-il dans différentes cliniques quand il n'y a pas de système de dossiers partagés ?</div>
+        <p class="horizon-text">Le carnet de santé se perd. La clinique change. Le patient recommence à zéro. Nous étudions à quoi ressemble un dossier médical détenu par le patient dans le contexte camerounais.</p>
+        <div class="horizon-when">Ubora Health · En recherche</div>
+      </div>
+      <div class="horizon-card reveal d3">
+        <div class="horizon-label-tag">Identité · En développement</div>
+        <div class="horizon-q">Comment vérifier l'identité pour les services financiers et de santé quand les pièces d'identité formelles sont incohérentes ?</div>
+        <p class="horizon-text">La couche d'infrastructure pour les questions ci-dessus. Une identité qui fonctionne dans tout l'écosystème — pas un autre silo.</p>
+        <div class="horizon-when">Ubora ID · Portée en expansion</div>
+      </div>
     </div>
   </div>
 </section>
@@ -729,7 +787,7 @@
     <div>
       <span class="f-brand-name">Ubora Labs</span>
       <p class="f-brand-tag">Là où l'espoir rencontre le code.</p>
-      <p class="f-brand-desc">Une division technologique du Groupe Leukam, pionnière de l'innovation africaine par l'excellence en R&D. Construire l'avenir de la technologie avec précision, créativité et engagement.</p>
+      <p class="f-brand-desc">Un studio R&D technologique au sein du Groupe Leukam. Nous construisons l'infrastructure numérique sur laquelle le Cameroun fonctionne — un secteur à la fois.</p>
       <div class="social-row">
         <a href="https://www.linkedin.com/company/uboralabs/" target="_blank" rel="noopener" class="social-btn" title="LinkedIn">in</a>
         <a href="https://www.facebook.com/profile.php?id=61577655578257" target="_blank" rel="noopener" class="social-btn" title="Facebook">f</a>
@@ -738,29 +796,26 @@
     <div>
       <div class="f-col-title">Navigation</div>
       <ul class="f-links">
-        <li><a href="#foundation">À propos</a></li>
-        <li><a href="#build">Ce que nous créons</a></li>
-        <li><a href="#pillars">Piliers</a></li>
-        <li><a href="#research">Recherche</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#statement">Le Lab</a></li>
+        <li><a href="#questions">Recherche</a></li>
+        <li><a href="#lab">Travaux</a></li>
+        <li><a href="#infra">Infrastructure</a></li>
+        <li><a href="#horizon">Horizon</a></li>
       </ul>
     </div>
     <div>
-      <div class="f-col-title">Découvrir</div>
+      <div class="f-col-title">Contact</div>
       <ul class="f-links">
-        <li><a href="#research">Recherche &amp; Développement</a></li>
-        <li><a href="#foundation">Innovation africaine</a></li>
-        <li><a href="#build">Solutions technologiques</a></li>
-        <li><span style="color:var(--white-faint);cursor:default;">Groupe Leukam</span></li>
+        <li><a href="mailto:contact@uboralabs.com" class="f-contact-email">contact@uboralabs.com</a></li>
+        <li><span style="color:var(--white-faint); font-size:.8rem;">Une entreprise du Groupe Leukam</span></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
     <p>© 2026 Ubora Labs. Tous droits réservés.</p>
-    <p>Une société du Groupe Leukam</p>
+    <p>Une entreprise du Groupe Leukam</p>
   </div>
 </footer>
-
 <script>
 /* ── CURSOR ── */
 const cur = document.getElementById('cur');
@@ -775,7 +830,7 @@ document.addEventListener('mousemove', e => {
   curRing.style.left=rx+'px'; curRing.style.top=ry+'px';
   requestAnimationFrame(tick);
 })();
-document.querySelectorAll('a,button,.p-item,.f-card,.r-item,.build-card').forEach(el=>{
+document.querySelectorAll('a,button,.q-item,.lab-card,.infra-card,.horizon-card').forEach(el=>{
   el.addEventListener('mouseenter',()=>{ cur.classList.add('big'); curRing.classList.add('big'); });
   el.addEventListener('mouseleave',()=>{ cur.classList.remove('big'); curRing.classList.remove('big'); });
 });
@@ -804,93 +859,13 @@ const ctx = canvas.getContext('2d');
 let W, H, particles=[];
 const COUNT=80, LINK=140, PUSH=115;
 let mouse={x:null, y:null};
-
-function resize(){
-  W=canvas.width=canvas.offsetWidth;
-  H=canvas.height=canvas.offsetHeight;
-}
+function resize(){ W=canvas.width=canvas.offsetWidth; H=canvas.height=canvas.offsetHeight; }
 resize();
 window.addEventListener('resize',()=>{ resize(); init(); });
-canvas.addEventListener('mousemove', e=>{
-  const r=canvas.getBoundingClientRect();
-  mouse.x=e.clientX-r.left; mouse.y=e.clientY-r.top;
-});
+canvas.addEventListener('mousemove', e=>{ const r=canvas.getBoundingClientRect(); mouse.x=e.clientX-r.left; mouse.y=e.clientY-r.top; });
 canvas.addEventListener('mouseleave',()=>{ mouse.x=mouse.y=null; });
-
 class P {
   constructor(){ this.reset(); }
-  reset(){
-    this.x=Math.random()*W; this.y=Math.random()*H;
-    this.vx=(Math.random()-.5)*.45; this.vy=(Math.random()-.5)*.45;
-    this.r=Math.random()*1.6+.4; this.o=Math.random()*.5+.18;
-  }
+  reset(){ this.x=Math.random()*W; this.y=Math.random()*H; this.vx=(Math.random()-.5)*.45; this.vy=(Math.random()-.5)*.45; this.r=Math.random()*1.6+.4; this.o=Math.random()*.5+.18; }
   update(){
-    if(mouse.x!==null){
-      const dx=this.x-mouse.x, dy=this.y-mouse.y;
-      const d=Math.sqrt(dx*dx+dy*dy);
-      if(d<PUSH){ const f=(PUSH-d)/PUSH; this.x+=(dx/d)*f*2.2; this.y+=(dy/d)*f*2.2; }
-    }
-    this.x+=this.vx; this.y+=this.vy;
-    if(this.x<0||this.x>W) this.vx*=-1;
-    if(this.y<0||this.y>H) this.vy*=-1;
-    this.x=Math.max(0,Math.min(W,this.x));
-    this.y=Math.max(0,Math.min(H,this.y));
-  }
-  draw(){
-    ctx.beginPath(); ctx.arc(this.x,this.y,this.r,0,Math.PI*2);
-    ctx.fillStyle=`rgba(201,168,76,${this.o})`; ctx.fill();
-  }
-}
-
-function init(){ particles=Array.from({length:COUNT},()=>new P()); }
-init();
-
-function drawLinks(){
-  for(let i=0;i<particles.length;i++){
-    for(let j=i+1;j<particles.length;j++){
-      const dx=particles[i].x-particles[j].x, dy=particles[i].y-particles[j].y;
-      const d=Math.sqrt(dx*dx+dy*dy);
-      if(d<LINK){
-        ctx.beginPath();
-        ctx.moveTo(particles[i].x,particles[i].y);
-        ctx.lineTo(particles[j].x,particles[j].y);
-        ctx.strokeStyle=`rgba(201,168,76,${(1-d/LINK)*.18})`;
-        ctx.lineWidth=.6; ctx.stroke();
-      }
-    }
-  }
-}
-
-(function loop(){
-  ctx.clearRect(0,0,W,H);
-  drawLinks();
-  particles.forEach(p=>{ p.update(); p.draw(); });
-  requestAnimationFrame(loop);
-})();
-
-/* ── SCROLL REVEAL ── */
-const obs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in'); });
-},{ threshold:.1, rootMargin:'0px 0px -45px 0px' });
-document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-
-/* ── STAT COUNTERS ── */
-function counter(el, target, dur=1800){
-  const start=performance.now();
-  (function tick(now){
-    const p=Math.min((now-start)/dur,1);
-    const e=1-Math.pow(1-p,3);
-    el.textContent=Math.floor(e*target);
-    if(p<1) requestAnimationFrame(tick);
-    else el.textContent=target;
-  })(start);
-}
-const sObs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){ counter(e.target,+e.target.dataset.target); sObs.unobserve(e.target); }
-  });
-},{ threshold:.5 });
-document.querySelectorAll('.stat-n[data-target]').forEach(el=>sObs.observe(el));
-</script>
-</body>
-</html>
+    if(mouse.x!==null){ const dx=this.x-mouse.x, dy=this.y-mouse.y; const d=Math.sqrt(dx*dx+dy*dy); if(d<PUSH){ const f=(PUSH-d)/PUSH; this.x+=(dx/d)*f*2.2; this.y+=(dy/d)*f*2.2; } }
