@@ -392,24 +392,72 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Ubora Labs",
-    "url": "https://uboralabs.com",
-    "logo": "https://uboralabs.com/logo.png",
-    "description": "Ubora Labs is an R&D studio building Africa-first digital infrastructure that thrives in low-data environments — software for education, services, housing, payments, and healthcare.",
-    "foundingLocation": { "@type": "Place", "name": "Cameroon" },
-    "parentOrganization": { "@type": "Organization", "name": "Leukam Group" },
-    "sameAs": ["https://twitter.com/uboralabs"],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Ubora Labs Products",
-      "itemListElement": [
-        { "@type": "SoftwareApplication", "name": "Ubora Écoles", "applicationCategory": "EducationApplication", "operatingSystem": "iOS, Android", "url": "https://uboraecoles.com", "description": "Digital school management platform for Cameroon — fee collection, student records, parent communication, and official exam results." },
-        { "@type": "SoftwareApplication", "name": "Ezra Service", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS, Android", "url": "https://ezraservice.com", "description": "On-demand marketplace connecting vetted home service providers with clients in Douala and Yaoundé." },
-        { "@type": "SoftwareApplication", "name": "Ubora Living", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS, Android", "url": "https://uboraliving.com", "description": "Rental management platform with Mobile Money payments and Africa's first Rental Score system." },
-        { "@type": "SoftwareApplication", "name": "Kreastar", "applicationCategory": "SocialNetworkingApplication", "url": "https://kreastar.com", "description": "Creator marketplace connecting Cameroon's micro-influencers with local brands." }
-      ]
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://uboralabs.com/#org",
+        "name": "Ubora Labs",
+        "url": "https://uboralabs.com",
+        "logo": "https://uboralabs.com/logo.png",
+        "description": "Ubora Labs is an R&D studio building Africa-first digital infrastructure for Cameroon — school payments, home services, rental management, and creator marketing.",
+        "foundingLocation": {
+          "@type": "Place",
+          "name": "Cameroon"
+        },
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "Leukam Group"
+        },
+        "sameAs": [
+          "https://www.instagram.com/uboralabs_official",
+          "https://www.facebook.com/people/Ubora-Labs/61577655578257/",
+          "https://products.uboralabs.com"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Ubora Labs Products",
+          "itemListElement": [
+            {
+              "@type": "SoftwareApplication",
+              "name": "Ubora Ecoles",
+              "applicationCategory": "EducationApplication",
+              "url": "https://uboraecoles.com"
+            },
+            {
+              "@type": "SoftwareApplication",
+              "name": "Ezra Service",
+              "applicationCategory": "LifestyleApplication",
+              "url": "https://ezraservice.com"
+            },
+            {
+              "@type": "SoftwareApplication",
+              "name": "Ubora Living",
+              "applicationCategory": "BusinessApplication",
+              "url": "https://uboraliving.com"
+            },
+            {
+              "@type": "SoftwareApplication",
+              "name": "Kreastar",
+              "applicationCategory": "SocialNetworkingApplication",
+              "url": "https://kreastar.com"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://uboralabs.com/#website",
+        "name": "Ubora Labs",
+        "url": "https://uboralabs.com",
+        "publisher": {
+          "@id": "https://uboralabs.com/#org"
+        },
+        "inLanguage": [
+          "en",
+          "fr"
+        ]
+      }
+    ]
   }
   </script>
 </head>
