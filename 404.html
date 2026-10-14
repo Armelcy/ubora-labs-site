@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page not found | Ubora Labs</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <style>
+    :root {
+      --navy-0: #020810;
+      --gold: #c9a84c;
+      --gold-border: rgba(201,168,76,0.22);
+      --white: #f0f4ff;
+      --white-dim: rgba(240,244,255,0.55);
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      min-height:100vh; display:flex; align-items:center; justify-content:center;
+      background:var(--navy-0); color:var(--white); padding:2rem 1rem;
+      font-family:'Archivo', system-ui, -apple-system, sans-serif; line-height:1.6; text-align:center;
+    }
+    main { max-width:520px; }
+    img { width:56px; height:56px; border-radius:8px; margin-bottom:2rem; }
+    .code { font-family:'Space Mono', ui-monospace, monospace; color:var(--gold); letter-spacing:.2em; font-size:.8rem; margin-bottom:1rem; }
+    h1 { font-size:clamp(1.6rem, 5vw, 2.2rem); margin-bottom:.75rem; }
+    p { color:var(--white-dim); margin-bottom:.25rem; }
+    .links { margin-top:2rem; display:flex; gap:.75rem; justify-content:center; flex-wrap:wrap; }
+    a { color:var(--gold); text-decoration:none; border:1px solid var(--gold-border); border-radius:4px; padding:.6rem 1.1rem; font-size:.9rem; }
+    a:hover, a:focus-visible { border-color:var(--gold); }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="/logo-nav.webp" alt="Ubora Labs" width="56" height="56">
+    <div class="code">ERROR 404</div>
+    <h1>This page doesn't exist.</h1>
+    <p>The link may be broken or the page may have moved.</p>
+    <p lang="fr">Cette page n'existe pas ou a été déplacée.</p>
+    <div class="links">
+      <a href="/">Home</a>
+      <a href="/fr/" lang="fr">Accueil (FR)</a>
+      <a href="https://products.uboralabs.com">Products</a>
+    </div>
+  </main>
+</body>
+</html>
