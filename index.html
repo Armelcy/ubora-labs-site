@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="/favicon.ico">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <title>Ubora Labs — Where Hope Meets Code</title>
   <meta name="description" content="Ubora Labs is an R&D studio building Africa-first digital infrastructure — school payments, home services, rental management, and creator marketing. 4 live products. One ecosystem.">
   <meta name="keywords" content="Ubora Labs, Africa tech studio, R&D lab Africa, edtech Cameroon, proptech Africa, mobile money API, Ubora Écoles, Ezra Service, Ubora Living, Kreastar, Ubora Pay, low data software, African innovation, digital products Cameroon">
@@ -372,6 +373,16 @@
     @keyframes orbFloat { 0%,100% { transform:scale(1) translateY(0); } 50% { transform:scale(1.03) translateY(-8px); } }
     @keyframes blink { 0%,100% { opacity:1; } 50% { opacity:.3; } }
 
+    /* ── REDUCED MOTION / TOUCH: no custom cursor, no animation ── */
+    @media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
+      body, body * { cursor: revert !important; }
+      .cursor, .cursor-ring { display: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+
     /* ── RESPONSIVE ── */
     @media (max-width:900px) {
       nav { padding:0 1.5rem; }
@@ -412,6 +423,7 @@
         "sameAs": [
           "https://www.instagram.com/uboralabs_official",
           "https://www.facebook.com/people/Ubora-Labs/61577655578257/",
+          "https://www.linkedin.com/company/uboralabs/",
           "https://products.uboralabs.com"
         ],
         "hasOfferCatalog": {
@@ -479,7 +491,7 @@
 <!-- NAVBAR -->
 <nav id="nav" role="navigation" aria-label="Main navigation">
   <a href="#" class="nav-logo">
-    <div class="nav-logo-box"><img src="/logo.png" alt="Ubora Labs Logo"></div>
+    <div class="nav-logo-box"><img src="/logo-nav.webp" width="34" height="34" alt="Ubora Labs Logo"></div>
     <span class="nav-logo-text">Ubora Labs</span>
   </a>
   <ul class="nav-links">
@@ -829,7 +841,8 @@
       <p class="f-brand-desc">A technology R&D studio inside Leukam Group. We build the digital infrastructure Cameroon runs on — one sector at a time.</p>
       <div class="social-row">
         <a href="https://www.linkedin.com/company/uboralabs/" target="_blank" rel="noopener" class="social-btn" title="LinkedIn">in</a>
-        <a href="https://www.facebook.com/profile.php?id=61577655578257" target="_blank" rel="noopener" class="social-btn" title="Facebook">f</a>
+        <a href="https://www.facebook.com/people/Ubora-Labs/61577655578257/" target="_blank" rel="noopener" class="social-btn" title="Facebook">f</a>
+        <a href="https://www.instagram.com/uboralabs_official" target="_blank" rel="noopener" class="social-btn" title="Instagram">ig</a>
       </div>
     </div>
     <div>
@@ -857,6 +870,10 @@
 </footer>
 
 <script>
+/* ── MOTION PREFS ── */
+const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const FINE_POINTER = matchMedia('(hover: hover) and (pointer: fine)').matches;
+
 /* ── CURSOR ── */
 const cur = document.getElementById('cur');
 const curRing = document.getElementById('cur-ring');
@@ -865,7 +882,7 @@ document.addEventListener('mousemove', e => {
   mx=e.clientX; my=e.clientY;
   cur.style.left=mx+'px'; cur.style.top=my+'px';
 });
-(function tick(){
+if (FINE_POINTER && !REDUCED) (function tick(){
   rx+=(mx-rx)*.22; ry+=(my-ry)*.22;
   curRing.style.left=rx+'px'; curRing.style.top=ry+'px';
   requestAnimationFrame(tick);
@@ -925,7 +942,15 @@ function drawLinks(){
     if(d<LINK){ ctx.beginPath(); ctx.moveTo(particles[i].x,particles[i].y); ctx.lineTo(particles[j].x,particles[j].y); ctx.strokeStyle=`rgba(201,168,76,${(1-d/LINK)*.18})`; ctx.lineWidth=.6; ctx.stroke(); }
   }
 }
-(function loop(){ ctx.clearRect(0,0,W,H); drawLinks(); particles.forEach(p=>{ p.update(); p.draw(); }); requestAnimationFrame(loop); })();
+let heroVisible = true;
+function frame(){ ctx.clearRect(0,0,W,H); drawLinks(); particles.forEach(p=>{ if(!REDUCED) p.update(); p.draw(); }); }
+function loop(){ if(!heroVisible) return; frame(); requestAnimationFrame(loop); }
+if (REDUCED) { frame(); window.addEventListener('resize', frame); }
+else {
+  // pause the particle loop while the hero is off-screen (saves CPU/battery on low-end phones)
+  new IntersectionObserver(([e])=>{ const was=heroVisible; heroVisible=e.isIntersecting; if(heroVisible && !was) loop(); }).observe(canvas);
+  loop();
+}
 
 /* ── SCROLL REVEAL ── */
 const obs=new IntersectionObserver(entries=>{
