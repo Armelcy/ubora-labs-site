@@ -22,7 +22,7 @@
       "continue": true
     },
     { "src": "/preview.html", "headers": { "X-Robots-Tag": "noindex" }, "continue": true },
-    { "src": "/testers", "dest": "/public/testers.html" },
+    { "src": "/(testers/?|public/testers\\.html)", "status": 308, "headers": { "Location": "https://products.uboralabs.com/fr" } },
     { "src": "/fr", "dest": "/fr/index.html" },
     { "handle": "filesystem" },
     { "src": "/(.*)", "status": 404, "dest": "/404.html" }
