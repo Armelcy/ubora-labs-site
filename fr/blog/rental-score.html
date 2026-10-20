@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ══ GOOGLE ANALYTICS 4 ══ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJED730Z5Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GJED730Z5Q');
+  </script>
+
+  <title>Pourquoi les locataires africains ont besoin d'un Score Locatif | Ubora Labs</title>
+  <meta name="description" content="Des millions de locataires en Afrique n'ont aucun historique de bail formel ni aucun moyen de prouver qu'ils paient à temps. Le Score Locatif d'Ubora Living construit l'infrastructure pour changer cela.">
+  <meta name="keywords" content="score locatif Afrique, proptech Afrique, solvabilité locataire, Ubora Living, logement Cameroun, marché locatif Afrique, sélection des locataires">
+  <meta name="author" content="Ubora Labs">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://uboralabs.com/fr/blog/rental-score.html">
+  <link rel="alternate" hreflang="en" href="https://uboralabs.com/blog/rental-score.html">
+  <link rel="alternate" hreflang="fr" href="https://uboralabs.com/fr/blog/rental-score.html">
+  <link rel="alternate" hreflang="x-default" href="https://uboralabs.com/blog/rental-score.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://uboralabs.com/fr/blog/rental-score.html">
+  <meta property="og:locale" content="fr_CM">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="Pourquoi les locataires africains ont besoin d'un Score Locatif | Ubora Labs">
+  <meta property="og:description" content="Des millions de locataires en Afrique n'ont aucun historique de bail formel. Nous avons construit le Score Locatif pour changer cela.">
+  <meta property="og:site_name" content="Ubora Labs">
+  <meta property="og:image" content="https://uboralabs.com/og-image-fr.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="article:author" content="Ubora Labs">
+  <meta property="article:published_time" content="2025-09-15">
+  <meta property="article:section" content="PropTech">
+  <meta property="article:tag" content="Score Locatif, PropTech Afrique, Ubora Living, Logement">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://uboralabs.com/og-image-fr.png">
+  <meta name="twitter:title" content="Pourquoi les locataires africains ont besoin d'un Score Locatif">
+  <meta name="twitter:description" content="Des millions de locataires en Afrique n'ont aucun historique de bail formel. Nous avons construit le Score Locatif pour changer cela.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Pourquoi les locataires africains ont besoin d'un Score Locatif",
+    "description": "Des millions de locataires en Afrique n'ont aucun historique de bail formel ni aucun moyen de prouver qu'ils paient à temps. Le Score Locatif d'Ubora Living construit l'infrastructure pour changer cela.",
+    "author": { "@type": "Organization", "name": "Ubora Labs", "url": "https://uboralabs.com" },
+    "publisher": { "@type": "Organization", "name": "Ubora Labs", "url": "https://uboralabs.com" },
+    "datePublished": "2025-09-15",
+    "mainEntityOfPage": "https://uboralabs.com/fr/blog/rental-score.html",
+    "inLanguage": "fr",
+    "about": ["PropTech", "Logement en Afrique", "Marché locatif", "FinTech"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy-0: #020810; --navy-1: #060d1a; --navy-2: #0a1628;
+      --gold: #c9a84c; --gold-light: #e8c96e;
+      --gold-border: rgba(201,168,76,0.22);
+      --white: #f0f4ff; --white-dim: rgba(240,244,255,0.62);
+    }
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { background:var(--navy-1); color:var(--white); font-family:'Archivo', sans-serif; font-weight:300; line-height:1.8; }
+
+    a { color:var(--gold); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+
+    /* NAV */
+    nav {
+      background:rgba(6,13,26,.95); backdrop-filter:blur(22px);
+      border-bottom:1px solid var(--gold-border);
+      padding:0 3rem; height:68px;
+      display:flex; align-items:center; justify-content:space-between;
+      position:sticky; top:0; z-index:100;
+    }
+    .nav-logo { display:flex; align-items:center; gap:.6rem; text-decoration:none; }
+    .nav-logo-box {
+      width:32px; height:32px; border-radius:5px;
+      overflow:hidden;
+      display:flex; align-items:center; justify-content:center;
+    }
+    .nav-logo-box img { width:100%; height:100%; object-fit:cover; }
+    .nav-logo-text { font-family:'Archivo Black', sans-serif; font-size:.9rem; color:var(--white); letter-spacing:.04em; }
+    .nav-back { font-family:'Space Mono', monospace; font-size:.72rem; color:var(--gold); letter-spacing:.06em; }
+    .nav-back::before { content:'← '; }
+
+    /* ARTICLE */
+    .article-wrap { max-width:720px; margin:0 auto; padding:5rem 2rem 6rem; }
+
+    .article-tag {
+      font-family:'Space Mono', monospace; font-size:.68rem; letter-spacing:.12em;
+      color:var(--gold); text-transform:uppercase; margin-bottom:1.2rem;
+      display:block;
+    }
+    h1 {
+      font-family:'Archivo Black', sans-serif; font-size:clamp(1.9rem, 4vw, 2.8rem);
+      line-height:1.2; color:var(--white); margin-bottom:1.5rem;
+    }
+    .article-meta {
+      font-family:'Space Mono', monospace; font-size:.72rem;
+      color:var(--white-dim); margin-bottom:3rem;
+      padding-bottom:2rem; border-bottom:1px solid var(--gold-border);
+    }
+
+    h2 {
+      font-family:'Archivo Black', sans-serif; font-size:1.3rem;
+      color:var(--white); margin:2.5rem 0 .8rem;
+    }
+    p { color:var(--white-dim); margin-bottom:1.4rem; font-size:1rem; }
+
+    blockquote {
+      border-left:3px solid var(--gold); padding:.8rem 1.4rem;
+      margin:2rem 0; background:rgba(201,168,76,0.06); border-radius:0 6px 6px 0;
+    }
+    blockquote p { color:var(--white); font-style:italic; margin:0; }
+
+    .highlight-box {
+      background:var(--navy-2); border:1px solid var(--gold-border);
+      border-radius:8px; padding:1.8rem 2rem; margin:2.5rem 0;
+    }
+    .highlight-box p { margin:0; }
+
+    .article-footer {
+      margin-top:4rem; padding-top:2rem;
+      border-top:1px solid var(--gold-border);
+      display:flex; align-items:center; justify-content:space-between;
+      flex-wrap:wrap; gap:1rem;
+    }
+    .btn-back {
+      display:inline-flex; align-items:center; gap:.5rem;
+      background:transparent; border:1px solid var(--gold-border);
+      color:var(--gold); padding:.7rem 1.4rem; border-radius:4px;
+      font-family:'Space Mono', monospace; font-size:.72rem; letter-spacing:.06em;
+      transition:background .2s, border-color .2s;
+    }
+    .btn-back:hover { background:rgba(201,168,76,0.1); border-color:var(--gold); text-decoration:none; }
+
+    .lang-switch { display:flex; align-items:center; gap:.4rem; font-size:.72rem; font-family:'Space Mono', monospace; }
+    .lang-switch a { color:rgba(240,244,255,0.55); text-decoration:none; transition:color .2s; }
+    .lang-switch a:hover { color:var(--gold); }
+    .lang-switch .lang-active { color:var(--gold); font-weight:700; }
+    .lang-switch span { color:rgba(240,244,255,0.55); opacity:.4; }
+    .nav-right { display:flex; align-items:center; gap:1.5rem; }
+    @media(max-width:600px){ nav{ padding:0 1.2rem; } .article-wrap{ padding:3rem 1.2rem 4rem; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/fr/" class="nav-logo">
+    <div class="nav-logo-box"><img src="/logo-nav.webp" width="34" height="34" alt="Logo Ubora Labs"></div>
+    <span class="nav-logo-text">Ubora Labs</span>
+  </a>
+  <div class="nav-right">
+    <div class="lang-switch">
+      <a href="/blog/rental-score.html" hreflang="en" lang="en">EN</a>
+      <span>|</span>
+      <span class="lang-active">FR</span>
+    </div>
+    <a href="/fr/#writing" class="nav-back">Tous les articles</a>
+  </div>
+</nav>
+
+<main>
+<article class="article-wrap">
+  <span class="article-tag">PropTech · Logement</span>
+
+  <h1>Pourquoi les locataires africains ont besoin d'un Score Locatif</h1>
+
+  <div class="article-meta">
+    Par Ubora Labs &nbsp;·&nbsp; Septembre 2025 &nbsp;·&nbsp; 6 min de lecture
+  </div>
+
+  <p>
+    Dans la plupart des pays du monde, votre historique financier vous suit. Les banques
+    enregistrent vos prêts. Les agences de crédit compilent vos paiements. Un propriétaire
+    peut consulter un rapport et savoir en quelques minutes si vous paierez probablement à temps.
+  </p>
+
+  <p>
+    Dans une grande partie de l'Afrique, rien de tout cela n'existe pour les locataires.
+    Un locataire qui a payé son loyer fidèlement pendant cinq ans n'a rien à montrer.
+    Pas de score. Pas de dossier. Pas de preuve. Quand il change de ville ou cherche un
+    meilleur logement, il repart de zéro. Encore une fois.
+  </p>
+
+  <p>
+    Ce n'est pas un petit problème. Il détermine qui obtient un logement, et à quelles conditions.
+  </p>
+
+  <h2>L'asymétrie dont profitent les propriétaires</h2>
+
+  <p>
+    En l'absence de tout système formel, les propriétaires se protègent de la seule
+    manière qu'ils connaissent&nbsp;: en exigeant de gros paiements d'avance. Trois mois de
+    caution plus trois mois d'avance, c'est courant dans plusieurs villes d'Afrique de
+    l'Ouest et centrale. Certains propriétaires demandent une année entière de loyer
+    avant de remettre les clés.
+  </p>
+
+  <p>
+    Ce n'est pas de la cupidité. C'est de la gestion du risque en l'absence de données.
+    Quand on n'a aucun moyen de vérifier la fiabilité financière de quelqu'un, on fait
+    payer l'incertitude.
+  </p>
+
+  <blockquote>
+    <p>Ceux qui en souffrent le plus ne sont pas les mauvais locataires. Ce sont les bons
+    locataires, qui n'ont tout simplement aucun moyen de le prouver.</p>
+  </blockquote>
+
+  <p>
+    Jeunes actifs, jeunes diplômés, personnes mutées pour le travail. Tous sont exclus
+    des meilleurs logements, ou contraints d'accepter des conditions qui épuisent leurs
+    économies avant même d'emménager.
+  </p>
+
+  <h2>Ce qu'est réellement un Score Locatif</h2>
+
+  <p>
+    Un Score Locatif est un historique structuré du comportement d'un locataire dans le
+    temps. Il indique s'il paie à temps, s'il entretient le logement, s'il communique
+    avec son propriétaire, et si ses anciens propriétaires lui loueraient à nouveau.
+  </p>
+
+  <p>
+    Ce n'est pas un score de crédit. Il ne demande ni compte bancaire, ni fiche de paie,
+    ni contrat de travail formel. Il repose entièrement sur le comportement locatif, ce
+    qui le rend accessible à tout locataire, quelle que soit la façon dont il gagne sa vie.
+  </p>
+
+  <div class="highlight-box">
+    <p>
+      Le Score Locatif d'Ubora Living construit un historique vérifié chaque fois qu'un
+      locataire termine une période de location sur la plateforme. Avec le temps, cet
+      historique devient portable — le locataire l'emporte vers son prochain logement,
+      sa prochaine ville, son prochain propriétaire. C'est sa preuve de fiabilité, émise
+      par son propre comportement.
+    </p>
+  </div>
+
+  <h2>Les propriétaires y gagnent aussi</h2>
+
+  <p>
+    On pense d'abord à un outil pour les locataires, mais les propriétaires y gagnent
+    tout autant. Aujourd'hui, leur seul outil de sélection, c'est l'intuition et le
+    réseau. «&nbsp;Vous connaissez quelqu'un qui peut se porter garant&nbsp;?&nbsp;» n'est pas un système.
+    Cela favorise ceux qui évoluent dans des cercles familiers et exclut tous les autres.
+  </p>
+
+  <p>
+    Avec un Score Locatif, les propriétaires décident plus vite et avec plus d'assurance.
+    Ils peuvent réduire les avances exigées, parce que le risque est mesuré au lieu d'être
+    deviné. Et avec le temps, les données rendent le marché plus efficace&nbsp;: les locataires
+    fiables obtiennent de meilleures conditions, les autres font face à des exigences plus élevées.
+  </p>
+
+  <h2>Construire l'infrastructure qui n'existe pas encore</h2>
+
+  <p>
+    Si cela n'a pas été construit plus tôt, ce n'est pas faute de besoin. C'est faute de
+    distribution. Un score locatif n'a de valeur que si propriétaires et locataires sont
+    sur la même plateforme.
+  </p>
+
+  <p>
+    Ubora Living est conçu autour de cet effet de réseau. Chaque propriétaire qui ajoute
+    un bien élargit l'offre. Chaque locataire qui construit son score donne plus de poids
+    à ce score. La plateforme devient plus utile à chaque nouvel utilisateur — non pas
+    malgré sa taille, mais grâce à elle.
+  </p>
+
+  <p>
+    Nous commençons par l'Afrique centrale et de l'Ouest, parce que c'est là que le manque
+    est le plus criant, et là que nous comprenons le mieux comment le marché locatif
+    fonctionne réellement sur le terrain. Pas le marché formel. Le vrai.
+  </p>
+
+  <h2>La vue d'ensemble</h2>
+
+  <p>
+    Un Score Locatif n'est pas qu'une fonctionnalité. C'est une brique d'infrastructure
+    financière qui n'a jamais existé pour ces populations. Quand elle fonctionne, les
+    locataires construisent un historique qui leur appartient. Les propriétaires prennent
+    de meilleures décisions. Le marché devient plus transparent. Et les milliards bloqués
+    dans les avances de loyer — un capital qui pourrait financer l'éducation, une activité
+    ou l'épargne — sont libérés.
+  </p>
+
+  <p>
+    C'est le genre de problème qui mérite qu'on construise pour lui.
+  </p>
+
+  <div class="article-footer">
+    <a href="/fr/#writing" class="btn-back">← Tous les articles</a>
+    <a href="https://uboraliving.com" target="_blank" rel="noopener" class="btn-back">Voir Ubora Living →</a>
+  </div>
+</article>
+</main>
+
+</body>
+</html>

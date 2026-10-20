@@ -17,16 +17,43 @@
   </url>
   <url>
     <loc>https://uboralabs.com/blog/rental-score.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uboralabs.com/blog/rental-score.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://uboralabs.com/fr/blog/rental-score.html"/>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://uboralabs.com/blog/mobile-money-africa.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uboralabs.com/blog/mobile-money-africa.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://uboralabs.com/fr/blog/mobile-money-africa.html"/>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://uboralabs.com/blog/low-data-design.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uboralabs.com/blog/low-data-design.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://uboralabs.com/fr/blog/low-data-design.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://uboralabs.com/fr/blog/rental-score.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uboralabs.com/blog/rental-score.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://uboralabs.com/fr/blog/rental-score.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://uboralabs.com/fr/blog/mobile-money-africa.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uboralabs.com/blog/mobile-money-africa.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://uboralabs.com/fr/blog/mobile-money-africa.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://uboralabs.com/fr/blog/low-data-design.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uboralabs.com/blog/low-data-design.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://uboralabs.com/fr/blog/low-data-design.html"/>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
