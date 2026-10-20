@@ -156,7 +156,8 @@
 
     /* product proof row — what's live, above the fold */
     .hero-proof { margin-top:3.5rem; display:flex; flex-direction:column; align-items:center; gap:1rem; }
-    .hero-proof-label { font-family:var(--font-mono); font-size:.68rem; letter-spacing:.22em; color:var(--white-faint); text-transform:uppercase; display:flex; align-items:center; gap:.6rem; }
+    .hero-proof-label { font-family:var(--font-mono); font-size:.74rem; font-weight:700; letter-spacing:.16em; color:var(--white); text-transform:uppercase; display:flex; align-items:center; gap:.6rem; }
+    .hero-proof-label .gold { color:var(--gold); }
     .hero-proof-list { display:flex; flex-wrap:wrap; justify-content:center; gap:.6rem; list-style:none; }
     .hero-proof-list a { display:inline-flex; align-items:center; gap:.55rem; font-size:.85rem; font-weight:500; color:var(--white); background:rgba(6,13,26,.6); border:1px solid var(--gold-border); border-radius:100px; padding:.45rem 1rem; transition:border-color .2s, background .2s, transform .1s; }
     .hero-proof-list a:hover { border-color:var(--gold); background:var(--gold-dim); }
@@ -216,10 +217,11 @@
     .p-item { border-bottom:1px solid var(--gold-border); }
     .p-item:first-child { border-top:1px solid var(--gold-border); }
     .p-link {
-      display:grid; grid-template-columns:72px 1fr 190px;
-      gap:0 2.5rem; padding:2.75rem 0; align-items:start;
+      display:grid; grid-template-columns:72px 1fr minmax(300px, 420px);
+      gap:0 3rem; padding:3rem 0; align-items:start;
       position:relative;
     }
+    .p-shot { align-self:center; }
     .p-link::before { content:''; position:absolute; inset:0 -1.5rem; background:var(--gold-dim); opacity:0; transition:opacity .3s; pointer-events:none; border-radius:4px; }
     .p-link:hover::before { opacity:.5; }
     .p-num { font-family:var(--font-display); font-size:2.6rem; color:var(--gold); opacity:.25; line-height:1; letter-spacing:-.03em; transition:opacity .3s; font-variant-numeric:tabular-nums; }
@@ -231,7 +233,20 @@
     .p-link:hover .p-name::before { transform:translateX(4px); }
     .p-tagline { font-family:var(--font-mono); font-size:.68rem; letter-spacing:.14em; color:var(--white-faint); text-transform:uppercase; }
     .p-desc { font-size:.95rem; color:var(--white-dim); line-height:1.75; max-width:680px; }
-    .p-meta { display:flex; flex-direction:column; align-items:flex-end; gap:.75rem; padding-top:.35rem; text-align:right; }
+    .p-meta { display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap; margin-top:1.25rem; }
+
+    /* product screenshots: browser frame for web dashboards, phone frame for mobile apps */
+    .p-shot { position:relative; border-radius:10px; overflow:hidden; border:1px solid var(--gold-border); background:var(--navy-2); box-shadow:0 24px 48px -24px rgba(0,0,0,.7); transition:transform .5s var(--ease-out), border-color .3s; }
+    .p-shot::before { content:''; display:block; height:22px; border-bottom:1px solid rgba(201,168,76,.12); background:
+      radial-gradient(circle at 12px 11px, rgba(240,244,255,.25) 3px, transparent 3.5px),
+      radial-gradient(circle at 24px 11px, rgba(240,244,255,.18) 3px, transparent 3.5px),
+      radial-gradient(circle at 36px 11px, rgba(240,244,255,.12) 3px, transparent 3.5px), var(--navy-2); }
+    .p-shot img { display:block; width:100%; height:auto; aspect-ratio:16/10; object-fit:cover; object-position:top; }
+    .p-shot--phone { width:190px; margin:0 auto; border-radius:28px; border:6px solid #141d2e; box-shadow:0 0 0 1px var(--gold-border), 0 24px 48px -20px rgba(0,0,0,.75); }
+    .p-shot--phone::before { display:none; }
+    .p-shot--phone img { aspect-ratio:360/780; }
+    .p-link:hover .p-shot { transform:translateY(-4px); border-color:var(--gold); }
+    .p-link:hover .p-shot--phone { border-color:#141d2e; }
     .p-status { display:flex; align-items:center; gap:.5rem; font-family:var(--font-mono); font-size:.68rem; letter-spacing:.14em; color:var(--white-dim); text-transform:uppercase; }
     .p-domain { font-family:var(--font-mono); font-size:.72rem; color:var(--gold); border-bottom:1px solid var(--gold-border); padding-bottom:1px; transition:border-color .2s; }
     .p-link:hover .p-domain { border-color:var(--gold); }
@@ -332,18 +347,26 @@
       .nav-links, .nav-cta { display:none; }
       .hamburger { display:flex; }
       .s-inner, .contact-inner { padding:4.5rem 1.25rem; }
-      .p-link { grid-template-columns:44px 1fr; gap:0 1rem; padding:2.25rem 0; }
+      .p-link { grid-template-columns:36px 1fr; gap:0 .9rem; padding:2.25rem 0; align-items:start; }
       .p-link::before { inset:0 -.75rem; }
-      .p-num { font-size:1.8rem; }
-      .p-meta { grid-column:2; flex-direction:row; align-items:center; justify-content:space-between; padding-top:1.1rem; text-align:left; }
+      .p-num { font-size:1.5rem; padding-top:.15rem; }
+      /* lighter question headlines on small screens: four Archivo Black paragraphs in a row read as a wall */
+      .p-question { font-family:var(--font-head); font-weight:600; font-size:1.12rem; line-height:1.4; letter-spacing:-.005em; margin-bottom:1rem; }
+      .p-meta { justify-content:space-between; }
+      .p-shot { grid-column:1 / -1; margin-top:1.75rem; }
+      .p-shot--phone { width:170px; }
       .insights-grid, .infra-grid, .horizon-grid { grid-template-columns:1fr; }
       .infra-card, .horizon-card { padding:1.75rem; }
       .footer-grid { padding:3rem 1.25rem; gap:2.25rem; }
       .footer-bottom { flex-direction:column; gap:.4rem; text-align:center; padding:1.2rem 1.25rem; }
     }
     @media (max-width:560px) {
-      .hero-eyebrow { font-size:.62rem; letter-spacing:.18em; }
-      .hero-eyebrow::before, .hero-eyebrow::after { display:none; }
+      .hero-eyebrow { font-size:.64rem; letter-spacing:.2em; gap:.75rem; }
+      .hero-eyebrow::before, .hero-eyebrow::after { width:20px; }
+      .eb-tag { display:none; }
+      .hero-proof { margin-top:2.75rem; }
+      .hero-proof-list { display:grid; grid-template-columns:1fr 1fr; width:100%; max-width:340px; }
+      .hero-proof-list a { width:100%; justify-content:center; padding:.6rem .5rem; }
       .hero-ctas a { flex:1 1 100%; justify-content:center; }
       .statement-tenets { grid-template-columns:1fr; }
       .tenet, .tenet + .tenet { padding:1.4rem 0 0; border-left:none; margin-top:0; }
@@ -470,7 +493,7 @@
   <canvas id="particle-canvas" aria-hidden="true"></canvas>
   <div class="hero-glow"></div>
   <div class="hero-content">
-    <div class="hero-eyebrow hero-enter he1">Where Hope Meets Code · R&amp;D Studio · Leukam Group</div>
+    <div class="hero-eyebrow hero-enter he1"><span class="eb-tag">Where Hope Meets Code ·&nbsp;</span>R&amp;D Studio · Leukam Group</div>
     <h1 class="hero-h1 hero-enter he2">
       We study how<br>
       <span class="gold">Cameroon works.</span>
@@ -486,7 +509,7 @@
       <a href="mailto:contact@uboralabs.com" class="btn-ghost">Get in Touch</a>
     </div>
     <div class="hero-proof hero-enter he5">
-      <span class="hero-proof-label"><span class="live-dot pulse" aria-hidden="true"></span>4 products in production</span>
+      <span class="hero-proof-label"><span class="live-dot pulse" aria-hidden="true"></span><span><span class="gold">4 products</span> in production</span></span>
       <ul class="hero-proof-list">
         <li><a href="https://uboraecoles.com" target="_blank" rel="noopener">Ubora Écoles</a></li>
         <li><a href="https://ezraservice.com" target="_blank" rel="noopener">Ezra Service</a></li>
@@ -575,11 +598,12 @@
             <p class="p-question">How do schools manage fees, records, and report cards without disrupting how they already work?</p>
             <div class="p-answer"><span class="p-name">Ubora Écoles</span><span class="p-tagline">School infrastructure · EdTech</span></div>
             <p class="p-desc">Digital fee collection, student records, parent communication, and report cards — built around how Cameroonian schools actually operate. Not a replacement. An amplifier.</p>
+            <div class="p-meta">
+              <span class="p-status"><span class="live-dot" aria-hidden="true"></span>In production</span>
+              <span class="p-domain">uboraecoles.com ↗</span>
+            </div>
           </div>
-          <div class="p-meta">
-            <span class="p-status"><span class="live-dot" aria-hidden="true"></span>In production</span>
-            <span class="p-domain">uboraecoles.com ↗</span>
-          </div>
+          <figure class="p-shot"><img src="/img/ecoles.webp" width="880" height="550" alt="Ubora Écoles school admin dashboard" loading="lazy" decoding="async"></figure>
         </a>
       </li>
       <li class="p-item reveal d1">
@@ -589,11 +613,12 @@
             <p class="p-question">How does a skilled provider's reputation travel beyond the two neighborhoods they've already worked in?</p>
             <div class="p-answer"><span class="p-name">Ezra Service</span><span class="p-tagline">Verified home services</span></div>
             <p class="p-desc">A home-services marketplace across Cameroon. Providers are verified, rated by real clients, and paid when the job is done. The network does what word-of-mouth used to — at national scale.</p>
+            <div class="p-meta">
+              <span class="p-status"><span class="live-dot" aria-hidden="true"></span>In production</span>
+              <span class="p-domain">ezraservice.com ↗</span>
+            </div>
           </div>
-          <div class="p-meta">
-            <span class="p-status"><span class="live-dot" aria-hidden="true"></span>In production</span>
-            <span class="p-domain">ezraservice.com ↗</span>
-          </div>
+          <figure class="p-shot p-shot--phone"><img src="/img/ezra.webp" width="360" height="780" alt="Ezra Service app home screen with service categories" loading="lazy" decoding="async"></figure>
         </a>
       </li>
       <li class="p-item reveal d1">
@@ -603,11 +628,12 @@
             <p class="p-question">How does a tenant prove they pay on time when there's no credit bureau and no formal lease history?</p>
             <div class="p-answer"><span class="p-name">Ubora Living</span><span class="p-tagline">Rental infrastructure · PropTech</span></div>
             <p class="p-desc">Every on-time Mobile Money payment builds a Rental Score. Tenants accumulate a verifiable history. Landlords get signal beyond gut instinct. A trust layer built on local payment behaviour.</p>
+            <div class="p-meta">
+              <span class="p-status"><span class="live-dot" aria-hidden="true"></span>In production</span>
+              <span class="p-domain">uboraliving.com ↗</span>
+            </div>
           </div>
-          <div class="p-meta">
-            <span class="p-status"><span class="live-dot" aria-hidden="true"></span>In production</span>
-            <span class="p-domain">uboraliving.com ↗</span>
-          </div>
+          <figure class="p-shot"><img src="/img/living.webp" width="880" height="550" alt="Ubora Living landlord dashboard" loading="lazy" decoding="async"></figure>
         </a>
       </li>
       <li class="p-item reveal d1">
@@ -617,11 +643,12 @@
             <p class="p-question">How do creators in Cameroon get compensated without routing through platforms built for other markets?</p>
             <div class="p-answer"><span class="p-name">Kreastar</span><span class="p-tagline">Local influencer marketing</span></div>
             <p class="p-desc">A marketplace connecting Cameroon's micro-influencers with local brands. Creators get discovered, book campaigns, and receive payment directly — no international routing, no percentage lost to platforms built for other markets.</p>
+            <div class="p-meta">
+              <span class="p-status"><span class="live-dot" aria-hidden="true"></span>In production</span>
+              <span class="p-domain">kreastar.com ↗</span>
+            </div>
           </div>
-          <div class="p-meta">
-            <span class="p-status"><span class="live-dot" aria-hidden="true"></span>In production</span>
-            <span class="p-domain">kreastar.com ↗</span>
-          </div>
+          <figure class="p-shot"><img src="/img/kreastar.webp" width="880" height="550" alt="Kreastar creator search page" loading="lazy" decoding="async"></figure>
         </a>
       </li>
     </ul>
