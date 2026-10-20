@@ -218,9 +218,8 @@
 
   <p>
     "Offline-first" is sometimes used loosely to mean "works a little bit when
-    offline." That is not what we mean. Offline-first means the app's default state
-    is to function fully without a connection, and connectivity is treated as an
-    enhancement when it is available, not a requirement.
+    offline." That is not what we mean. For us, offline-first means the work people do every day keeps working without a connection,
+    and connectivity is treated as an enhancement when it is available, not a requirement.
   </p>
 
   <p>
@@ -230,15 +229,15 @@
   <ul class="principle-list">
     <li>
       <span class="p-num">01</span>
-      <span class="p-text"><strong>Local-first data storage.</strong> Student records, grades, attendance, and schedules are stored on the device. The app reads from local storage first, not from the server. A teacher can mark attendance in a classroom with no signal. It syncs when connectivity returns.</span>
+      <span class="p-text"><strong>Teacher work is saved on the device first.</strong> Attendance, grades, assignments, and behaviour notes are saved on the device, then sent to the server when connectivity returns. A teacher can mark attendance in a classroom with no signal. Recently viewed data stays cached, so screens still open offline.</span>
     </li>
     <li>
       <span class="p-num">02</span>
-      <span class="p-text"><strong>Conflict resolution by design.</strong> When a device syncs after being offline, the server may have newer data. The app needs a clear policy for what wins. We make these rules explicit rather than letting them produce silent data corruption.</span>
+      <span class="p-text"><strong>Clear rules for syncing.</strong> When a device comes back online, the app needs a clear policy for what wins. If the same attendance sheet is saved twice while offline, the latest version wins, and re-sending never creates duplicate records. We make these rules explicit rather than letting them produce silent data corruption.</span>
     </li>
     <li>
       <span class="p-num">03</span>
-      <span class="p-text"><strong>Queued actions, not failed actions.</strong> If a parent sends a message to a teacher while offline, that message is queued locally and sent when connectivity returns. The user experience shows "sent," not "failed." Nothing is lost.</span>
+      <span class="p-text"><strong>Queued actions, not failed actions.</strong> If a teacher enters grades while offline, they are queued on the device and sent when connectivity returns. The app shows what is still waiting to sync instead of an error. Nothing is lost.</span>
     </li>
     <li>
       <span class="p-num">04</span>
