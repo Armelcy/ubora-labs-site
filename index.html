@@ -217,11 +217,10 @@
     .p-item { border-bottom:1px solid var(--gold-border); }
     .p-item:first-child { border-top:1px solid var(--gold-border); }
     .p-link {
-      display:grid; grid-template-columns:72px 1fr minmax(300px, 420px);
-      gap:0 3rem; padding:3rem 0; align-items:start;
+      display:grid; grid-template-columns:72px 1fr;
+      gap:0 2.5rem; padding:2.75rem 0; align-items:start;
       position:relative;
     }
-    .p-shot { align-self:center; }
     .p-link::before { content:''; position:absolute; inset:0 -1.5rem; background:var(--gold-dim); opacity:0; transition:opacity .3s; pointer-events:none; border-radius:4px; }
     .p-link:hover::before { opacity:.5; }
     .p-num { font-family:var(--font-display); font-size:2.6rem; color:var(--gold); opacity:.25; line-height:1; letter-spacing:-.03em; transition:opacity .3s; font-variant-numeric:tabular-nums; }
@@ -235,18 +234,6 @@
     .p-desc { font-size:.95rem; color:var(--white-dim); line-height:1.75; max-width:680px; }
     .p-meta { display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap; margin-top:1.25rem; }
 
-    /* product screenshots: browser frame for web dashboards, phone frame for mobile apps */
-    .p-shot { position:relative; border-radius:10px; overflow:hidden; border:1px solid var(--gold-border); background:var(--navy-2); box-shadow:0 24px 48px -24px rgba(0,0,0,.7); transition:transform .5s var(--ease-out), border-color .3s; }
-    .p-shot::before { content:''; display:block; height:22px; border-bottom:1px solid rgba(201,168,76,.12); background:
-      radial-gradient(circle at 12px 11px, rgba(240,244,255,.25) 3px, transparent 3.5px),
-      radial-gradient(circle at 24px 11px, rgba(240,244,255,.18) 3px, transparent 3.5px),
-      radial-gradient(circle at 36px 11px, rgba(240,244,255,.12) 3px, transparent 3.5px), var(--navy-2); }
-    .p-shot img { display:block; width:100%; height:auto; aspect-ratio:16/10; object-fit:cover; object-position:top; }
-    .p-shot--phone { width:190px; margin:0 auto; border-radius:28px; border:6px solid #141d2e; box-shadow:0 0 0 1px var(--gold-border), 0 24px 48px -20px rgba(0,0,0,.75); }
-    .p-shot--phone::before { display:none; }
-    .p-shot--phone img { aspect-ratio:360/780; }
-    .p-link:hover .p-shot { transform:translateY(-4px); border-color:var(--gold); }
-    .p-link:hover .p-shot--phone { border-color:#141d2e; }
     .p-status { display:flex; align-items:center; gap:.5rem; font-family:var(--font-mono); font-size:.68rem; letter-spacing:.14em; color:var(--white-dim); text-transform:uppercase; }
     .p-domain { font-family:var(--font-mono); font-size:.72rem; color:var(--gold); border-bottom:1px solid var(--gold-border); padding-bottom:1px; transition:border-color .2s; }
     .p-link:hover .p-domain { border-color:var(--gold); }
@@ -353,8 +340,6 @@
       /* lighter question headlines on small screens: four Archivo Black paragraphs in a row read as a wall */
       .p-question { font-family:var(--font-head); font-weight:600; font-size:1.12rem; line-height:1.4; letter-spacing:-.005em; margin-bottom:1rem; }
       .p-meta { justify-content:space-between; }
-      .p-shot { grid-column:1 / -1; margin-top:1.75rem; }
-      .p-shot--phone { width:170px; }
       .insights-grid, .infra-grid, .horizon-grid { grid-template-columns:1fr; }
       .infra-card, .horizon-card { padding:1.75rem; }
       .footer-grid { padding:3rem 1.25rem; gap:2.25rem; }
@@ -603,7 +588,6 @@
               <span class="p-domain">uboraecoles.com ↗</span>
             </div>
           </div>
-          <figure class="p-shot"><img src="/img/ecoles.webp" width="880" height="550" alt="Ubora Écoles school admin dashboard" loading="lazy" decoding="async"></figure>
         </a>
       </li>
       <li class="p-item reveal d1">
@@ -618,7 +602,6 @@
               <span class="p-domain">ezraservice.com ↗</span>
             </div>
           </div>
-          <figure class="p-shot p-shot--phone"><img src="/img/ezra.webp" width="360" height="780" alt="Ezra Service app home screen with service categories" loading="lazy" decoding="async"></figure>
         </a>
       </li>
       <li class="p-item reveal d1">
@@ -633,7 +616,6 @@
               <span class="p-domain">uboraliving.com ↗</span>
             </div>
           </div>
-          <figure class="p-shot"><img src="/img/living.webp" width="880" height="550" alt="Ubora Living landlord dashboard" loading="lazy" decoding="async"></figure>
         </a>
       </li>
       <li class="p-item reveal d1">
@@ -648,7 +630,6 @@
               <span class="p-domain">kreastar.com ↗</span>
             </div>
           </div>
-          <figure class="p-shot"><img src="/img/kreastar.webp" width="880" height="550" alt="Kreastar creator search page" loading="lazy" decoding="async"></figure>
         </a>
       </li>
     </ul>
