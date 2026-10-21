@@ -1,14 +1,24 @@
 {
   "version": 2,
   "builds": [
-    { "src": "**", "use": "@vercel/static" }
+    {
+      "src": "**",
+      "use": "@vercel/static"
+    }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "has": [{ "type": "host", "value": "www.uboralabs.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.uboralabs.com"
+        }
+      ],
       "status": 308,
-      "headers": { "Location": "https://uboralabs.com/$1" }
+      "headers": {
+        "Location": "https://uboralabs.com/$1"
+      }
     },
     {
       "src": "/(.*)",
@@ -21,10 +31,24 @@
       },
       "continue": true
     },
-    { "src": "/preview.html", "headers": { "X-Robots-Tag": "noindex" }, "continue": true },
-    { "src": "/(testers/?|public/testers\\.html)", "status": 308, "headers": { "Location": "https://products.uboralabs.com/fr" } },
-    { "src": "/fr", "dest": "/fr/index.html" },
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "status": 404, "dest": "/404.html" }
+    {
+      "src": "/(testers/?|public/testers\\.html)",
+      "status": 308,
+      "headers": {
+        "Location": "https://products.uboralabs.com/fr"
+      }
+    },
+    {
+      "src": "/fr",
+      "dest": "/fr/index.html"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "status": 404,
+      "dest": "/404.html"
+    }
   ]
 }
