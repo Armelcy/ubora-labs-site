@@ -39,6 +39,13 @@
       }
     },
     {
+      "src": "/armelleukam/?",
+      "status": 307,
+      "headers": {
+        "Location": "https://products.uboralabs.com"
+      }
+    },
+    {
       "src": "/fr",
       "dest": "/fr/index.html"
     },
